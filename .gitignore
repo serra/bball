@@ -7,6 +7,12 @@
 
 dbl/output/**
 
+ #######
+# Blog #
+#######
+
+site/blog
+
  #########
 # Python #
 #########
