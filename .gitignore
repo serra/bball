@@ -5,7 +5,7 @@
 .[Rr][Dd]ata
 .Rhistory
 
-# dbl/output/**
+dbl/output/**
 
  #########
 # Python #
