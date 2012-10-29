@@ -1,0 +1,38 @@
+Goals
+=====
+
+[x] Offensive and defensive ratings for teams for regular season.
+
+[x] Pace for each team, shown in box plots
+
+[x] Four performance indicators for all teams and their opponents:
+
+ * (effective?) field goal percentage
+ * offensive rebound percentage
+ * turnover percentage
+ * fta/fga
+
+[x] Four performance indicators, shown in side-by-side box plots
+
+[x] Shot selection for all teams
+
+ * 2s / 3s as box plot for season
+
+[x] Correlation between the four performance indicators and Nrtg
+
+ * for competions
+ * per team
+
+[x] Summary of indicators for the competition
+ 
+[ ] Field- and floor percentages for all teams
+
+[ ] Offensive and defensive ratings for players for complete season.
+
+[x] Offensive usage percentages for all players
+
+[ ] Points produced for all players.
+
+[ ] Verifiaction of estimaters (e.g. 0.4 in the possesion calculation)
+
+

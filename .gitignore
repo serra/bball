@@ -1,3 +1,16 @@
+ ####
+# R #
+####
+
+.[Rr][Dd]ata
+.Rhistory
+
+# dbl/output/**
+
+ #########
+# Python #
+#########
+
 *.py[co]
 
 # Packages
