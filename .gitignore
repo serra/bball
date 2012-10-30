@@ -4,6 +4,7 @@
 
 .[Rr][Dd]ata
 .Rhistory
+*.Rout
 
 dbl/output/**
 
