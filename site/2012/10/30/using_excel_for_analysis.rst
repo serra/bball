@@ -32,6 +32,7 @@ I used a simple average function.
 This will calculate per-game averages,
 based on the per game values in the advanced stats.
 
+.. todo:: add disqus
 
 .. author:: default
 .. categories:: none
