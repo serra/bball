@@ -2,10 +2,15 @@
 downloadseason <- function(seasonId) {
   baseUrl <- "http://west.basketball.nl/db/overzicht/heren_ere_stats.pl?seizoen="
   url <- paste(baseUrl, seasonId, sep="")
-  dest <- paste("./input/heren_", seasonId, ".csv", sep ="")
+  dest <- GetInputFileName(seasonId)
   download.file(url, dest, "auto")
   return(dest)
 }
+
+GetInputFileName <- function (seasonId) {
+  return(paste("./input/heren_", seasonId, ".csv", sep =""))
+}
+
 
 DownLoadAll <- function() {
   seasonStarts <- 2000:2012
