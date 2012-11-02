@@ -141,8 +141,9 @@ GetAdvancedTeamStats <- function(sts) {
   names(psData) <- sub("Assists", "Ast", names(psData))
   names(psData) <- sub("Steals", "Stl", names(psData))
   names(psData) <- sub("Blocks", "Blk", names(psData))
+  names(psData) <- sub("^FG", "FG2", names(psData))
   names(psData) <- sub("3P", "FG3", names(psData))
-  
+    
   teams <- GetTeams(sts)
    
   sqlThuis <- paste("select wed_ID, plg_ID, wed_UitPloeg, wed_ThuisPloeg, ", 
@@ -208,20 +209,20 @@ GetAdvancedTeamStats <- function(sts) {
   )
   
   teamStats <- transform(teamStats, 
-                         pts = FTM + 2*FGM + 3*FG3M,
-                         opp_pts =  opp_FTM + 2*opp_FGM + 3*opp_FG3M
+                         pts = FTM + 2*FG2M + 3*FG3M,
+                         opp_pts =  opp_FTM + 2*opp_FG2M + 3*opp_FG3M
   )
   
   # a play is a turnover, a ft trip or field goal attempt 
   teamStats <- transform(teamStats, 
-                         plays = TO + FTtrips + (FGA + FG3A),
-                         opp_plays = opp_TO + opp_FTtrips + (opp_FGA + opp_FG3A)
+                         plays = TO + FTtrips + (FG2A + FG3A),
+                         opp_plays = opp_TO + opp_FTtrips + (opp_FG2A + opp_FG3A)
   )
   
   # to calculate possessions, we have to take offensive rebounds into account
   teamStats <- transform(teamStats, 
-                         ps = plays - secondChanceFactor * (FGA + FG3A - FGM - FG3M) * OR / (OR + opp_DR),
-                         opp_ps = opp_plays - secondChanceFactor * (opp_FGA + opp_FG3A - opp_FGM - opp_FG3M) * opp_OR / (opp_OR + DR)
+                         ps = plays - secondChanceFactor * (FG2A + FG3A - FG2M - FG3M) * OR / (OR + opp_DR),
+                         opp_ps = opp_plays - secondChanceFactor * (opp_FG2A + opp_FG3A - opp_FG2M - opp_FG3M) * opp_OR / (opp_OR + DR)
   )
   
   teamStats <- transform(teamStats,
@@ -237,35 +238,35 @@ GetAdvancedTeamStats <- function(sts) {
                          Nrtg = Ortg - Drtg)
   
   teamStats <- transform(teamStats,
-                         EFGpct = (FGM+1.5*FG3M)/(FGA+FG3A),
+                         EFGpct = (FG2M+1.5*FG3M)/(FG2A+FG3A),
                          ORpct = OR / (OR + opp_DR),
                          TOpct = TO / avgps
   )
   
   teamStats <- transform(teamStats,
-                         opp_EFGpct = (opp_FGM+1.5*opp_FG3M)/(opp_FGA+opp_FG3A),
+                         opp_EFGpct = (opp_FG2M+1.5*opp_FG3M)/(opp_FG2A+opp_FG3A),
                          opp_ORpct = opp_OR / (opp_OR + DR),
                          opp_TOpct = opp_TO / avgps,
-                         opp_FTTpct = opp_FTtrips / (opp_FGA+opp_FG3A)
+                         opp_FTTpct = opp_FTtrips / (opp_FG2A+opp_FG3A)
   )
   
   # shooting distribution
   teamStats <- transform(teamStats,
-                         FGApct = FGA / (FGA + FG3A + FTtrips),
-                         FGA3pct = FG3A / (FGA + FG3A + FTtrips),
-                         FTTpct = FTtrips / (FGA + FG3A + FTtrips)
+                         FG2Apct = FG2A / (FG2A + FG3A + FTtrips),
+                         FG2A3pct = FG3A / (FG2A + FG3A + FTtrips),
+                         FTTpct = FTtrips / (FG2A + FG3A + FTtrips)
   )
   
   # shooting percentages
   teamStats <- transform(teamStats,
-                         FG2pct = FGM / FGA,
+                         FG2pct = FG2M / FG2A,
                          FG3pct = FG3M/ FG3A,
                          FTpct = FTM / FTA
   )
   
   # # point by category
   # teamStats <- transform(teamStats,
-  #                      FG2pts = FGM*2,
+  #                      FG2pts = FG2M*2,
   #                      FG3pts = FG3M*3,
   #                      FTpts = FTM
   #                      )
@@ -304,6 +305,7 @@ GetAdvancedPlayerStats <- function(sts, teamStats) {
   names(playerStats) <- sub("OffRebounds", "OR", names(playerStats))
   names(playerStats) <- sub("DefRebounds", "DR", names(playerStats))
   names(playerStats) <- sub("TurnOvers", "TO", names(playerStats))
+  names(playerStats) <- sub("FG", "FG2", names(playerStats))
   names(playerStats) <- sub("3P", "FG3", names(playerStats))
   names(playerStats) <- sub("Fouten", "PF", names(playerStats))
   names(playerStats) <- sub("Assists", "Ast", names(playerStats))
@@ -325,7 +327,7 @@ GetAdvancedPlayerStats <- function(sts, teamStats) {
   
   # how many plays did the player use?
   playerStats <- transform(playerStats,
-                           spl_Plays = (spl_FGA + spl_FG3A + ftaFactor * spl_FTA + spl_TO)
+                           spl_Plays = (spl_FG2A + spl_FG3A + ftaFactor * spl_FTA + spl_TO)
   )
   
   # usage percentage is the number of plays deployed by this player,
@@ -338,15 +340,15 @@ GetAdvancedPlayerStats <- function(sts, teamStats) {
   
   # scoring
   playerStats <- transform(playerStats,
-                           spl_PTS = spl_FTM + 2*spl_FGM + 3*spl_FG3M)
+                           spl_PTS = spl_FTM + 2*spl_FG2M + 3*spl_FG3M)
   
   # advanced shooting indicators
   playerStats <- transform(playerStats,
                            spl_PPP = spl_PTS / spl_Plays,
-                           spl_FTperFG = spl_FTA / (spl_FGA+spl_FG3A),
-                           spl_FG3AperFG =  spl_FG3A / (spl_FGA+spl_FG3A),
-                           spl_EFGpct = (1.5*spl_FG3M + spl_FGM) / (spl_FGA+spl_FG3A),
-                           spl_TSpct = (spl_PTS / (2 * (spl_FGA + spl_FG3A + ftaFactor * spl_FTA)))
+                           spl_FTperFG = spl_FTA / (spl_FG2A+spl_FG3A),
+                           spl_FG3AperFG =  spl_FG3A / (spl_FG2A+spl_FG3A),
+                           spl_EFGpct = (1.5*spl_FG3M + spl_FG2M) / (spl_FG2A+spl_FG3A),
+                           spl_TSpct = (spl_PTS / (2 * (spl_FG2A + spl_FG3A + ftaFactor * spl_FTA)))
   )
     
   playerStats <- transform(playerStats,
@@ -355,7 +357,7 @@ GetAdvancedPlayerStats <- function(sts, teamStats) {
   
   playerStats <- transform(playerStats,
                            spl_Astpct = (spl_Ast) 
-                           / (spl_MinutesRatio * (FGM + FG3M) - spl_FGM - spl_FG3M)
+                           / (spl_MinutesRatio * (FG2M + FG3M) - spl_FG2M - spl_FG3M)
   )
   
   playerStats <- transform(playerStats,
@@ -372,7 +374,7 @@ GetAdvancedPlayerStats <- function(sts, teamStats) {
   # note that block percentage is estimated using 2pt field goal attempts only
   playerStats <- transform(playerStats,
                            spl_Blkpct = (spl_Blk) 
-                           / (spl_MinutesRatio * (opp_FGA))
+                           / (spl_MinutesRatio * (opp_FG2A))
   )
     
   return (playerStats)
