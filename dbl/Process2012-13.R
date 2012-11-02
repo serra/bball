@@ -4,12 +4,7 @@ source("./src/CalculateAdvancedGameStats.r")
 source("./src/download.r")
 
 season <- "2012-2013" 
-
-message("downloading ", season, " ...")
-fileName <- downloadseason(season)
-
-message("saved as ", fileName)
-  
+fileName <- GetInputFileName(season)
 CreateAdvancedStatsFiles(fileName)
 
 # read to check results:
