@@ -253,7 +253,7 @@ GetAdvancedTeamStats <- function(sts) {
   # shooting distribution
   teamStats <- transform(teamStats,
                          FG2Apct = FG2A / (FG2A + FG3A + FTtrips),
-                         FG2A3pct = FG3A / (FG2A + FG3A + FTtrips),
+                         FG3Apct = FG3A / (FG2A + FG3A + FTtrips),
                          FTTpct = FTtrips / (FG2A + FG3A + FTtrips)
   )
   

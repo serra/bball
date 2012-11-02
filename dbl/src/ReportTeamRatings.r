@@ -273,7 +273,7 @@ PrintTeamRatings <- function(teamStats, outputFile) {
     gameNrs <- c(1:nrow(forPlot))
     
     # absolute
-    plot(gameNrs, forPlot$FGA, 
+    plot(gameNrs, forPlot$FG2A, 
          type="o", pch=1, lty=1, col="blue", 
          xlab=plgName, ylab="#Shots",
          ylim=yLim)
@@ -286,19 +286,19 @@ PrintTeamRatings <- function(teamStats, outputFile) {
           xlab=plgName, 
           ylim=yLim)
     
-    abline(h=mean(forPlot$FGA), lty=3, col="blue")
+    abline(h=mean(forPlot$FG2A), lty=3, col="blue")
     abline(h=mean(forPlot$FG3A), lty=3, col="purple")
     abline(h=mean(forPlot$FTtrip), lty=3, col="red")
     
-    boxplot((forPlot$FGApct), data=forPlot, 
-            xlab="2FGA", col="blue", 
+    boxplot((forPlot$FG2Apct), data=forPlot, 
+            xlab="FG2A", col="blue", 
             ylim=c(0.0, 1.0) )
-    abline(h=median(teamStats$FGApct), lty=3)
+    abline(h=median(teamStats$FG2Apct), lty=3)
     
-    boxplot(forPlot$FGA3pct, data=forPlot, 
+    boxplot(forPlot$FG3Apct, data=forPlot, 
             xlab="3FGA", col="purple",
             ylim=c(0.0, 1.0) )
-    abline(h=median(teamStats$FGA3pct), lty=3)
+    abline(h=median(teamStats$FG3Apct), lty=3)
     
     boxplot(forPlot$FTTpct, data=forPlot, 
             xlab="FT trips", col="red",
@@ -306,11 +306,11 @@ PrintTeamRatings <- function(teamStats, outputFile) {
     abline(h=median(teamStats$FTTpct), lty=3)
     
     # relative
-    plot(gameNrs, forPlot$FGApct, 
+    plot(gameNrs, forPlot$FG2Apct, 
          type="o", pch=1, lty=1, col="blue", 
          xlab=plgName, ylab="Shot Selection Ratio",
          ylim=c(0.0, 1.0))
-    lines(gameNrs, forPlot$FGA3pct, 
+    lines(gameNrs, forPlot$FG3Apct, 
           type="o", pch=1, lty=1, col="purple", 
           xlab=plgName, 
           ylim=c(0.0, 1.0))
