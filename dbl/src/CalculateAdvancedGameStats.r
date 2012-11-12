@@ -10,10 +10,7 @@ library(sqldf)
 # 
 ############
 
-ftaFactor <- 0.4     # Estimated percentage of free throws that end a possession.
-                     # Originally estimated by Oliver at 0.4,
-                     # but nowadays values of 0.44 (NBA) and 0.47 (EuroLeague)
-                     # are used. To be investigated.
+ftaFactor <- 0.46
 
 secondChanceFactor <- 1.07
 
@@ -227,7 +224,9 @@ GetAdvancedTeamStats <- function(sts) {
   
   teamStats <- transform(teamStats,
                          avgps = round((ps + opp_ps) / 2),
-                         WARNING = abs(ps-opp_ps) > 4.0)
+                         WARNING = abs(ps-opp_ps) > 4.0,
+                         pace = (400/(Minuten+opp_Minuten)) * ((ps + opp_ps) / 2))
+  
   
   teamStats <- transform(teamStats,
                          Ortg = 100 * pts / avgps,
