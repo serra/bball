@@ -4,6 +4,7 @@ Sitemap
 .. toctree::
    :maxdepth: 1
 
+   2012/11/01/estimating_the_fta_factor
    2012/11/07/which_statistics_to_look_at_this_early_in_the_season
    2012/10/30/using_excel_for_analysis
    2012/10/29/introduction

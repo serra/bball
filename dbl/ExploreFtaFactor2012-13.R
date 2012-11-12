@@ -23,7 +23,7 @@ for(f in factorsToExplore) {
   diffs <- abs(regseasTeam$ps - regseasTeam$opp_ps)
   qts <- quantile(diffs,probs=c(.00,.90))
   
-  hist(diffs,ylim=c(0,120),xlim=c(0,30))
+  hist(diffs,ylim=c(0,120),xlim=c(0,30),breaks=30)
   mtext(paste(ftaFactor, qts[2], sep=" / "), side=4)
   #mtext(summary(abs(regseasTeam$ps - regseasTeam$opp_ps)),side=2)
   # note that every game occurs TWICE in the stat file
