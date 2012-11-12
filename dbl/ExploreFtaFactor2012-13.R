@@ -11,7 +11,7 @@ season <- "2011-2012"
 fileName <- GetInputFileName(season)
 
 #factorsToExplore <- seq(0.0, 0.50, 0.05) # also interesting
-factorsToExplore <- seq(0.4, 0.50, 0.01)
+factorsToExplore <- seq(0.4, 0.50, 0.02)
 
 for(f in factorsToExplore) {
   ftaFactor <- f

@@ -1,5 +1,5 @@
-Estimating the fta factor
-=========================
+Estimating the number of possessions
+====================================
 
 When estimating the number of possession,
 we have to estimate:
@@ -8,8 +8,8 @@ we have to estimate:
    that wasn't preceeded by a shot. This is what I call a free throw trip.
  # The number of times a possession continued, because of an offensive rebound.
 
-I have chosen to use an fta dactor of 0.46.
-This is based on references of Oliver and in-the-game.org.
+I have chosen to use an fta dactor of 0.46, 
+based on references of Oliver [#Oliver]_ and in-the-game.org [#inthegame]_.
 
 When accounting for second chance shots (after an OR),
 Oliver advices to use 0.44 instead of 0.40 
@@ -19,21 +19,25 @@ to estimate the number of trips to the free throw line. I use::
   
 Plays are then calculated::
 
-  plays = TO + FTtrips + (FGA + FG3A) # FGA is a 2 point field goal attempt 
+  plays = TO + FTtrips + (FG2A + FG3A)
 
-And to calculate the number of posses
+And to calculate the number of possessions, 
+we have to subtract the number of plays that occured after an offensive rebound
+[#Oliver]_:
 
+  # secondChanceFactor = 1.07
+  ps = plays - secondChanceFactor * (FG2A + FG3A - FG2M - FG3M) * OR / (OR + opp_DR)
 
+The `secondChanceFactor` is a bit higher than one,
+because some offensive rebounds (approximately 7 percent) 
+occur after another offensive rebound in the same possession.
 
-We'd expect the number of possessions to be within 0 to 4 of each other.
-For this range, 
- 
 
  
 .. rubbric:: Footnotes
 
   [#Oliver] Oliver
-  [#intheamge]
+  [#inthegame] http://www.in-the-game.org/?page_id=10227
 
 .. author:: default
 .. categories:: none
