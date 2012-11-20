@@ -10,4 +10,5 @@ Sitemap
    2012/10/29/introduction
    pages/about
    pages/downloads
+   pages/team_indicators_2012_13
 
