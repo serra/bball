@@ -36,6 +36,57 @@ PageWithTrendAndBoxPlot <- function (df, title, medianForComp, yLim) {
   message("Done.")
 }
 
+######################################################################
+#
+# Plot functions
+#
+######################################################################
+
+OrtgByTeamPlot <- function (teamStats) {
+  plt <- ggplot(teamStats, aes(plg_Name, Ortg)) + 
+    geom_boxplot(aes(fill=plg_Name)) +
+    geom_hline(aes(yintercept=median(Ortg)), linetype="dotted") +
+    theme(axis.text.x = element_text(angle = -45, hjust = 0)) +    
+    opts(title ="Offensive Rating") +
+    xlab("") + 
+    ylab("Points per 100 possessions")
+  return(plt)
+}   
+
+drtgByTeamPlot <- function(teamStats) {
+  return(ggplot(teamStats, aes(plg_ShortName, Drtg)) + 
+           geom_boxplot(aes(fill=plg_ShortName)) +
+           geom_hline(aes(yintercept=median(Drtg)), linetype="dotted") +
+           opts(title ="Defensive Rating by Team") +
+           xlab("") + 
+           ylab("Points per 100 possessions"))
+}
+
+nrtgByTeamPlot <- function(teamStats) {
+  return( ggplot(teamStats, aes(plg_ShortName, Nrtg)) + 
+            geom_boxplot(aes(fill=plg_ShortName)) +
+            geom_hline(aes(yintercept=median(Nrtg)), linetype="dotted") +
+            opts(title ="Net Rating by Team") +
+            xlab("") + 
+            ylab("Points Difference per 100 possessions"))
+}
+
+TeamRatingQuadrantPlot <- function (teamStats) {
+  plt <- ggplot(teamStats, aes(Ortg, Drtg, plg_ShortName)) + 
+    geom_boxplot(aes(fill=plg_ShortName)) +
+    geom_hline(aes(yintercept=median(Ortg)), linetype="dotted") +
+    opts(title ="Offensive Rating") +
+    xlab("") + 
+    ylab("Points per 100 possessions")
+  return(plt)
+}   
+
+######################################################################
+#
+# Output functions
+#
+######################################################################
+
 PrintTeamRatings <- function(teamStats, outputFile) {
   message("Creating team rating output file ...")
   
@@ -49,29 +100,11 @@ PrintTeamRatings <- function(teamStats, outputFile) {
   pdf(outputFile, paper="a4r", width=12)
   
   # Offensive and Defensive Ratings - Competition
-  ortgByTeamPlot <- ggplot(teamStats, aes(plg_ShortName, Ortg)) + 
-                    geom_boxplot(aes(fill=plg_ShortName)) +
-                    geom_hline(aes(yintercept=median(Ortg)), linetype="dotted") +
-                    opts(title ="Offensive Rating") +
-                    xlab("") + 
-                    ylab("Points per 100 possessions")    
-  print(ortgByTeamPlot)
-    
-  drtgByTeamPlot <- ggplot(teamStats, aes(plg_ShortName, Drtg)) + 
-    geom_boxplot(aes(fill=plg_ShortName)) +
-    geom_hline(aes(yintercept=median(Drtg)), linetype="dotted") +
-    opts(title ="Defensive Rating by Team") +
-    xlab("") + 
-    ylab("Points per 100 possessions")    
-  print(drtgByTeamPlot)
+  print(OrtgByTeamPlot(teamStats))
 
-  nrtgByTeamPlot <- ggplot(teamStats, aes(plg_ShortName, Nrtg)) + 
-    geom_boxplot(aes(fill=plg_ShortName)) +
-    geom_hline(aes(yintercept=median(Nrtg)), linetype="dotted") +
-    opts(title ="Net Rating by Team") +
-    xlab("") + 
-    ylab("Points Difference per 100 possessions")    
-  print(nrtgByTeamPlot)
+  print(drtgByTeamPlot(teamStats))
+
+  print(nrtgByTeamPlot(teamStats))
   
   ptsByTeamPlot <- ggplot(teamStats, aes(plg_ShortName, pts)) + 
     geom_boxplot(aes(fill=plg_ShortName)) +
