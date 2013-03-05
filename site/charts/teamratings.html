@@ -67,7 +67,7 @@
                 .attr("x", width)
                 .attr("y", -6)
                 .style("text-anchor", "end")
-                .text("Sepal Width (cm)");
+                .text("Offensive rating (points per 100 possessions)");
 
             svg.append("g")
                 .attr("class", "y axis")
@@ -78,7 +78,15 @@
                 .attr("y", 6)
                 .attr("dy", ".71em")
                 .style("text-anchor", "end")
-                .text("Sepal Length (cm)")
+                .text("Defensive rating (points conceeded per 100 possessions)")
+
+            var myLine = svg.append("line")
+                .attr("x1", x(50))
+                .attr("y1", y(50))
+                .attr("x2", x(150))
+                .attr("y2", y(150))
+                .style("stroke", "#000")
+                .style("stroke-dasharray", "9,5");
 
             svg.selectAll(".dot")
                 .data(data)
