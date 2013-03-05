@@ -47,7 +47,7 @@ OrtgByTeamPlot <- function (teamStats) {
     geom_boxplot(aes(fill=plg_Name)) +
     geom_hline(aes(yintercept=median(Ortg)), linetype="dotted") +
     theme(axis.text.x = element_text(angle = -45, hjust = 0)) +    
-    opts(title ="Offensive Rating") +
+    labs(title ="Offensive Rating") +
     xlab("") + 
     ylab("Points per 100 possessions")
   return(plt)
@@ -58,7 +58,7 @@ drtgByTeamPlot <- function(teamStats) {
            geom_boxplot(aes(fill=plg_Name)) +
            geom_hline(aes(yintercept=median(Drtg)), linetype="dotted") +
            theme(axis.text.x = element_text(angle = -45, hjust = 0)) +    
-           opts(title ="Defensive Rating by Team") +
+           labs(title ="Defensive Rating by Team") +
            xlab("") + 
            ylab("Points per 100 possessions"))
 }
@@ -68,22 +68,37 @@ nrtgByTeamPlot <- function(teamStats) {
             geom_boxplot(aes(fill=plg_Name)) +
             geom_hline(aes(yintercept=median(Nrtg)), linetype="dotted") +
             theme(axis.text.x = element_text(angle = -45, hjust = 0)) +    
-            opts(title ="Net Rating by Team") +
+            labs(title ="Net Rating by Team") +
             xlab("") + 
             ylab("Points Difference per 100 possessions"))
 }
 
 TeamRatingQuadrantPlot <- function (teamStats) {
-  plt <- ggplot(teamStats, aes(x=Ortg, y=Drtg, color=plg_Name)) + 
+  
+  agg <- aggregate(cbind(Ortg, Drtg) ~ plg_Name,
+                   dat = teamStats, 
+                   FUN = median)
+  
+  moff <- median(teamStats$Ortg)
+  mdef <- median(teamStats$Drtg)
+  
+  print(moff)
+  print(mdef)
+  
+  print(agg)
+  
+  plt <- ggplot(agg, aes(x=Ortg, y=Drtg)) + 
     geom_point() +
     #geom_boxplot(aes(fill=plg_Name)) +
-    geom_hline(aes(yintercept=median(Ortg))) +
-    geom_vline(aes(xintercept=median(Drtg))) +
+    #geom_hline(aes(yintercept = moff)) +
+    #geom_vline(aes(xintercept = mdef)) +
     geom_abline(intercept = 0, slope = 1, linetype="dotted") +  
-    theme(axis.text.x = element_text(angle = -45, hjust = 0)) +    
-    opts(title ="Offensive Rating") +
-    xlab("") + 
-    ylab("Points per 100 possessions")
+    #theme(axis.text.x = element_text(angle = -45, hjust = 0)) +    
+    labs(title ="Team Rating Quadrant") +
+    xlab("Ortg (Points per 100 possessions)") + 
+    ylab("Drtg (Points per 100 possessions)") +
+    xlim(80,120) + 
+    ylim(80,120)
   return(plt)
 }   
 
