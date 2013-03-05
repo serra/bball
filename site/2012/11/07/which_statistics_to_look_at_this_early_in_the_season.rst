@@ -1,4 +1,4 @@
-Which statistics to look at this early in the season
+Which statistics to look at early in the season
 ====================================================
 
 With the DBL season just underway at about six games per team,
