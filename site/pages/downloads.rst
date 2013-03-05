@@ -3,7 +3,7 @@ Downloads
 
 For the Excel- and spreadsheet geeks:
 
- * `Excel file, configured to download stats </stats/analysis.xlsx>` (note: assumes a European locale)
+ * `Excel file, configured to download stats </stats/analysis.xlsx>`_ (note: assumes a European locale)
  * `Publicly visible Google spreadsheet <https://docs.google.com/spreadsheet/ccc?key=0ApXo0exfZJzddDlCemxmeFI4NHBCNHhPSWtpTzJDMUE&usp=sharing>`_ 
    (note: this might take a significant amount of time to load)
 
