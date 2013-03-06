@@ -34,6 +34,16 @@ function scatterTeamRatings() {
         x.domain(d3.extent(data, function (d) { return d.Ortg; })).nice();
         y.domain(d3.extent(data, function (d) { return d.Drtg; })).nice();
 
+        var byTeam = d3.nest()
+                        .key(function(d) { return d.plg_Name; })
+                        .rollup(function(d) {
+                                  return {
+                                    Ortg:d3.median(d,function(g) {return +g.Ortg;}),
+                                    Drtg:d3.median(d,function(g) {return +g.Drtg})
+                                  };
+                                })
+                        .entries(data);
+        
         svg.append("g")
             .attr("class", "x axis")
             .attr("transform", "translate(0," + height + ")")
@@ -65,13 +75,13 @@ function scatterTeamRatings() {
             .style("stroke-dasharray", "9,5");
 
         svg.selectAll(".dot")
-            .data(data)
+            .data(byTeam)
           .enter().append("circle")
             .attr("class", "dot")
             .attr("r", 3.5)
-            .attr("cx", function (d) { return x(d.Ortg); })
-            .attr("cy", function (d) { return y(d.Drtg); })
-            .style("fill", function (d) { return color(d.plg_Name); });
+            .attr("cx", function (d) { return x(d.values.Ortg); })
+            .attr("cy", function (d) { return y(d.values.Drtg); })
+            .style("fill", function (d) { return color(d.key); });
 
         var legend = svg.selectAll(".legend")
             .data(color.domain())
