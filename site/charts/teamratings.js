@@ -29,6 +29,7 @@ function scatterTeamRatings() {
         data.forEach(function (d) {
             d.Drtg = +d.Drtg;   // all inpunt are strings, so we have to coerce to numeric using +
             d.Ortg = +d.Ortg;
+            d.Nrtg = +d.Nrtg;
         });
 
         x.domain(d3.extent(data, function (d) { return d.Ortg; })).nice();
@@ -38,8 +39,9 @@ function scatterTeamRatings() {
                         .key(function(d) { return d.plg_Name; })
                         .rollup(function(d) {
                                   return {
-                                    Ortg:d3.median(d,function(g) {return +g.Ortg;}),
-                                    Drtg:d3.median(d,function(g) {return +g.Drtg})
+                                    Ortg:d3.median(d,function(g) {return g.Ortg;}),
+                                    Drtg:d3.median(d,function(g) {return g.Drtg;}),
+                                    Nrtg:d3.median(d,function(g) {return g.Nrtg;})
                                   };
                                 })
                         .entries(data);
@@ -85,7 +87,9 @@ function scatterTeamRatings() {
             .attr("r", 3.5)
             .attr("cx", function (d) { return x(d.values.Ortg); })
             .attr("cy", function (d) { return y(d.values.Drtg); })
-            .style("fill", function (d) { return color(d.key); });
+            .style("fill", function (d) { return color(d.key); })
+            .append("title").text(function(d,i) {return "" + d.key + " (" + d.values.Nrtg.toFixed(1) + ")" })
+            ;
 
         var legend = svg.selectAll(".legend")
             .data(color.domain())
