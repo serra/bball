@@ -27,14 +27,14 @@ function scatterTeamRatings() {
 
     d3.csv("/stats/heren_2012-2013_regseas_advanced_team_stats_google.csv", function (error, data) {
         data.forEach(function (d) {
-            d.Drtg = +d.Drtg;
+            d.Drtg = +d.Drtg;   // all inpunt are strings, so we have to coerce to numeric using +
             d.Ortg = +d.Ortg;
         });
 
         x.domain(d3.extent(data, function (d) { return d.Ortg; })).nice();
         y.domain(d3.extent(data, function (d) { return d.Drtg; })).nice();
 
-        var byTeam = d3.nest()
+        var teamAgg = d3.nest()
                         .key(function(d) { return d.plg_Name; })
                         .rollup(function(d) {
                                   return {
@@ -43,6 +43,10 @@ function scatterTeamRatings() {
                                   };
                                 })
                         .entries(data);
+                        
+        var gamesByTeam = d3.nest()
+                            .key(function(d) { return d.plg_Name; })
+                            .entries(data);
         
         svg.append("g")
             .attr("class", "x axis")
@@ -75,7 +79,7 @@ function scatterTeamRatings() {
             .style("stroke-dasharray", "9,5");
 
         svg.selectAll(".dot")
-            .data(byTeam)
+            .data(teamAgg)
           .enter().append("circle")
             .attr("class", "dot")
             .attr("r", 3.5)
