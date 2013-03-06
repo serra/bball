@@ -30,6 +30,8 @@ function scatterTeamRatings() {
             d.Drtg = +d.Drtg;   // all inpunt are strings, so we have to coerce to numeric using +
             d.Ortg = +d.Ortg;
             d.Nrtg = +d.Nrtg;
+            d.win = (+d.pts > +d.opp_pts) ? 1 : 0;
+            d.Summary = d.plg_Name + " " + d.pts + " - " + d.opp_pts + " " + d.opp_plg_Name;
         });
 
         x.domain(d3.extent(data, function (d) { return d.Ortg; })).nice();
@@ -41,14 +43,15 @@ function scatterTeamRatings() {
                                   return {
                                     Ortg:d3.median(d,function(g) {return g.Ortg;}),
                                     Drtg:d3.median(d,function(g) {return g.Drtg;}),
-                                    Nrtg:d3.median(d,function(g) {return g.Nrtg;})
+                                    Nrtg:d3.median(d,function(g) {return g.Nrtg;}),
+                                    WinPct:d3.mean(d,function(g) {return g.win;}),
                                   };
                                 })
                         .entries(data);
                         
         var gamesByTeam = d3.nest()
                             .key(function(d) { return d.plg_Name; })
-                            .entries(data);
+                            .map(data);
         
         svg.append("g")
             .attr("class", "x axis")
@@ -84,11 +87,12 @@ function scatterTeamRatings() {
             .data(teamAgg)
           .enter().append("circle")
             .attr("class", "dot")
-            .attr("r", 3.5)
+            .attr("r", function (d) { return 2.5 + d.values.WinPct * 5;})
             .attr("cx", function (d) { return x(d.values.Ortg); })
             .attr("cy", function (d) { return y(d.values.Drtg); })
             .style("fill", function (d) { return color(d.key); })
-            .append("title").text(function(d,i) {return "" + d.key + " (" + d.values.Nrtg.toFixed(1) + ")" })
+            .on("click", function(d) {showGames(d.key);})
+            .append("title").text(function(d,i) {return "" + d.key + " (win pct: " + d.values.WinPct.toFixed(2) + ", Nrtg: " + d.values.Nrtg.toFixed(1) + ")" })
             ;
 
         var legend = svg.selectAll(".legend")
@@ -109,6 +113,26 @@ function scatterTeamRatings() {
             .attr("dy", ".35em")
             .style("text-anchor", "end")
             .text(function (d) { return d; });
-
+        
+        var games = {}; // will contain games to show
+        function showGames(teamKey) {
+            
+            games[teamKey] = gamesByTeam[teamKey];
+            
+            var toShow = d3.merge(d3.values(games));
+                      
+            svg.selectAll(".game")
+            .data(toShow)
+          .enter().append("circle")
+            .attr("class", "game")
+            .attr("r", 3.5)
+            .attr("cx", function (d) { return x(d.Ortg); })
+            .attr("cy", function (d) { return y(d.Drtg); })
+            .style("fill", function (d) { return color(d.plg_Name); })
+            //.on("click", function(d) {showGames(d.key);})
+            .append("title").text(function(d,i) {return d.Summary  })
+            ;
+        }
+        
     });
 }
