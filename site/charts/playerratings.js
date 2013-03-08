@@ -55,15 +55,22 @@ function scatterPlayerScoring() {
                             .key(function(d) { return d.spl_ID; })
                             .map(data);
 
-        for(team in d3.keys(playerByTeamAgg))
+        for(n in d3.keys(playerByTeamAgg))
         {
-            var playerAgg = playerByTeamAgg[team].values;
+            var team = playerByTeamAgg[n].key;
+            var playerAgg = playerByTeamAgg[n].values;
 
             var svg = d3.select("#playerscoring").append("svg")
                 .attr("width", width + margin.left + margin.right)
                 .attr("height", height + margin.top + margin.bottom)
               .append("g")
                 .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+            svg.append("text")
+                .attr("x", (width / 2))
+                .attr("y", 0 - (margin.top / 2))
+                .attr("text-anchor", "middle")
+                .text(team);
 
             svg.append("g")
                 .attr("class", "x axis")
