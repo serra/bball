@@ -1,4 +1,4 @@
-Team Indicators 2012-13
+Indicators 2012-13
 =======================
 
 .. raw:: html
@@ -19,16 +19,28 @@ Offensive and defensive ratings
     </script>
 
 The offensive team rating is the number of point a team scores per 100 possessions.
-The defensive rating is the  the number of point a team conceeds per 100 possessions.
-The teamrating charts shows the median rating for each team.
+The defensive rating is the  the number of point a team concedes per 100 possessions.
+The team rating charts shows the median rating for each team.
 Click on a team to see all the team's games.
 Hover over the dots for additional info.
 
 The chart shows a diagonal line that indicates identical offensive and defensive rating.
-A dot below the line denot a team win, and above a loosing effort.
+A dot below the line denote a team win, and above a loosing effort.
 
 The chart can be divided into four quadrant by drawing the median offensive and defensive rating for all teams.
-Teams below the "Average Defense" line conceed fewer points per possession
+Teams below the "Average Defense" line concede fewer points per possession
 and can be considered above-average teams defensively.
 Teams to the right of the "Average Offense" line score more points per possession 
 and can be considered above-average teams offensively.
+
+
+Scoring efficiency
+------------------
+
+.. raw:: html
+    
+    <div id="playerscoring"></div>
+    <script src="/charts/playerratings.js"></script>
+    <script>
+        scatterPlayerScoring();
+    </script>
