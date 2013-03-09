@@ -9,6 +9,10 @@ function scatterPlayerScoring() {
     var y = d3.scale.linear()
         .range([height, 0]);
 
+    var color = d3.scale.linear()
+                  .domain([0, .8, 1.6])
+                  .range(["red", "white", "green"]);              
+
     var xAxis = d3.svg.axis()
         .scale(x)
         .orient("bottom");
@@ -55,7 +59,6 @@ function scatterPlayerScoring() {
 
         for(n in d3.keys(playerByTeamAgg))
         {
-            var color = d3.scale.category20();
             var team = playerByTeamAgg[n].key;
             var playerAgg = playerByTeamAgg[n].values;
 
@@ -100,15 +103,15 @@ function scatterPlayerScoring() {
                 .attr("x2", x(0.6))
                 .attr("y2", y(competitionAverage))
                .style("stroke", "#222")
-               .style("stroke-dasharray", "3,2");
-//              compAvg.append("text")
-//                .attr("class", "label")
-//                .attr("x", x(competitionAverage)-6)
-//                .attr("y", 6)
-//                .attr("dy", ".71em")
-//                .style("text-anchor", "end")
-//                .text("Average TSP")
-//                ;
+               .style("stroke-dasharray", "3,2")
+              compAvg.append("text")
+                .attr("class", "label")
+                .attr("x", x(competitionAverage)-6)
+                .attr("y", 6)
+                .attr("dy", ".71em")
+                .style("text-anchor", "end")
+                .text("Average TSP")
+                ;
 
             var usgAvg = svg.append("g");
               usgAvg.append("line")
@@ -117,14 +120,14 @@ function scatterPlayerScoring() {
                 .attr("x2", x(.2))
                 .attr("y2", y(1.1))
                 .style("stroke", "#222")
-                .style("stroke-dasharray", "3,2");
-//              usgAvg.append("text")
-//                .attr("class", "label")
-//                .attr("x", x(0.3))
-//                .attr("y", y(competitionAverage))
-//                .attr("dy", ".71em")
-//                .style("text-anchor", "start")
-//                .text("Average TSP");
+                .style("stroke-dasharray", "3,2")
+              usgAvg.append("text")
+                .attr("class", "label")
+                .attr("x", x(0.2) + 6)
+                .attr("y", 8)
+                .attr("dy", ".71em")
+                .style("text-anchor", "start")
+                .text("Average Usage");
 
             svg.selectAll(".dot")
                 .data(playerAgg)
@@ -133,7 +136,7 @@ function scatterPlayerScoring() {
                 .attr("r", function (d) { return 2.5 + (d.values.spl_pointShare * 20);})
                 .attr("cx", function (d) { return x(d.values.spl_USGpct); })
                 .attr("cy", function (d) { return y(d.values.spl_TSpct); })
-                .style("fill", function (d) { return color(d.key); })
+                .style("fill", function (d) { return color(d.values.spl_PPP); })
                 .on("click", function(d) {showGames(d.key);})
                 .append("title").text(function(d,i) {return "" + d.key
                                                                + " \n median ppp: " + d.values.spl_PPP.toFixed(2)
@@ -146,12 +149,12 @@ function scatterPlayerScoring() {
                 .data(color.domain())
               .enter().append("g")
                 .attr("class", "legend")
-                .attr("transform", function (d, i) { return "translate(0," + i * 15 + ")"; });
+                .attr("transform", function (d, i) { return "translate(0," + i * 20 + ")"; });
 
-            legend.append("circle")
-                .attr("cx", width - 10)
-                .attr("r", 5)
-                //.attr("height", 10)
+            legend.append("rect")
+                .attr("x", width - 10)
+                .attr("width", 10)
+                .attr("height", 10)
                 .attr("stroke", "#222")
                 .style("fill", color);
 
