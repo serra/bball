@@ -27,6 +27,7 @@ function scatterPlayerScoring() {
             d.spl_USGpct = Math.min(+d.spl_USGpct, 0.6);
             d.spl_PPP = +d.spl_PPP || 0.0;
             d.spl_MinutesRatio = +d.spl_MinutesRatio;
+            d.spl_pointShare = ((+d.spl_PTS || 0.0) / +d.pts),
             d.win = (+d.pts > +d.opp_pts) ? 1 : 0;
             d.Summary = d.spl_Id + " (" + d.spl_PPP.toFixed(2) + "), " + d.pts + " - " + d.opp_pts + " vs " + d.opp_plg_Name;
         });
@@ -45,8 +46,9 @@ function scatterPlayerScoring() {
                                     spl_TSpct:d3.median(d,function(g) {return g.spl_TSpct;}),
                                     spl_PPP:d3.median(d,function(g) {return g.spl_PPP;}),
                                     spl_MinutesRatio:d3.median(d,function(g) {return g.spl_MinutesRatio;}),
+                                    spl_pointShare:d3.median(d,function(g) {return g.spl_pointShare;}),
                                     spl_Games: d.length,
-                                    WinPct:d3.mean(d,function(g) {return g.win;}),
+                                    WinPct:d3.mean(d,function(g) {return g.win;})
                                   };
                                 })
                         .entries(data);
@@ -131,15 +133,16 @@ function scatterPlayerScoring() {
                 .data(playerAgg)
               .enter().append("circle")
                 .attr("class", "dot")
-                .attr("r", function (d) { return 2.5 + (d.values.spl_MinutesRatio * 5);})
+                .attr("r", function (d) { return 2.5 + (d.values.spl_pointShare * 20);})
                 .attr("cx", function (d) { return x(d.values.spl_USGpct); })
                 .attr("cy", function (d) { return y(d.values.spl_TSpct); })
                 .style("fill", function (d) { return color(d.values.spl_PPP); })
-                //.on("click", function(d) {showGames(d.key);})
+                .on("click", function(d) {showGames(d.key);})
                 .append("title").text(function(d,i) {return "" + d.key
-                                                               + " | median ppp: " + d.values.spl_PPP.toFixed(2)
-                                                               + " | median playing time: " + (d.values.spl_MinutesRatio*40).toFixed(1)
-                                                               + " | #gms: " + d.values.spl_Games })
+                                                               + " \n median ppp: " + d.values.spl_PPP.toFixed(2)
+                                                               + " \n median point share: " + (d.values.spl_pointShare).toFixed(2)
+                                                               + " \n median playing time: " + (d.values.spl_MinutesRatio*40).toFixed(1)
+                                                               + " \n #gms: " + d.values.spl_Games })
                 ;
 
             var legend = svg.selectAll(".legend")
