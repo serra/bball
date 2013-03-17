@@ -27,7 +27,7 @@ function scatterPlayerScoring() {
             d.spl_USGpct = Math.min(+d.spl_USGpct, 0.6);
             d.spl_PPP = +d.spl_PPP || 0.0;
             d.spl_MinutesRatio = +d.spl_MinutesRatio;
-            d.spl_pointShare = ((+d.spl_PTS || 0.0) / +d.pts),
+            d.spl_pointShare = ((+d.spl_PTS || 0.0) / +d.pts);
             d.win = (+d.pts > +d.opp_pts) ? 1 : 0;
             d.Summary = d.spl_Id + " (" + d.spl_PPP.toFixed(2) + "), " + d.pts + " - " + d.opp_pts + " vs " + d.opp_plg_Name;
         });
@@ -56,6 +56,7 @@ function scatterPlayerScoring() {
         var gamesByPlayer = d3.nest()
                             .key(function(d) { return d.spl_ID; })
                             .map(data);
+        var svgs = {};
 
         for(n in d3.keys(playerByTeamAgg))
         {
@@ -67,6 +68,8 @@ function scatterPlayerScoring() {
                 .attr("height", height + margin.top + margin.bottom)
               .append("g")
                 .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+            svgs[team] = svg;
 
             svg.append("text")
                 .attr("x", (width / 2))
@@ -103,15 +106,14 @@ function scatterPlayerScoring() {
                 .attr("x2", x(0.6))
                 .attr("y2", y(competitionAverage))
                .style("stroke", "#222")
-               .style("stroke-dasharray", "3,2")
+               .style("stroke-dasharray", "3,2");
               compAvg.append("text")
                 .attr("class", "label")
-                .attr("x", x(competitionAverage)-6)
-                .attr("y", 6)
+                .attr("x", x(0.2) + 6)
+                .attr("y", 8)
                 .attr("dy", ".71em")
-                .style("text-anchor", "end")
-                .text("Average TSP")
-                ;
+                .style("text-anchor", "start")
+                .text("Average TSP");
 
             var usgAvg = svg.append("g");
               usgAvg.append("line")
@@ -121,13 +123,7 @@ function scatterPlayerScoring() {
                 .attr("y2", y(1.1))
                 .style("stroke", "#222")
                 .style("stroke-dasharray", "3,2")
-              usgAvg.append("text")
-                .attr("class", "label")
-                .attr("x", x(0.2) + 6)
-                .attr("y", 8)
-                .attr("dy", ".71em")
-                .style("text-anchor", "start")
-                .text("Average Usage");
+
 
             svg.selectAll(".dot")
                 .data(playerAgg)
@@ -165,14 +161,13 @@ function scatterPlayerScoring() {
                 .style("text-anchor", "end")
                 .text(function (d) { return d; });
 
-            var games = {}; // will contain games to show
             function showGames(playerKey) {
+                var games = gamesByPlayer[playerKey];
+                var teamKey = games[0].plg_Name;
+                var teamSvg = svgs[teamKey];
+                var toShow = games;
 
-                games[playerKey] = gamesByPlayer[playerKey];
-
-                var toShow = d3.merge(d3.values(games));
-
-                svg.selectAll(".game")
+                teamSvg.selectAll(".game")
                 .data(toShow)
               .enter().append("circle")
                 .attr("class", "game")
