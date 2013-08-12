@@ -2,7 +2,7 @@
 source("./src/ReportTeamRatings.r")
 
 args<-commandArgs(TRUE)
-season <- args[0]
+season <- args[1]
 
 fileName <- GetInputFileName(season)
 

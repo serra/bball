@@ -2,7 +2,7 @@
 source("./src/download.r")
 
 args<-commandArgs(TRUE)
-season <- args[0]
+season <- args[1]
 
 message("downloading ", season, " ...")
 fileName <- downloadseason(season)

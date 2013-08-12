@@ -4,7 +4,7 @@ source("./src/CalculateAdvancedGameStats.r")
 source("./src/download.r")
 
 args<-commandArgs(TRUE)
-season <- args[0]
+season <- args[1]
 
 fileName <- GetInputFileName(season)
 CreateAdvancedStatsFiles(fileName)
