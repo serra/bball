@@ -3,7 +3,9 @@
 source("./src/CalculateAdvancedGameStats.r")
 source("./src/download.r")
 
-season <- "2012-2013" 
+args<-commandArgs(TRUE)
+season <- args[0]
+
 fileName <- GetInputFileName(season)
 CreateAdvancedStatsFiles(fileName)
 
