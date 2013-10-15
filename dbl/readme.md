@@ -7,6 +7,8 @@ Generate a list of changed games using:
         awk -F\; 'NR>4 {print $11 " " $9 " @ " $6 }' | 
         sort -r | uniq)
 
+Use the feed https://github.com/serra/bball/commits/master.atom to show all the commits.
+        
 ### Goals
 
 [x] Offensive and defensive ratings for teams for regular season.
