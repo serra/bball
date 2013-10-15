@@ -1,4 +1,6 @@
-function scatterTeamRatings() { 
+function scatterTeamRatings(season) { 
+    season = season || "2012-2013";
+    
     var margin = { top: 20, right: 20, bottom: 30, left: 40 },
         width = 450,
         height = 450;
@@ -25,7 +27,7 @@ function scatterTeamRatings() {
       .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    d3.csv("/stats/heren_2012-2013_regseas_advanced_team_stats_google.csv", function (error, data) {
+    d3.csv("/stats/heren_" + season + "_regseas_advanced_team_stats_google.csv", function (error, data) {
         data.forEach(function (d) {
             d.Drtg = +d.Drtg;   // all inpunt are strings, so we have to coerce to numeric using +
             d.Ortg = +d.Ortg;
