@@ -4,6 +4,7 @@ Sitemap
 .. toctree::
    :maxdepth: 1
 
+   2013/10/15/2013_2014_stats_available
    2013/03/23/predicting_the_perfect_bracket
    2013/03/08/basketball_prospectus_____end_of_life_
    2012/11/07/which_statistics_to_look_at_this_early_in_the_season

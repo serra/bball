@@ -1,8 +1,10 @@
+.. _using-excel-for-analysis:
+
 Using Excel for analysis
 ========================
 
 If you'd like to do some analysis using Microsoft Excel,
-you can start `using the analysis.xlsx Excel document </stats>`_ 
+you can start `using the analysis_2012-2013.xlsx Excel document </stats/excel>`_ 
 located in the downloads section. 
 This assumes you're using Excel 2010.
 

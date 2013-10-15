@@ -1,12 +1,10 @@
+.. _downloads:
+
 Downloads
 =========
 
-For the Excel- and spreadsheet geeks:
-
- * `Excel file, configured to download stats </stats/analysis.xlsx>`_ (note: assumes a European locale)
- * `Publicly visible Google spreadsheet <https://docs.google.com/spreadsheet/ccc?key=0ApXo0exfZJzddDlCemxmeFI4NHBCNHhPSWtpTzJDMUE&usp=sharing>`_ 
-   (note: this might take a significant amount of time to load)
-
+For the Excel geeks we provide `Excel files, configured to download stats </stats/excel/>`_ (note: assumes a European locale)
+ 
 For the R- and raw data geeks:
 
  * `Dump of advanced stats, updated regularly </stats>`_
