@@ -4,12 +4,12 @@ options(width = 75)
 render_rst(strict=TRUE)
 
 # global chunk options
-opts_chunk$set(fig.width=7.5, fig.height=5, echo=false)
+opts_chunk$set(fig.width=7.5, fig.height=5, echo=FALSE)
 .. ..
 
 
-Regular season
-==============
+:r:`season` Regular season
+====================================================
 
 Teams
 -----
@@ -22,3 +22,17 @@ teams
 .. ..
 
 
+Ratings
+-------
+
+.. {r net-rating, fig.cap='Net Ratings', message=FALSE}
+nrtgByTeamPlot(regseasTeam)
+.. ..
+
+.. {r off-rating, fig.cap='Offensive Ratings', message=FALSE}
+OrtgByTeamPlot(regseasTeam)
+.. ..
+
+.. {r def-rating, fig.cap='Defensive Ratings', message=FALSE}
+drtgByTeamPlot(regseasTeam)
+.. ..

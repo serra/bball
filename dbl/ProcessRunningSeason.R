@@ -30,6 +30,4 @@ googlePlayerFile <- sprintf("./output/heren_%s_regseas_advanced_player_stats_goo
 write.csv(regseasTeam, googleTeamFile)
 write.csv(regseasPlyr, googlePlayerFile)
 
-# knit reportsfor this season
 KnitReports(season, regseasTeam, regseasPlyr)
-
