@@ -25,14 +25,14 @@ teams
 Ratings
 -------
 
-.. {r net-rating, fig.cap='Net Ratings', message=FALSE}
+.. {r net-rating, message=FALSE}
 nrtgByTeamPlot(regseasTeam)
 .. ..
 
-.. {r off-rating, fig.cap='Offensive Ratings', message=FALSE}
+.. {r off-rating, message=FALSE}
 OrtgByTeamPlot(regseasTeam)
 .. ..
 
-.. {r def-rating, fig.cap='Defensive Ratings', message=FALSE}
+.. {r def-rating, message=FALSE}
 drtgByTeamPlot(regseasTeam)
 .. ..

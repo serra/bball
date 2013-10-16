@@ -56,5 +56,3 @@ pip-log.txt
 site/stats/**
 
 .DS_Store
-dbl/figure/
-site/pages/reports/**

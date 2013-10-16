@@ -1,7 +1,7 @@
 library(knitr)
 
 KnitReports <- function (season, regseasTeam, regseasPlyr) {
-  outputBaseDir <- file.path('output', 'reports', season)   #ensure dir?
+  outputBaseDir <- file.path('../site/pages', 'reports', season)
   
   file.remove(outputBaseDir)
   dir.create(outputBaseDir, recursive=TRUE, showWarnings=FALSE)
