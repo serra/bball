@@ -1,0 +1,24 @@
+.. {r setup}
+options(width = 75)
+# do not use the sourcecode directive
+render_rst(strict=TRUE)
+
+# global chunk options
+opts_chunk$set(fig.width=7.5, fig.height=5, echo=false)
+.. ..
+
+
+Regular season
+==============
+
+Teams
+-----
+
+The following teams are in this competition:
+
+.. {r teams}
+teams <- sqldf("select plg_ID, plg_Name from regseasTeam group by plg_ID, plg_Name")
+teams
+.. ..
+
+
