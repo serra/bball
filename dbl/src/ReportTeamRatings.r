@@ -75,28 +75,20 @@ nrtgByTeamPlot <- function(teamStats) {
 
 TeamRatingQuadrantPlot <- function (teamStats) {
   
-  agg <- aggregate(cbind(Ortg, Drtg) ~ plg_Name,
+  agg <- aggregate(cbind(Ortg, Drtg, Nrtg) ~ plg_Name,
                    dat = teamStats, 
                    FUN = median)
   
   moff <- median(teamStats$Ortg)
   mdef <- median(teamStats$Drtg)
   
-  print(moff)
-  print(mdef)
-  
-  print(agg)
-  
   plt <- ggplot(agg, aes(x=Ortg, y=Drtg)) + 
-    geom_point() +
-    #geom_boxplot(aes(fill=plg_Name)) +
-    #geom_hline(aes(yintercept = moff)) +
-    #geom_vline(aes(xintercept = mdef)) +
-    geom_abline(intercept = 0, slope = 1, linetype="dotted") +  
-    #theme(axis.text.x = element_text(angle = -45, hjust = 0)) +    
-    labs(title ="Team Rating Quadrant") +
+    geom_point(aes(colour = factor(plg_Name), size = Nrtg)) +
+    geom_abline(intercept = 0, slope = 1, linetype="dotted") +   
+    labs(title ="Team Ratings") +
+    geom_text(aes(label=plg_Name), vjust=2, size=3, alpha = I(0.6)) +
     xlab("Ortg (Points per 100 possessions)") + 
-    ylab("Drtg (Points per 100 possessions)") +
+    ylab("Drtg (Points allowed per 100 possessions)") +
     xlim(80,120) + 
     ylim(80,120)
   return(plt)

@@ -1,17 +1,11 @@
 
 
-::
 
-    options(width = 75)
-    # do not use the sourcecode directive
-    render_rst(strict = TRUE)
-    
-    # global chunk options
-    opts_chunk$set(fig.width = 7.5, fig.height = 5, echo = FALSE)
-
-
-
-
+..
+  Assumptions
+  season      : srting identifier of the season we're evaluating
+  regseasTeam : dataframe containing the team statistics
+  ReportTeamRatings.r is sourced.
 
 2012-2013 Regular season
 ====================================================
@@ -45,22 +39,33 @@ Ratings
 -------
 
 
-.. figure:: figure/net-rating.png
-    :alt: plot of chunk net-rating
+.. figure:: figure/rating-quadrant.png
+    :alt: 
 
-    plot of chunk net-rating
+    
+
+
+
+.. figure:: figure/net-rating.png
+    :alt: 
+
+    
 
 
 
 .. figure:: figure/off-rating.png
-    :alt: plot of chunk off-rating
+    :alt: 
 
-    plot of chunk off-rating
+    
 
 
 
 .. figure:: figure/def-rating.png
-    :alt: plot of chunk def-rating
+    :alt: 
 
-    plot of chunk def-rating
+    
 
+
+
+Four Factors
+------------

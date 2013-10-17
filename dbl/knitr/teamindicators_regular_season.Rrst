@@ -1,12 +1,16 @@
-.. {r setup}
-options(width = 75)
-# do not use the sourcecode directive
-render_rst(strict=TRUE)
-
-# global chunk options
-opts_chunk$set(fig.width=7.5, fig.height=5, echo=FALSE)
+.. {r setup, echo=FALSE}
+  options(width = 75)
+  # do not use the sourcecode directive
+  render_rst(strict=TRUE)
+  # global chunk options
+  opts_chunk$set(fig.width=7.5, fig.height=5, echo=FALSE)
 .. ..
 
+..
+  Assumptions
+  season      : srting identifier of the season we're evaluating
+  regseasTeam : dataframe containing the team statistics
+  ReportTeamRatings.r is sourced.
 
 :r:`season` Regular season
 ====================================================
@@ -25,14 +29,22 @@ teams
 Ratings
 -------
 
-.. {r net-rating, message=FALSE}
+.. {r rating-quadrant, message=FALSE, fig.cap=''}
+TeamRatingQuadrantPlot(regseasTeam)
+.. ..
+
+.. {r net-rating, message=FALSE, fig.cap=''}
 nrtgByTeamPlot(regseasTeam)
 .. ..
 
-.. {r off-rating, message=FALSE}
+.. {r off-rating, message=FALSE, fig.cap=''}
 OrtgByTeamPlot(regseasTeam)
 .. ..
 
-.. {r def-rating, message=FALSE}
+.. {r def-rating, message=FALSE, fig.cap=''}
 drtgByTeamPlot(regseasTeam)
 .. ..
+
+
+Four Factors
+------------
