@@ -1,17 +1,11 @@
 
 
-::
 
-    options(width = 75)
-    # do not use the sourcecode directive
-    render_rst(strict = TRUE)
-    
-    # global chunk options
-    opts_chunk$set(fig.width = 7.5, fig.height = 5, echo = FALSE)
-
-
-
-
+..
+  Assumptions
+  season      : srting identifier of the season we're evaluating
+  regseasTeam : dataframe containing the team statistics
+  ReportTeamRatings.r is sourced.
 
 2013-2014 Regular season
 ====================================================
@@ -45,22 +39,69 @@ Ratings
 -------
 
 
-.. figure:: figure/net-rating.png
-    :alt: plot of chunk net-rating
 
-    plot of chunk net-rating
+::
+
+    ## Warning: Removed 2 rows containing missing values (geom_point). Warning:
+    ## Removed 2 rows containing missing values (geom_text).
+
+
+.. figure:: figure/rating-quadrant.png
+    :alt: 
+
+    
+
+
+
+.. figure:: figure/net-rating.png
+    :alt: 
+
+    
 
 
 
 .. figure:: figure/off-rating.png
-    :alt: plot of chunk off-rating
+    :alt: 
 
-    plot of chunk off-rating
+    
 
 
 
 .. figure:: figure/def-rating.png
-    :alt: plot of chunk def-rating
+    :alt: 
 
-    plot of chunk def-rating
+    
+
+
+
+Four Factors
+------------
+
+The net rating is plotted against all "four factors"" 
+for all games in this competition.
+These plots show us how each of the four factors influences the net rating.
+Because we can assume the net rating to be the best indicator of actually winning games,
+these plots show ho and how strongly each of the four factor contribute to winning basketball games in the DBL in this season. 
+
+
+.. figure:: figure/net-rating-by-four-factor.png
+    :alt: 
+
+    
+
+
+The correlation matrix for the four factors and the net rating is displayed below:
+
+
+
+::
+
+    ##           Nrtg   EFGpct    ORpct     TOpct  FTTpct
+    ## Nrtg    1.0000 0.302471  0.25018 -0.577265  0.1937
+    ## EFGpct  0.3025 1.000000  0.02326  0.000959  0.4659
+    ## ORpct   0.2502 0.023264  1.00000 -0.154827 -0.1096
+    ## TOpct  -0.5773 0.000959 -0.15483  1.000000  0.4738
+    ## FTTpct  0.1937 0.465948 -0.10958  0.473796  1.0000
+
+
 
