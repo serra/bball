@@ -73,6 +73,41 @@ nrtgByTeamPlot <- function(teamStats) {
             ylab("Points Difference per 100 possessions"))
 }
 
+fourFactorsDf <- function(teamStats) {
+  d = data.frame(teamStats$Nrtg, 
+                 teamStats$EFGpct, teamStats$ORpct, 
+                 teamStats$TOpct, teamStats$FTTpct
+                 # when evaluating the competion, 
+                 # it does not make sense to include opponent stats
+                 #teamStats$opp_EFGpct, teamStats$opp_ORpct, 
+                 #teamStats$opp_TOpct, teamStats$opp_FTTpct
+  )
+  names(d) <- sub("^teamStats.", "", names(d))
+  return(d)
+}
+
+fourFactorsForCompetition <- function(teamStats) {
+  # correlation of performance indicators
+  d <- fourFactorsDf(teamStats)
+  
+  forPlot <- teamStats[c("wed_ID","Nrtg","EFGpct","ORpct","TOpct","FTTpct",
+                         "plg_ShortName","Home")] 
+  forPlot.m <- melt(forPlot, id=c("wed_ID", "plg_ShortName", "Home","Nrtg"))
+  
+  p <- ggplot(forPlot.m, aes(value, Nrtg)) +
+    geom_point(aes(shape=plg_ShortName, colour=plg_ShortName)) + 
+    scale_shape_manual(values=as.numeric(forPlot.m$plg_ShortName)) +
+    stat_smooth(method="lm") +
+    facet_wrap(~variable,scales="free")
+  
+  return(p)
+}
+
+fourFactorsForCompetitionCorrelationMatrix <- function(teamStats) {
+    d <- fourFactorsDf(teamStats)
+    return(cor(d))
+}
+
 TeamRatingQuadrantPlot <- function (teamStats) {
   
   agg <- aggregate(cbind(Ortg, Drtg, Nrtg) ~ plg_Name,
@@ -193,39 +228,7 @@ PrintTeamRatings <- function(teamStats, outputFile) {
     ylab("FTT%")    
   print(fttPctPlot)
     
-  # correlation of performance indicators
   
-  d = data.frame(teamStats$Nrtg, 
-                teamStats$EFGpct, teamStats$ORpct, 
-                teamStats$TOpct, teamStats$FTTpct
-                 # when evaluating the competion, 
-                 # it does not make sense to include opponent stats
-                 #teamStats$opp_EFGpct, teamStats$opp_ORpct, 
-                 #teamStats$opp_TOpct, teamStats$opp_FTTpct
-                )
-  names(d) <- sub("^teamStats.", "", names(d))
-  corComp <- cor(d)
-  
-  print(corComp,2)
-  
-  corComp.m <- melt(corComp)
-  corPlot <- ggplot(corComp.m, aes(Var1, Var2, fill = value)) + 
-              geom_tile() + 
-              scale_fill_gradient2(low = "red",  high = "blue") +
-              opts(title="Correlation matrix for complete competition")
-  print(corPlot)
-  
-  forPlot <- teamStats[c("wed_ID","Nrtg","EFGpct","ORpct","TOpct","FTTpct",
-                       "plg_ShortName","Home")] 
-  forPlot.m <- melt(forPlot, id=c("wed_ID", "plg_ShortName", "Home","Nrtg"))
-  
-  p <- ggplot(forPlot.m, aes(value, Nrtg)) +
-    geom_point(aes(shape=plg_ShortName, colour=plg_ShortName)) + 
-    scale_shape_manual(values=as.numeric(forPlot.m$plg_ShortName)) +
-    stat_smooth(method="lm") +
-    facet_wrap(~variable,scales="free")
-  
-  print(p)  
   
   message("Offensive and Defensive Ratings - by team ...")
   
