@@ -108,8 +108,8 @@ wed_ID;cmp_ID;cmp_Nummer;wed_Nummer;wed_ThuisPloeg;thuis_club;thuis_ploeg;wed_Ui
 476810;421;B1000;GC;2571;Basketball Stars Weert;HS 1;3103;Rotterdam Basketbal;HS 1;2009-10-06;20:00:00;10963;2571;Hugo;;Sterk;1982-05-01;193;19;1;2;1;2;0;0;5;1;0;3;0;2;1;1;1;2;0;3;3;6;2;0;
 476810;421;B1000;GC;2571;Basketball Stars Weert;HS 1;3103;Rotterdam Basketbal;HS 1;2009-10-06;20:00:00;10964;2571;Bart;;Tooms;1983-04-26;211;14;2;3;0;0;0;0;4;2;0;4;0;0;0;1;1;2;0;3;3;6;2;0;
 476810;421;B1000;GC;2571;Basketball Stars Weert;HS 1;3103;Rotterdam Basketbal;HS 1;2009-10-06;20:00:00;10965;2571;Niels;;Vorenhout;1980-03-17;202;25;0;1;2;6;0;0;6;3;1;4;3;2;0;1;1;2;0;3;3;6;2;0;
-476810;421;B1000;GC;2571;Basketball Stars Weert;HS 1;3103;Rotterdam Basketbal;HS 1;2009-10-06;20:00:00;11013;3103;Luuk;;Besseling;1989-09-13;178;4;0;0;0;0;0;0;0;1;0;0;0;0;0;1;1;2;0;3;3;6;2;0;
 476810;421;B1000;GC;2571;Basketball Stars Weert;HS 1;3103;Rotterdam Basketbal;HS 1;2009-10-06;20:00:00;11019;3103;Sjors;;Besseling;1985-10-09;198;26;3;10;0;2;4;7;10;4;2;3;1;1;0;2;1;2;0;3;3;6;2;0;
+476810;421;B1000;GC;2571;Basketball Stars Weert;HS 1;3103;Rotterdam Basketbal;HS 1;2009-10-06;20:00:00;11013;3103;Luuk;;Besseling;1989-09-13;178;4;0;0;0;0;0;0;0;1;0;0;0;0;0;1;1;2;0;3;3;6;2;0;
 476810;421;B1000;GC;2571;Basketball Stars Weert;HS 1;3103;Rotterdam Basketbal;HS 1;2009-10-06;20:00:00;11022;3103;Patrick;;Hilliman;1982-04-17;206;27;4;7;0;0;2;2;10;3;5;4;1;1;2;1;1;2;0;3;3;6;2;0;
 476810;421;B1000;GC;2571;Basketball Stars Weert;HS 1;3103;Rotterdam Basketbal;HS 1;2009-10-06;20:00:00;11020;3103;Ognjen;;Ivanovic;1990-11-19;194;7;0;1;0;1;0;0;0;2;0;0;0;0;0;0;1;2;0;3;3;6;2;0;
 476810;421;B1000;GC;2571;Basketball Stars Weert;HS 1;3103;Rotterdam Basketbal;HS 1;2009-10-06;20:00:00;11014;3103;Daniel;;Jones;1979-12-05;200;30;3;6;0;0;0;0;6;3;1;1;0;0;0;0;1;2;0;3;3;6;2;0;
@@ -354,8 +354,8 @@ wed_ID;cmp_ID;cmp_Nummer;wed_Nummer;wed_ThuisPloeg;thuis_club;thuis_ploeg;wed_Ui
 476822;421;B1000;JD;1771;Landstede Basketbal;HS 1;3120;ABC Amsterdam;HS 1;2009-10-15;19:30:00;10951;3120;Andrew;;Dawson;1987-03-02;190;1;1;2;0;0;0;0;2;0;1;0;0;0;0;0;2;8;2;1;4;0;0;2;
 476822;421;B1000;JD;1771;Landstede Basketbal;HS 1;3120;ABC Amsterdam;HS 1;2009-10-15;19:30:00;10957;3120;Kizmahr;;Grell;1986-04-28;183;3;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2;8;2;1;4;0;0;2;
 476822;421;B1000;JD;1771;Landstede Basketbal;HS 1;3120;ABC Amsterdam;HS 1;2009-10-15;19:30:00;10952;3120;Dimeo;van der;Horst;1991-06-23;190;18;0;3;0;3;1;2;1;1;0;3;1;3;0;1;2;8;2;1;4;0;0;2;
-476822;421;B1000;JD;1771;Landstede Basketbal;HS 1;3120;ABC Amsterdam;HS 1;2009-10-15;19:30:00;10961;3120;Hicham;;Kherrazi;1988-06-30;195;3;0;1;0;0;2;2;2;0;1;0;1;1;0;0;2;8;2;1;4;0;0;2;
 476822;421;B1000;JD;1771;Landstede Basketbal;HS 1;3120;ABC Amsterdam;HS 1;2009-10-15;19:30:00;10960;3120;Mohamed;;Kherrazi;1990-06-29;200;25;1;5;0;0;1;2;3;3;3;2;1;3;0;2;2;8;2;1;4;0;0;2;
+476822;421;B1000;JD;1771;Landstede Basketbal;HS 1;3120;ABC Amsterdam;HS 1;2009-10-15;19:30:00;10961;3120;Hicham;;Kherrazi;1988-06-30;195;3;0;1;0;0;2;2;2;0;1;0;1;1;0;0;2;8;2;1;4;0;0;2;
 476822;421;B1000;JD;1771;Landstede Basketbal;HS 1;3120;ABC Amsterdam;HS 1;2009-10-15;19:30:00;10953;3120;Robert;;Krabbendam;1986-07-11;206;26;7;13;1;1;5;6;22;3;2;4;2;5;1;1;2;8;2;1;4;0;0;2;
 476822;421;B1000;JD;1771;Landstede Basketbal;HS 1;3120;ABC Amsterdam;HS 1;2009-10-15;19:30:00;10959;3120;Alton;;Mason;1977-08-02;186;34;6;10;0;5;4;4;16;1;0;1;4;1;0;2;2;8;2;1;4;0;0;2;
 476822;421;B1000;JD;1771;Landstede Basketbal;HS 1;3120;ABC Amsterdam;HS 1;2009-10-15;19:30:00;10962;3120;Ralf;de;Pagter;1989-07-22;200;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2;8;2;1;4;0;0;2;
@@ -2888,8 +2888,8 @@ wed_ID;cmp_ID;cmp_Nummer;wed_Nummer;wed_ThuisPloeg;thuis_club;thuis_ploeg;wed_Ui
 476957;421;B1000;Ih;3138;BV Aris;HS 1;2393;Matrixx Magixx;HS 1;2010-03-16;20:00:00;10937;3138;Craig;;Moore;1986-09-08;191;38;1;1;7;10;0;0;23;2;0;1;8;1;0;2;0;2;1;4;5;4;3;3;
 476957;421;B1000;Ih;3138;BV Aris;HS 1;2393;Matrixx Magixx;HS 1;2010-03-16;20:00:00;10936;3138;Joost;;Padberg;1991-04-14;202;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2;1;4;5;4;3;3;
 476957;421;B1000;Ih;3138;BV Aris;HS 1;2393;Matrixx Magixx;HS 1;2010-03-16;20:00:00;10934;3138;Keith;;Spencer;1984-04-24;203;8;2;3;0;0;1;4;5;5;0;1;0;2;0;1;0;2;1;4;5;4;3;3;
-476958;421;B1000;Ce;3103;Rotterdam Basketbal;HS 1;6115;Giants Academy;HS 1;2010-03-18;19:30:00;11019;3103;Sjors;;Besseling;1985-10-09;198;24;2;3;0;5;0;0;4;3;1;2;3;1;1;0;1;0;2;1;3;1;3;1;
 476958;421;B1000;Ce;3103;Rotterdam Basketbal;HS 1;6115;Giants Academy;HS 1;2010-03-18;19:30:00;11013;3103;Luuk;;Besseling;1989-09-13;178;9;0;1;0;1;0;0;0;3;1;0;1;0;0;0;1;0;2;1;3;1;3;1;
+476958;421;B1000;Ce;3103;Rotterdam Basketbal;HS 1;6115;Giants Academy;HS 1;2010-03-18;19:30:00;11019;3103;Sjors;;Besseling;1985-10-09;198;24;2;3;0;5;0;0;4;3;1;2;3;1;1;0;1;0;2;1;3;1;3;1;
 476958;421;B1000;Ce;3103;Rotterdam Basketbal;HS 1;6115;Giants Academy;HS 1;2010-03-18;19:30:00;11159;3103;Kizmahr;;Grell;1986-04-28;183;15;0;0;0;1;0;0;0;0;0;0;0;0;0;2;1;0;2;1;3;1;3;1;
 476958;421;B1000;Ce;3103;Rotterdam Basketbal;HS 1;6115;Giants Academy;HS 1;2010-03-18;19:30:00;11022;3103;Patrick;;Hilliman;1982-04-17;206;30;9;12;0;0;5;9;23;3;1;8;1;1;3;3;1;0;2;1;3;1;3;1;
 476958;421;B1000;Ce;3103;Rotterdam Basketbal;HS 1;6115;Giants Academy;HS 1;2010-03-18;19:30:00;11020;3103;Ognjen;;Ivanovic;1990-11-19;194;23;1;2;1;4;0;0;5;2;2;0;2;0;0;3;1;0;2;1;3;1;3;1;
