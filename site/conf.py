@@ -44,7 +44,7 @@ posts_per_page = 2
 # **************************************************************
 
 # Add other Sphinx extensions here
-extensions = ['tinkerer.ext.blog', 'tinkerer.ext.disqus'] 
+extensions = ['tinkerer.ext.blog', 'tinkerer.ext.disqus', 'sphinx.ext.todo'] 
 
 # Add other template paths here
 templates_path = ['_templates']
@@ -62,6 +62,8 @@ exclude_patterns = ["drafts/*"]
 html_sidebars = {
     "**": ["recent.html", "searchbox.html"]
 }
+
+todo_include_todos = True
 
 # **************************************************************
 # Do not modify below lines as the values are required by 

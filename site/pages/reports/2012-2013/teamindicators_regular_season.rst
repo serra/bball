@@ -7,6 +7,16 @@
   regseasTeam : dataframe containing the team statistics
   ReportTeamRatings.r is sourced.
 
+
+.. todo::
+
+  Add a header:
+  
+   * date of last analyzed games
+   * number of games analyzed
+   * team summary should contain W/L, median Ortg, Drtg, Nrtg
+
+
 2012-2013 Regular season
 ====================================================
 

@@ -12,6 +12,16 @@
   regseasTeam : dataframe containing the team statistics
   ReportTeamRatings.r is sourced.
 
+
+.. todo::
+
+  Add a header:
+  
+   * date of last analyzed games
+   * number of games analyzed
+   * team summary should contain W/L, win pct, median Ortg, Drtg, Nrtg
+
+
 :r:`season` Regular season
 ====================================================
 
@@ -49,11 +59,11 @@ drtgByTeamPlot(regseasTeam)
 Four Factors
 ------------
 
-The net rating is plotted against all "four factors"" 
+The net rating is plotted against all "four factors"
 for all games in this competition.
 These plots show us how each of the four factors influences the net rating.
 Because we can assume the net rating to be the best indicator of actually winning games,
-these plots show ho and how strongly each of the four factor contribute to winning basketball games in the DBL in this season. 
+these plots show how and how strongly each of the four factor contribute to winning basketball games in the DBL in this season. 
 
 .. {r net-rating-by-four-factor, message=FALSE, fig.cap=''}
 fourFactorsForCompetition(regseasTeam)
