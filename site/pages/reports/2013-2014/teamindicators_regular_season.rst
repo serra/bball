@@ -7,30 +7,49 @@
   regseasTeam : dataframe containing the team statistics
   ReportTeamRatings.r is sourced.
 
+
+.. todo::
+
+  Add a header:
+  
+   * date of last analyzed games
+   * number of games analyzed
+   * team summary should contain W/L, win pct, median Ortg, Drtg, Nrtg
+   * format tables
+
+
 2013-2014 Regular season
 ====================================================
 
-Teams
------
+Results
+-------
 
 The following teams are in this competition:
 
 
-
-::
-
-    ##    plg_ID                  plg_Name
-    ## 1    1771       Landstede Basketbal
-    ## 2    2393            Matrixx Magixx
-    ## 3    2571    Basketball Stars Weert
-    ## 4    3103       Rotterdam Basketbal
-    ## 5    3107                 BS Leiden
-    ## 6    3138                   BV Aris
-    ## 7    3520 Den Helder Kings Noordkop
-    ## 8    8594           GasTerra Flames
-    ## 9   10757           BC APOLLO A'dam
-    ## 10  11480           Dukes Unlimited
-
++----+---------------------------+------+------+------+--------+--------+--------+
+|    | plg_Name                  | pct  | W    | L    | Nrtg   | Ortg   | Drtg   |
++====+===========================+======+======+======+========+========+========+
+| 1  | BS Leiden                 | 1.00 | 1.00 | 0.00 | 8.45   | 97.18  | 88.73  |
++----+---------------------------+------+------+------+--------+--------+--------+
+| 2  | BV Aris                   | 1.00 | 1.00 | 0.00 | 12.99  | 103.90 | 90.91  |
++----+---------------------------+------+------+------+--------+--------+--------+
+| 3  | Den Helder Kings Noordkop | 1.00 | 1.00 | 0.00 | 9.09   | 124.24 | 115.15 |
++----+---------------------------+------+------+------+--------+--------+--------+
+| 4  | Dukes Unlimited           | 1.00 | 1.00 | 0.00 | 21.74  | 107.25 | 85.51  |
++----+---------------------------+------+------+------+--------+--------+--------+
+| 5  | Landstede Basketbal       | 1.00 | 1.00 | 0.00 | 9.86   | 105.63 | 95.77  |
++----+---------------------------+------+------+------+--------+--------+--------+
+| 6  | BC APOLLO A'dam           | 0.00 | 0.00 | 1.00 | -12.99 | 90.91  | 103.90 |
++----+---------------------------+------+------+------+--------+--------+--------+
+| 7  | Basketball Stars Weert    | 0.00 | 0.00 | 1.00 | -21.74 | 85.51  | 107.25 |
++----+---------------------------+------+------+------+--------+--------+--------+
+| 8  | GasTerra Flames           | 0.00 | 0.00 | 1.00 | -8.45  | 88.73  | 97.18  |
++----+---------------------------+------+------+------+--------+--------+--------+
+| 9  | Matrixx Magixx            | 0.00 | 0.00 | 1.00 | -9.86  | 95.77  | 105.63 |
++----+---------------------------+------+------+------+--------+--------+--------+
+| 10 | Rotterdam Basketbal       | 0.00 | 0.00 | 1.00 | -9.09  | 115.15 | 124.24 |
++----+---------------------------+------+------+------+--------+--------+--------+
 
 
 
@@ -77,11 +96,11 @@ Ratings
 Four Factors
 ------------
 
-The net rating is plotted against all "four factors"" 
+The net rating is plotted against all "four factors"
 for all games in this competition.
 These plots show us how each of the four factors influences the net rating.
 Because we can assume the net rating to be the best indicator of actually winning games,
-these plots show ho and how strongly each of the four factor contribute to winning basketball games in the DBL in this season. 
+these plots show how and how strongly each of the four factor contribute to winning basketball games in the DBL in this season. 
 
 
 .. figure:: figure/net-rating-by-four-factor.png
