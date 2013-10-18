@@ -209,7 +209,12 @@ GetAdvancedTeamStats <- function(sts) {
                          pts = FTM + 2*FG2M + 3*FG3M,
                          opp_pts =  opp_FTM + 2*opp_FG2M + 3*opp_FG3M
   )
-  
+
+  teamStats <- transform(teamStats,
+                         Win = (pts > opp_pts) ,
+                         Loss = (pts < opp_pts)
+  )
+    
   # a play is a turnover, a ft trip or field goal attempt 
   teamStats <- transform(teamStats, 
                          plays = TO + FTtrips + (FG2A + FG3A),

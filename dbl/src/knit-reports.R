@@ -1,4 +1,5 @@
 library(knitr)
+library(ascii)
 
 KnitReports <- function (season, regseasTeam, regseasPlyr) {
   outputBaseDir <- file.path('../site/pages', 'reports', season)

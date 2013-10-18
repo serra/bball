@@ -1,4 +1,4 @@
-.. {r setup, echo=FALSE}
+.. {r setup, echo=FALSE, warning=FALSE}
   options(width = 75)
   # do not use the sourcecode directive
   render_rst(strict=TRUE)
@@ -20,19 +20,27 @@
    * date of last analyzed games
    * number of games analyzed
    * team summary should contain W/L, win pct, median Ortg, Drtg, Nrtg
+   * format tables
 
 
 :r:`season` Regular season
 ====================================================
 
-Teams
------
+Results
+-------
 
 The following teams are in this competition:
 
-.. {r teams}
-teams <- sqldf("select plg_ID, plg_Name from regseasTeam group by plg_ID, plg_Name")
-teams
+.. {r results='asis', warning=FALSE}
+sql <- paste("select plg_Name ",
+             ", avg(Win) as pct, sum(Win) as W, sum(Loss) as L ",
+             ", median(Nrtg) as Nrtg, median(Ortg) as Ortg, median(Drtg) as Drtg ", 
+             "from regseasTeam ",
+             "group by plg_Name ", 
+             "order by pct desc")
+
+teams <- sqldf(sql)
+print(ascii(teams), type='rest')
 .. ..
 
 
@@ -71,7 +79,7 @@ fourFactorsForCompetition(regseasTeam)
 
 The correlation matrix for the four factors and the net rating is displayed below:
 
-.. {r}
+.. {r }
 d <- fourFactorsDf(regseasTeam)
-return(cor(d))
+cor(d)
 .. ..
