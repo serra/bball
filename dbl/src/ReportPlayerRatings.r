@@ -1,5 +1,3 @@
-library(pander)
-
 ScoringEfficiency <- function (sts) {
   teamUsageMedian <- 0.2
   teamTSMedian <- median(sts$spl_PPP)
