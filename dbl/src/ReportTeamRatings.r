@@ -129,6 +129,26 @@ TeamRatingQuadrantPlot <- function (teamStats) {
   return(plt)
 }   
 
+ptsDiffByTeamPlot <- function (teamStats) {
+  return(ggplot(teamStats, aes(plg_ShortName, (pts-opp_pts))) + 
+           geom_boxplot(aes(fill=plg_ShortName)) +
+           geom_hline(aes(yintercept=0), linetype="dotted") +
+           geom_hline(aes(yintercept=-5), linetype="dotted") +
+           geom_hline(aes(yintercept=5), linetype="dotted") +
+           opts(title ="Points Difference") +
+           xlab("") + 
+           ylab("Points"))
+}
+
+paceByTeamPlot <- function(teamStats) {
+  ggplot(teamStats, aes(plg_Name, pace)) + 
+    geom_boxplot(aes(fill=plg_Name)) +
+    geom_hline(aes(yintercept=median(pace)), linetype="dotted") +
+    opts(title ="Game Pace") +
+    xlab("") + 
+    ylab("#Possessions per 40 minutes")    
+}
+
 ######################################################################
 #
 # Output functions
@@ -169,26 +189,10 @@ PrintTeamRatings <- function(teamStats, outputFile) {
     xlab("") + 
     ylab("Points")    
   print(ptsAllowedByTeamPlot)
-  
-  ptsDiffByTeamPlot <- ggplot(teamStats, aes(plg_ShortName, (pts-opp_pts))) + 
-    geom_boxplot(aes(fill=plg_ShortName)) +
-    geom_hline(aes(yintercept=0), linetype="dotted") +
-    geom_hline(aes(yintercept=-5), linetype="dotted") +
-    geom_hline(aes(yintercept=5), linetype="dotted") +
-    opts(title ="Points Difference") +
-    xlab("") + 
-    ylab("Points") 
                               
-  print(ptsDiffByTeamPlot)
+  print(ptsDiffByTeamPlot(teamStats))
   
-  # Game pace
-  p <- ggplot(teamStats, aes(plg_ShortName, avgps)) + 
-    geom_boxplot(aes(fill=plg_ShortName)) +
-    geom_hline(aes(yintercept=median(avgps)), linetype="dotted") +
-    opts(title ="Game Pace") +
-    xlab("") + 
-    ylab("#Possessions")    
-  print(p)
+  print(paceByTeamPlot(teamStats))
   
   # Performance Indicators - Competition
   

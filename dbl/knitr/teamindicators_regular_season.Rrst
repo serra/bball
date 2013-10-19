@@ -34,7 +34,7 @@ The following teams are in this competition:
 .. {r results='asis', warning=FALSE}
 sql <- paste("select plg_Name ",
              ", avg(Win) as pct, sum(Win) as W, sum(Loss) as L ",
-             ", median(Nrtg) as Nrtg, median(Ortg) as Ortg, median(Drtg) as Drtg ", 
+             ", avg(Nrtg), avg(Ortg), avg(Drtg) ", 
              "from regseasTeam ",
              "group by plg_Name ", 
              "order by pct desc")
@@ -44,8 +44,8 @@ print(ascii(teams), type='rest')
 .. ..
 
 
-Ratings
--------
+Ratings and Pace
+----------------
 
 .. {r rating-quadrant, message=FALSE, fig.cap=''}
 TeamRatingQuadrantPlot(regseasTeam)
@@ -63,6 +63,9 @@ OrtgByTeamPlot(regseasTeam)
 drtgByTeamPlot(regseasTeam)
 .. ..
 
+.. {r pace-by-team, message=FALSE, fig.cap=''}
+paceByTeamPlot(regseasTeam)
+.. ..
 
 Four Factors
 ------------
@@ -71,7 +74,7 @@ The net rating is plotted against all "four factors"
 for all games in this competition.
 These plots show us how each of the four factors influences the net rating.
 Because we can assume the net rating to be the best indicator of actually winning games,
-these plots show how and how strongly each of the four factor contribute to winning basketball games in the DBL in this season. 
+these plots show how and how strongly each of the four factors contribute to winning basketball games in the DBL in this season. 
 
 .. {r net-rating-by-four-factor, message=FALSE, fig.cap=''}
 fourFactorsForCompetition(regseasTeam)
@@ -82,4 +85,12 @@ The correlation matrix for the four factors and the net rating is displayed belo
 .. {r }
 d <- fourFactorsDf(regseasTeam)
 cor(d)
+.. ..
+
+
+Points
+------
+
+.. {r point-differential-by-team, message=FALSE, fig.cap=''}
+ptsDiffByTeamPlot(regseasTeam)
 .. ..
