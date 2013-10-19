@@ -10,31 +10,37 @@
 2011-2012 Regular season
 ====================================================
 
-Teams
------
+Results
+-------
 
 The following teams are in this competition:
 
 
++---+------------------------+------+-------+-------+-----------+-----------+-----------+
+|   | plg_Name               | pct  | W     | L     | avg(Nrtg) | avg(Ortg) | avg(Drtg) |
++===+========================+======+=======+=======+===========+===========+===========+
+| 1 | BS Leiden              | 0.79 | 22.00 | 6.00  | 13.03     | 103.42    | 90.40     |
++---+------------------------+------+-------+-------+-----------+-----------+-----------+
+| 2 | GasTerra Flames        | 0.79 | 22.00 | 6.00  | 10.61     | 101.50    | 90.89     |
++---+------------------------+------+-------+-------+-----------+-----------+-----------+
+| 3 | EBBC                   | 0.75 | 21.00 | 7.00  | 15.78     | 114.57    | 98.79     |
++---+------------------------+------+-------+-------+-----------+-----------+-----------+
+| 4 | Matrixx Magixx         | 0.61 | 17.00 | 11.00 | 1.52      | 106.26    | 104.74    |
++---+------------------------+------+-------+-------+-----------+-----------+-----------+
+| 5 | Landstede Basketbal    | 0.43 | 12.00 | 16.00 | 1.67      | 98.12     | 96.45     |
++---+------------------------+------+-------+-------+-----------+-----------+-----------+
+| 6 | BV Aris                | 0.32 | 9.00  | 19.00 | -4.93     | 101.16    | 106.09    |
++---+------------------------+------+-------+-------+-----------+-----------+-----------+
+| 7 | Basketball Stars Weert | 0.18 | 5.00  | 23.00 | -12.41    | 92.82     | 105.22    |
++---+------------------------+------+-------+-------+-----------+-----------+-----------+
+| 8 | Rotterdam Basketbal    | 0.14 | 4.00  | 24.00 | -25.27    | 90.03     | 115.30    |
++---+------------------------+------+-------+-------+-----------+-----------+-----------+
 
-::
-
-    ##   plg_ID               plg_Name
-    ## 1   1771    Landstede Basketbal
-    ## 2   2393         Matrixx Magixx
-    ## 3   2571 Basketball Stars Weert
-    ## 4   2823                   EBBC
-    ## 5   3103    Rotterdam Basketbal
-    ## 6   3107              BS Leiden
-    ## 7   3138                BV Aris
-    ## 8   8594        GasTerra Flames
 
 
 
-
-
-Ratings
--------
+Ratings and Pace
+----------------
 
 
 .. figure:: figure/rating-quadrant.png
@@ -65,14 +71,20 @@ Ratings
 
 
 
+.. figure:: figure/pace-by-team.png
+    :alt: 
+
+    
+
+
 Four Factors
 ------------
 
-The net rating is plotted against all "four factors"" 
+The net rating is plotted against all "four factors"
 for all games in this competition.
 These plots show us how each of the four factors influences the net rating.
 Because we can assume the net rating to be the best indicator of actually winning games,
-these plots show ho and how strongly each of the four factor contribute to winning basketball games in the DBL in this season. 
+these plots show how and how strongly each of the four factors contribute to winning basketball games in the DBL in this season. 
 
 
 .. figure:: figure/net-rating-by-four-factor.png
@@ -96,3 +108,84 @@ The correlation matrix for the four factors and the net rating is displayed belo
 
 
 
+
+By Team
+^^^^^^^
+
+
+.. figure:: figure/efg-by-team.png
+    :alt: 
+
+    
+
+
+
+.. figure:: figure/or-pct-by-team.png
+    :alt: 
+
+    
+
+
+
+.. figure:: figure/to-pct-team.png
+    :alt: 
+
+    
+
+
+
+.. figure:: figure/ftt-pct-team.png
+    :alt: 
+
+    
+
+
+By Opponent
+^^^^^^^^^^^
+
+
+.. figure:: figure/opp-efg-by-team.png
+    :alt: 
+
+    
+
+
+
+.. figure:: figure/opp-or-pct-by-team.png
+    :alt: 
+
+    
+
+
+
+.. figure:: figure/opp-to-pct-team.png
+    :alt: 
+
+    
+
+
+
+.. figure:: figure/opp-ftt-pct-team.png
+    :alt: 
+
+    
+
+
+Points
+------
+
+
+.. figure:: figure/point-differential-by-team.png
+    :alt: 
+
+    
+
+
+
+
+.. todo::
+
+  Add a header:
+  
+   * date of last analyzed games
+   * number of games analyzed
