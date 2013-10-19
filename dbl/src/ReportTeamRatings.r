@@ -112,10 +112,10 @@ TeamRatingQuadrantPlot <- function (teamStats) {
   
   agg <- aggregate(cbind(Ortg, Drtg, Nrtg) ~ plg_Name,
                    dat = teamStats, 
-                   FUN = median)
+                   FUN = mean)
   
-  moff <- median(teamStats$Ortg)
-  mdef <- median(teamStats$Drtg)
+  moff <- mean(teamStats$Ortg)
+  mdef <- mean(teamStats$Drtg)
   
   plt <- ggplot(agg, aes(x=Ortg, y=Drtg)) + 
     geom_point(aes(colour = factor(plg_Name), size = Nrtg)) +
@@ -142,58 +142,51 @@ ptsDiffByTeamPlot <- function (teamStats) {
 }
 
 paceByTeamPlot <- function(teamStats) {
-  ggplot(teamStats, aes(plg_Name, pace)) + 
-    geom_boxplot(aes(fill=plg_Name)) +
+  return(allTeamsBoxPlot(teamStats, "pace") +
     geom_hline(aes(yintercept=median(pace)), linetype="dotted") +
-    theme(axis.text.x = element_text(angle = -45, hjust = 0)) + 
     labs(title ="Game Pace") +
-    xlab("") + 
-    ylab("#Possessions per 40 minutes")    
+    ylab("#Possessions per 40 minutes"))
 }
 
-toPctPlot <- function(teamStats) {
-  return(ggplot(teamStats, aes(plg_Name, TOpct)) + 
-           geom_boxplot(aes(fill=plg_Name)) +
-           geom_hline(aes(yintercept=median(TOpct)), linetype="dotted") +
-           theme(axis.text.x = element_text(angle = -45, hjust = 0)) +            
+toPctPlot <- function(teamStats, opponent=FALSE) { 
+  return(allTeamsBoxPlot(teamStats, "TOpct", opponent) +  
+           geom_hline(aes(yintercept=median(TOpct)), linetype="dotted") +          
            labs(title ="Turnovers per Possession") +
-           xlab("") + 
-           ylim(c(0.0,0.4)) +
            ylab("TO ratio"))
 }
 
-fttPctPlot <- function(teamStats) {
-  return(ggplot(teamStats, aes(plg_Name, FTTpct)) + 
+fttPctPlot <- function(teamStats, opponent=FALSE) {
+  return(allTeamsBoxPlot(teamStats, "FTTpct", opponent) + 
            geom_boxplot(aes(fill=plg_Name)) +
            geom_hline(aes(yintercept=median(FTTpct)), linetype="dotted") +
            labs(title ="Free Throw Trips per Shooting Possession") +
            theme(axis.text.x = element_text(angle = -45, hjust = 0)) + 
-           xlab("") + 
-           ylim(c(0.0,0.3)) +
            ylab("FTT%"))
 }
 
-orPctPlot <- function(teamStats){
-  return(ggplot(teamStats, aes(plg_Name, ORpct)) + 
-           geom_boxplot(aes(fill=plg_Name)) +
+orPctPlot <- function(teamStats, opponent=FALSE){
+  return(allTeamsBoxPlot(teamStats, "ORpct", opponent) + 
            geom_hline(aes(yintercept=median(ORpct)), linetype="dotted") +
-           theme(axis.text.x = element_text(angle = -45, hjust = 0)) + 
            labs(title ="Offensive Rebound % (OR%)") +
-           xlab("") + 
-           ylim(c(0.0,0.7)) +
            ylab("OR%")   )
 }
 
-efgPctPlot <- function(teamStats) {
-  return(ggplot(teamStats, aes(plg_Name, EFGpct)) + 
-           geom_boxplot(aes(fill=plg_Name)) +
+efgPctPlot <- function(teamStats, opponent=FALSE) {
+  return(allTeamsBoxPlot(teamStats, "EFGpct", opponent) +
            geom_hline(aes(yintercept=median(EFGpct)), linetype="dotted") +
            labs(title ="Effective Field Goal % (EFG%)") +
-           theme(axis.text.x = element_text(angle = -45, hjust = 0)) + 
-           xlab("") + 
-           ylim(c(0.2,0.8)) +
            ylab("EFG%"))
 } 
+
+allTeamsBoxPlot <- function(teamStats, field, opponent=FALSE) {
+  if(opponent) { field <- paste("opp_", field, sep="") }
+  aest <- aes_string(x = "plg_Name", y = field)
+  return(ggplot(teamStats, aest) + 
+           geom_boxplot(aes(fill=plg_Name)) +
+           theme(axis.text.x = element_text(angle = -45, hjust = 0)) + 
+           xlab("")
+  )
+}
 
 ######################################################################
 #

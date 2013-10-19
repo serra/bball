@@ -142,12 +142,6 @@ By Team
 
 
 
-
-::
-
-    ## Warning: Removed 1 rows containing non-finite values (stat_boxplot).
-
-
 .. figure:: figure/to-pct-team.png
     :alt: 
 
@@ -161,6 +155,35 @@ By Team
     
 
 
+By Opponent
+^^^^^^^^^^^
+
+
+.. figure:: figure/opp-efg-by-team.png
+    :alt: 
+
+    
+
+
+
+.. figure:: figure/opp-or-pct-by-team.png
+    :alt: 
+
+    
+
+
+
+.. figure:: figure/opp-to-pct-team.png
+    :alt: 
+
+    
+
+
+
+.. figure:: figure/opp-ftt-pct-team.png
+    :alt: 
+
+    
 
 
 

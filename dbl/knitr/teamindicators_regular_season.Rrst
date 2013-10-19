@@ -106,7 +106,24 @@ toPctPlot(regseasTeam)
 fttPctPlot(regseasTeam)
 .. ..
 
+By Opponent
+^^^^^^^^^^^
 
+.. {r opp-efg-by-team, message=FALSE, fig.cap=''}
+efgPctPlot(regseasTeam, TRUE)
+.. ..
+
+.. {r opp-or-pct-by-team, message=FALSE, fig.cap=''}
+orPctPlot(regseasTeam, TRUE)
+.. ..
+
+.. {r opp-to-pct-team, message=FALSE, fig.cap=''}
+toPctPlot(regseasTeam, TRUE)
+.. ..
+
+.. {r opp-ftt-pct-team, message=FALSE, fig.cap=''}
+fttPctPlot(regseasTeam, TRUE)
+.. ..
 
 
 Points
