@@ -3,8 +3,7 @@ library(ascii)
 
 KnitReports <- function (season, regseasTeam, regseasPlyr) {
   outputBaseDir <- file.path('../site/pages', 'reports', season)
-  
-  file.remove(outputBaseDir)
+  unlink(outputBaseDir,recursive=TRUE)
   dir.create(outputBaseDir, recursive=TRUE, showWarnings=FALSE)
   
   print(paste("generating report for season ", season, "into", outputBaseDir  ))
