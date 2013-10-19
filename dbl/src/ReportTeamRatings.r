@@ -87,16 +87,14 @@ fourFactorsDf <- function(teamStats) {
 }
 
 fourFactorsForCompetition <- function(teamStats) {
-  # correlation of performance indicators
   d <- fourFactorsDf(teamStats)
   
   forPlot <- teamStats[c("wed_ID","Nrtg","EFGpct","ORpct","TOpct","FTTpct",
-                         "plg_ShortName","Home")] 
-  forPlot.m <- melt(forPlot, id=c("wed_ID", "plg_ShortName", "Home","Nrtg"))
+                         "plg_Name","Home")] 
+  forPlot.m <- melt(forPlot, id=c("wed_ID", "plg_Name", "Home","Nrtg"))
   
   p <- ggplot(forPlot.m, aes(value, Nrtg)) +
-    geom_point(aes(shape=plg_ShortName, colour=plg_ShortName)) + 
-    scale_shape_manual(values=as.numeric(forPlot.m$plg_ShortName)) +
+    geom_point(alpha=0.4) + 
     stat_smooth(method="lm") +
     facet_wrap(~variable,scales="free")
   
