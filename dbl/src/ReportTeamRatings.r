@@ -132,10 +132,11 @@ TeamRatingQuadrantPlot <- function (teamStats) {
 ptsDiffByTeamPlot <- function (teamStats) {
   return(ggplot(teamStats, aes(plg_ShortName, (pts-opp_pts))) + 
            geom_boxplot(aes(fill=plg_ShortName)) +
+           theme(axis.text.x = element_text(angle = -45, hjust = 0)) +            
            geom_hline(aes(yintercept=0), linetype="dotted") +
-           geom_hline(aes(yintercept=-5), linetype="dotted") +
-           geom_hline(aes(yintercept=5), linetype="dotted") +
-           opts(title ="Points Difference") +
+           geom_hline(aes(yintercept=-6), linetype="dotted") +
+           geom_hline(aes(yintercept=6), linetype="dotted") +
+           labs(title ="Points Difference") +
            xlab("") + 
            ylab("Points"))
 }
@@ -144,10 +145,55 @@ paceByTeamPlot <- function(teamStats) {
   ggplot(teamStats, aes(plg_Name, pace)) + 
     geom_boxplot(aes(fill=plg_Name)) +
     geom_hline(aes(yintercept=median(pace)), linetype="dotted") +
-    opts(title ="Game Pace") +
+    theme(axis.text.x = element_text(angle = -45, hjust = 0)) + 
+    labs(title ="Game Pace") +
     xlab("") + 
     ylab("#Possessions per 40 minutes")    
 }
+
+toPctPlot <- function(teamStats) {
+  return(ggplot(teamStats, aes(plg_Name, TOpct)) + 
+           geom_boxplot(aes(fill=plg_Name)) +
+           geom_hline(aes(yintercept=median(TOpct)), linetype="dotted") +
+           theme(axis.text.x = element_text(angle = -45, hjust = 0)) +            
+           labs(title ="Turnovers per Possession") +
+           xlab("") + 
+           ylim(c(0.0,0.4)) +
+           ylab("TO ratio"))
+}
+
+fttPctPlot <- function(teamStats) {
+  return(ggplot(teamStats, aes(plg_Name, FTTpct)) + 
+           geom_boxplot(aes(fill=plg_Name)) +
+           geom_hline(aes(yintercept=median(FTTpct)), linetype="dotted") +
+           labs(title ="Free Throw Trips per Shooting Possession") +
+           theme(axis.text.x = element_text(angle = -45, hjust = 0)) + 
+           xlab("") + 
+           ylim(c(0.0,0.3)) +
+           ylab("FTT%"))
+}
+
+orPctPlot <- function(teamStats){
+  return(ggplot(teamStats, aes(plg_Name, ORpct)) + 
+           geom_boxplot(aes(fill=plg_Name)) +
+           geom_hline(aes(yintercept=median(ORpct)), linetype="dotted") +
+           theme(axis.text.x = element_text(angle = -45, hjust = 0)) + 
+           labs(title ="Offensive Rebound % (OR%)") +
+           xlab("") + 
+           ylim(c(0.0,0.7)) +
+           ylab("OR%")   )
+}
+
+efgPctPlot <- function(teamStats) {
+  return(ggplot(teamStats, aes(plg_Name, EFGpct)) + 
+           geom_boxplot(aes(fill=plg_Name)) +
+           geom_hline(aes(yintercept=median(EFGpct)), linetype="dotted") +
+           labs(title ="Effective Field Goal % (EFG%)") +
+           theme(axis.text.x = element_text(angle = -45, hjust = 0)) + 
+           xlab("") + 
+           ylim(c(0.2,0.8)) +
+           ylab("EFG%"))
+} 
 
 ######################################################################
 #
@@ -196,41 +242,13 @@ PrintTeamRatings <- function(teamStats, outputFile) {
   
   # Performance Indicators - Competition
   
-  efgPctPlot <- ggplot(teamStats, aes(plg_ShortName, EFGpct)) + 
-    geom_boxplot(aes(fill=plg_ShortName)) +
-    geom_hline(aes(yintercept=median(EFGpct)), linetype="dotted") +
-    opts(title ="Effective Field Goal % (EFG%)") +
-    xlab("") + 
-    ylim(c(0.2,0.8)) +
-    ylab("EFG%")    
-  print(efgPctPlot)
-  
-  orPctPlot <- ggplot(teamStats, aes(plg_ShortName, ORpct)) + 
-    geom_boxplot(aes(fill=plg_ShortName)) +
-    geom_hline(aes(yintercept=median(ORpct)), linetype="dotted") +
-    opts(title ="Offensive Rebound % (OR%)") +
-    xlab("") + 
-    ylim(c(0.0,0.7)) +
-    ylab("OR%")    
-  print(orPctPlot)
-  
-  toPctPlot <- ggplot(teamStats, aes(plg_ShortName, TOpct)) + 
-    geom_boxplot(aes(fill=plg_ShortName)) +
-    geom_hline(aes(yintercept=median(TOpct)), linetype="dotted") +
-    opts(title ="Turnovers per Possession") +
-    xlab("") + 
-    ylim(c(0.0,0.4)) +
-    ylab("FTT%")    
-  print(toPctPlot)
-  
-  fttPctPlot <- ggplot(teamStats, aes(plg_ShortName, FTTpct)) + 
-    geom_boxplot(aes(fill=plg_ShortName)) +
-    geom_hline(aes(yintercept=median(FTTpct)), linetype="dotted") +
-    opts(title ="Free Throw Trips per Shooting Possession") +
-    xlab("") + 
-    ylim(c(0.0,0.3)) +
-    ylab("FTT%")    
-  print(fttPctPlot)
+  print(efgPctPlot(teamStats))
+
+  print(orPctPlot(teamStats))
+
+  print(toPctPlot(teamStats))
+
+  print(fttPctPlot(fttPctPlot(teamStats)))
     
   
   

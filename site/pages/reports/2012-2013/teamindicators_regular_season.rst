@@ -124,6 +124,45 @@ The correlation matrix for the four factors and the net rating is displayed belo
 
 
 
+By Team
+^^^^^^^
+
+
+.. figure:: figure/efg-by-team.png
+    :alt: 
+
+    
+
+
+
+.. figure:: figure/or-pct-by-team.png
+    :alt: 
+
+    
+
+
+
+
+::
+
+    ## Warning: Removed 1 rows containing non-finite values (stat_boxplot).
+
+
+.. figure:: figure/to-pct-team.png
+    :alt: 
+
+    
+
+
+
+.. figure:: figure/ftt-pct-team.png
+    :alt: 
+
+    
+
+
+
+
 
 Points
 ------

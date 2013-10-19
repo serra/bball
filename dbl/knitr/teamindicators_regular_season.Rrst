@@ -87,6 +87,27 @@ d <- fourFactorsDf(regseasTeam)
 cor(d)
 .. ..
 
+By Team
+^^^^^^^
+
+.. {r efg-by-team, message=FALSE, fig.cap=''}
+efgPctPlot(regseasTeam)
+.. ..
+
+.. {r or-pct-by-team, message=FALSE, fig.cap=''}
+orPctPlot(regseasTeam)
+.. ..
+
+.. {r to-pct-team, message=FALSE, fig.cap=''}
+toPctPlot(regseasTeam)
+.. ..
+
+.. {r ftt-pct-team, message=FALSE, fig.cap=''}
+fttPctPlot(regseasTeam)
+.. ..
+
+
+
 
 Points
 ------
