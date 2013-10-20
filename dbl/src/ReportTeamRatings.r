@@ -76,7 +76,7 @@ nrtgByTeamPlot <- function(teamStats) {
 fourFactorsDf <- function(teamStats) {
   d = data.frame(teamStats$Nrtg, 
                  teamStats$EFGpct, teamStats$ORpct, 
-                 teamStats$TOpct, teamStats$FTTpct
+                 teamStats$TOpct, teamStats$FT4f
                  # when evaluating the competion, 
                  # it does not make sense to include opponent stats
                  #teamStats$opp_EFGpct, teamStats$opp_ORpct, 
@@ -89,7 +89,7 @@ fourFactorsDf <- function(teamStats) {
 fourFactorsForCompetition <- function(teamStats) {
   d <- fourFactorsDf(teamStats)
   
-  forPlot <- teamStats[c("wed_ID","Nrtg","EFGpct","ORpct","TOpct","FTTpct",
+  forPlot <- teamStats[c("wed_ID","Nrtg","EFGpct","ORpct","TOpct","FT4f",
                          "plg_Name","Home")] 
   forPlot.m <- melt(forPlot, id=c("wed_ID", "plg_Name", "Home","Nrtg"))
   
@@ -128,8 +128,8 @@ TeamRatingQuadrantPlot <- function (teamStats) {
 }   
 
 ptsDiffByTeamPlot <- function (teamStats) {
-  return(ggplot(teamStats, aes(plg_ShortName, (pts-opp_pts))) + 
-           geom_boxplot(aes(fill=plg_ShortName)) +
+  return(ggplot(teamStats, aes(plg_Name, (pts-opp_pts))) + 
+           geom_boxplot(aes(fill=plg_Name)) +
            theme(axis.text.x = element_text(angle = -45, hjust = 0)) +            
            geom_hline(aes(yintercept=0), linetype="dotted") +
            geom_hline(aes(yintercept=-6), linetype="dotted") +
@@ -154,12 +154,11 @@ toPctPlot <- function(teamStats, opponent=FALSE) {
 }
 
 fttPctPlot <- function(teamStats, opponent=FALSE) {
-  return(allTeamsBoxPlot(teamStats, "FTTpct", opponent) + 
+  return(allTeamsBoxPlot(teamStats, "FT4f", opponent) + 
            geom_boxplot(aes(fill=plg_Name)) +
-           geom_hline(aes(yintercept=median(FTTpct)), linetype="dotted") +
-           labs(title ="Free Throw Trips per Shooting Possession") +
-           theme(axis.text.x = element_text(angle = -45, hjust = 0)) + 
-           ylab("FTT%"))
+           geom_hline(aes(yintercept=median(FT4f)), linetype="dotted") +
+           labs(title ="Free throws made per field goal attempt") +
+           ylab(""))
 }
 
 orPctPlot <- function(teamStats, opponent=FALSE){

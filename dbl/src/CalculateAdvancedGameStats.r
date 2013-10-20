@@ -200,16 +200,19 @@ GetAdvancedTeamStats <- function(sts) {
   #
   #######################################################################
   
+  # ft ftrips
   teamStats <- transform(teamStats,
                          FTtrips = ftaFactor*FTA,
                          opp_FTtrips =  ftaFactor*opp_FTA
   )
   
+  # pts
   teamStats <- transform(teamStats, 
                          pts = FTM + 2*FG2M + 3*FG3M,
                          opp_pts =  opp_FTM + 2*opp_FG2M + 3*opp_FG3M
   )
 
+  # win or loss
   teamStats <- transform(teamStats,
                          Win = (pts > opp_pts) ,
                          Loss = (pts < opp_pts)
@@ -227,31 +230,36 @@ GetAdvancedTeamStats <- function(sts) {
                          opp_ps = opp_plays - secondChanceFactor * (opp_FG2A + opp_FG3A - opp_FG2M - opp_FG3M) * opp_OR / (opp_OR + DR)
   )
   
+  # check posessions, pace and indicate if the number of possessions is suspicious
   teamStats <- transform(teamStats,
                          avgps = round((ps + opp_ps) / 2),
                          WARNING = abs(ps-opp_ps) > 4.0,
                          pace = (400/(Minuten+opp_Minuten)) * ((ps + opp_ps) / 2))
   
-  
+  # offensive and defensive ratings
+  # we use the average posessions, because we think that's the best estimate of the actual number of posessions
   teamStats <- transform(teamStats,
                          Ortg = 100 * pts / avgps,
                          Drtg = 100 * opp_pts / avgps,
                          Home =  plg_ID == wed_ThuisPloeg)
   
+  # net rating
   teamStats <- transform(teamStats,
                          Nrtg = Ortg - Drtg)
   
+  # Four factors: 1-3
   teamStats <- transform(teamStats,
                          EFGpct = (FG2M+1.5*FG3M)/(FG2A+FG3A),
                          ORpct = OR / (OR + opp_DR),
-                         TOpct = TO / avgps
+                         TOpct = TO / avgps,
+                         FT4f = FTM / (FG2A+FG3A)
   )
   
   teamStats <- transform(teamStats,
                          opp_EFGpct = (opp_FG2M+1.5*opp_FG3M)/(opp_FG2A+opp_FG3A),
                          opp_ORpct = opp_OR / (opp_OR + DR),
                          opp_TOpct = opp_TO / avgps,
-                         opp_FTTpct = opp_FTtrips / (opp_FG2A+opp_FG3A)
+                         opp_FT4f = opp_FTM / (opp_FG2A+opp_FG3A)
   )
   
   # shooting distribution
