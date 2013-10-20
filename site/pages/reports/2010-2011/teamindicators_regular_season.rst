@@ -10,33 +10,41 @@
 2010-2011 Regular season
 ====================================================
 
-Teams
------
+Results
+-------
 
 The following teams are in this competition:
 
 
++----+------------------------+------+-------+-------+-----------+-----------+-----------+
+|    | plg_Name               | pct  | W     | L     | avg(Nrtg) | avg(Ortg) | avg(Drtg) |
++====+========================+======+=======+=======+===========+===========+===========+
+| 1  | BS Leiden              | 0.81 | 29.00 | 7.00  | 13.95     | 102.86    | 88.91     |
++----+------------------------+------+-------+-------+-----------+-----------+-----------+
+| 2  | GasTerra Flames        | 0.81 | 29.00 | 7.00  | 18.80     | 105.68    | 86.89     |
++----+------------------------+------+-------+-------+-----------+-----------+-----------+
+| 3  | EBBC                   | 0.72 | 26.00 | 10.00 | 13.77     | 108.88    | 95.11     |
++----+------------------------+------+-------+-------+-----------+-----------+-----------+
+| 4  | Matrixx Magixx         | 0.58 | 21.00 | 15.00 | 0.76      | 95.82     | 95.06     |
++----+------------------------+------+-------+-------+-----------+-----------+-----------+
+| 5  | BV Aris                | 0.47 | 17.00 | 19.00 | -5.42     | 98.79     | 104.21    |
++----+------------------------+------+-------+-------+-----------+-----------+-----------+
+| 6  | Giants Academy         | 0.47 | 17.00 | 19.00 | 3.36      | 103.66    | 100.29    |
++----+------------------------+------+-------+-------+-----------+-----------+-----------+
+| 7  | Basketball Stars Weert | 0.44 | 16.00 | 20.00 | -1.26     | 99.80     | 101.06    |
++----+------------------------+------+-------+-------+-----------+-----------+-----------+
+| 8  | ABC Amsterdam          | 0.36 | 13.00 | 23.00 | -7.50     | 94.30     | 101.80    |
++----+------------------------+------+-------+-------+-----------+-----------+-----------+
+| 9  | Landstede Basketbal    | 0.28 | 10.00 | 26.00 | -12.19    | 92.67     | 104.86    |
++----+------------------------+------+-------+-------+-----------+-----------+-----------+
+| 10 | Rotterdam Basketbal    | 0.06 | 2.00  | 34.00 | -24.28    | 87.34     | 111.62    |
++----+------------------------+------+-------+-------+-----------+-----------+-----------+
 
-::
-
-    ##    plg_ID               plg_Name
-    ## 1    1771    Landstede Basketbal
-    ## 2    2393         Matrixx Magixx
-    ## 3    2571 Basketball Stars Weert
-    ## 4    2823                   EBBC
-    ## 5    3103    Rotterdam Basketbal
-    ## 6    3107              BS Leiden
-    ## 7    3120          ABC Amsterdam
-    ## 8    3138                BV Aris
-    ## 9    6115         Giants Academy
-    ## 10   8594        GasTerra Flames
 
 
 
-
-
-Ratings
--------
+Ratings and Pace
+----------------
 
 
 .. figure:: figure/rating-quadrant.png
@@ -67,14 +75,20 @@ Ratings
 
 
 
+.. figure:: figure/pace-by-team.png
+    :alt: 
+
+    
+
+
 Four Factors
 ------------
 
-The net rating is plotted against all "four factors"" 
+The net rating is plotted against all "four factors"
 for all games in this competition.
 These plots show us how each of the four factors influences the net rating.
 Because we can assume the net rating to be the best indicator of actually winning games,
-these plots show ho and how strongly each of the four factor contribute to winning basketball games in the DBL in this season. 
+these plots show how and how strongly each of the four factors contribute to winning basketball games in the DBL in this season. 
 
 
 .. figure:: figure/net-rating-by-four-factor.png
@@ -98,3 +112,84 @@ The correlation matrix for the four factors and the net rating is displayed belo
 
 
 
+
+By Team
+^^^^^^^
+
+
+.. figure:: figure/efg-by-team.png
+    :alt: 
+
+    
+
+
+
+.. figure:: figure/or-pct-by-team.png
+    :alt: 
+
+    
+
+
+
+.. figure:: figure/to-pct-team.png
+    :alt: 
+
+    
+
+
+
+.. figure:: figure/ftt-pct-team.png
+    :alt: 
+
+    
+
+
+By Opponent
+^^^^^^^^^^^
+
+
+.. figure:: figure/opp-efg-by-team.png
+    :alt: 
+
+    
+
+
+
+.. figure:: figure/opp-or-pct-by-team.png
+    :alt: 
+
+    
+
+
+
+.. figure:: figure/opp-to-pct-team.png
+    :alt: 
+
+    
+
+
+
+.. figure:: figure/opp-ftt-pct-team.png
+    :alt: 
+
+    
+
+
+Points
+------
+
+
+.. figure:: figure/point-differential-by-team.png
+    :alt: 
+
+    
+
+
+
+
+.. todo::
+
+  Add a header:
+  
+   * date of last analyzed games
+   * number of games analyzed
