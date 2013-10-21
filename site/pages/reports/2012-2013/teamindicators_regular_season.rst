@@ -119,8 +119,10 @@ The correlation matrix for the four factors and the net rating is displayed belo
 
 
 
-By Team
+Offense
 ^^^^^^^
+
+This shows the four factors for each of the teams.
 
 
 .. figure:: figure/efg-by-team.png
@@ -150,8 +152,10 @@ By Team
     
 
 
-By Opponent
-^^^^^^^^^^^
+Defense
+^^^^^^^
+
+This shows the four factors of the team's opponents for each of the teams.
 
 
 .. figure:: figure/opp-efg-by-team.png

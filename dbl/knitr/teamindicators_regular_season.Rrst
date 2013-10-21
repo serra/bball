@@ -82,8 +82,10 @@ d <- fourFactorsDf(regseasTeam)
 cor(d)
 .. ..
 
-By Team
+Offense
 ^^^^^^^
+
+This shows the four factors for each of the teams.
 
 .. {r efg-by-team, message=FALSE, fig.cap=''}
 efgPctPlot(regseasTeam)
@@ -101,8 +103,10 @@ toPctPlot(regseasTeam)
 fttPctPlot(regseasTeam)
 .. ..
 
-By Opponent
-^^^^^^^^^^^
+Defense
+^^^^^^^
+
+This shows the four factors of the team's opponents for each of the teams.
 
 .. {r opp-efg-by-team, message=FALSE, fig.cap=''}
 efgPctPlot(regseasTeam, TRUE)
