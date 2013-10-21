@@ -113,17 +113,23 @@ TeamRatingQuadrantPlot <- function (teamStats) {
                    FUN = mean)
   
   moff <- mean(teamStats$Ortg)
-  mdef <- mean(teamStats$Drtg)
+  x0 <- moff-20
+  x1 <- moff+20
   
   plt <- ggplot(agg, aes(x=Ortg, y=Drtg)) + 
     geom_point(aes(colour = factor(plg_Name), size = Nrtg)) +
     geom_abline(intercept = 0, slope = 1, linetype="dotted") +   
+    geom_hline(yintercept = moff, linetype="dotted") +   
+    geom_text(data = NULL, x = x0+2, y = moff, size=3, label = "league avg") + 
+    geom_vline(xintercept = moff, linetype="dotted") +  
+    geom_text(data = NULL, x = moff, y = x1, size=3, label = "league avg") + 
+    coord_fixed() +
     labs(title ="Team Ratings") +
     geom_text(aes(label=plg_Name), vjust=2, size=3, alpha = I(0.6)) +
     xlab("Ortg (Points per 100 possessions)") + 
     ylab("Drtg (Points allowed per 100 possessions)") +
-    xlim(80,120) + 
-    ylim(80,120)
+    xlim(x0,x1) + 
+    ylim(x0,x1)
   return(plt)
 }   
 

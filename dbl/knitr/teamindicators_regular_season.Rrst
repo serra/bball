@@ -33,8 +33,11 @@ print(ascii(teams), type='rest')
 .. ..
 
 
-Ratings and Pace
-----------------
+Ratings
+-------
+
+The average offensive and defensive ratings for all teams are pictured below,
+in the quadrant plot descibed by Kevin Pelton in [Pelton2012]_.
 
 .. {r rating-quadrant, message=FALSE, fig.cap=''}
 TeamRatingQuadrantPlot(regseasTeam)
@@ -51,6 +54,9 @@ OrtgByTeamPlot(regseasTeam)
 .. {r def-rating, message=FALSE, fig.cap=''}
 drtgByTeamPlot(regseasTeam)
 .. ..
+
+Pace
+----
 
 .. {r pace-by-team, message=FALSE, fig.cap=''}
 paceByTeamPlot(regseasTeam)

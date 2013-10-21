@@ -43,8 +43,11 @@ The following teams are in this competition:
 
 
 
-Ratings and Pace
-----------------
+Ratings
+-------
+
+The average offensive and defensive ratings for all teams are pictured below,
+in the quadrant plot descibed by Kevin Pelton in [Pelton2012]_.
 
 
 .. figure:: figure/rating-quadrant.png
@@ -73,6 +76,9 @@ Ratings and Pace
 
     
 
+
+Pace
+----
 
 
 .. figure:: figure/pace-by-team.png
