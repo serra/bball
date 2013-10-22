@@ -43,8 +43,11 @@ The following teams are in this competition:
 
 
 
-Ratings and Pace
-----------------
+Ratings
+-------
+
+The average offensive and defensive ratings for all teams are pictured below,
+in the quadrant plot descibed by Kevin Pelton in [Pelton2012]_.
 
 
 .. figure:: figure/rating-quadrant.png
@@ -74,8 +77,21 @@ Ratings and Pace
     
 
 
+Pace
+----
+
 
 .. figure:: figure/pace-by-team.png
+    :alt: 
+
+    
+
+
+Points
+------
+
+
+.. figure:: figure/point-differential-by-team.png
     :alt: 
 
     
@@ -113,8 +129,10 @@ The correlation matrix for the four factors and the net rating is displayed belo
 
 
 
-By Team
+Offense
 ^^^^^^^
+
+This shows the four factors for each of the teams.
 
 
 .. figure:: figure/efg-by-team.png
@@ -144,8 +162,10 @@ By Team
     
 
 
-By Opponent
-^^^^^^^^^^^
+Defense
+^^^^^^^
+
+This shows the four factors of the team's opponents for each of the teams.
 
 
 .. figure:: figure/opp-efg-by-team.png
@@ -175,11 +195,33 @@ By Opponent
     
 
 
-Points
-------
+
+Shot selection
+--------------
 
 
-.. figure:: figure/point-differential-by-team.png
+.. figure:: figure/shot-selection-ftt-team.png
+    :alt: 
+
+    
+
+
+
+.. figure:: figure/shot-selection-2s-team.png
+    :alt: 
+
+    
+
+
+
+.. figure:: figure/shot-selection-3s-team.png
+    :alt: 
+
+    
+
+
+
+.. figure:: figure/shot-selection-history-team.png
     :alt: 
 
     
