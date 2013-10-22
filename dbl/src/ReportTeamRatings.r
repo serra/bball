@@ -102,8 +102,17 @@ fourFactorsForCompetition <- function(teamStats) {
 }
 
 fourFactorsForCompetitionCorrelationMatrix <- function(teamStats) {
-    d <- fourFactorsDf(teamStats)
-    return(cor(d))
+  d <- fourFactorsDf(teamStats)
+  return(cor(d))
+}
+
+plotfourFactorsForCompetitionCorrelationMatrix <- function(teamStats) {
+  cor_melt <- melt(fourFactorsForCompetitionCorrelationMatrix(teamStats))
+  return(ggplot(cor_melt, aes(Var1, Var2, fill=value, label=round(value, 2))) +
+         scale_fill_gradient() +
+         geom_tile() +
+         geom_text()
+  )
 }
 
 TeamRatingQuadrantPlot <- function (teamStats) {
@@ -186,11 +195,45 @@ allTeamsBoxPlot <- function(teamStats, field, opponent=FALSE) {
   aest <- aes_string(x = "plg_Name", y = field)
   return(ggplot(teamStats, aest) + 
            geom_boxplot(aes(fill=plg_Name)) +
+           theme(legend.position="none") +
            theme(axis.text.x = element_text(angle = -45, hjust = 0)) + 
            xlab("")
   )
 }
 
+shotSelectionFG2A <- function(teamStats, opponent=FALSE) {
+  return(allTeamsBoxPlot(teamStats, "FG2Apct", opponent) +
+           geom_hline(aes(yintercept=median(FG2Apct)), linetype="dotted") +
+           labs(title ="% shooting plays ending with a 2pt attempt")
+  )
+}
+
+shotSelectionFG3A <- function(teamStats, opponent=FALSE) {
+  return(allTeamsBoxPlot(teamStats, "FG3Apct", opponent) +
+           geom_hline(aes(yintercept=median(FG3Apct)), linetype="dotted") +
+           labs(title ="% shooting plays ending with a 3pt attempt")
+  )
+}
+
+shotSelectionFTT <- function(teamStats, opponent=FALSE) {
+  return(allTeamsBoxPlot(teamStats, "FTTpct", opponent) +
+           geom_hline(aes(yintercept=median(FTTpct)), linetype="dotted") +
+           labs(title ="% shooting plays ending with 2 or 3 ft")
+  )
+}
+
+shotSelectionHistory <- function(teamStats) {
+  
+  dfm <- melt(teamStats,measure.vars=c('FG2Apct','FG3Apct', 'FTTpct'),id.vars = c('wed_ID', 'plg_Name', 'opp_plg_Name'))
+  
+  return(ggplot(dfm, aes(x=factor(wed_ID), y=value, fill=variable)) +
+           geom_bar(stat="identity", color='black') +
+           theme(axis.text.x = element_blank()) +
+           facet_wrap(~ plg_Name, scales = "free_x", ncol=2) 
+         
+  )
+  
+}
 ######################################################################
 #
 # Output functions

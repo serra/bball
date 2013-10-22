@@ -62,6 +62,13 @@ Pace
 paceByTeamPlot(regseasTeam)
 .. ..
 
+Points
+------
+
+.. {r point-differential-by-team, message=FALSE, fig.cap=''}
+ptsDiffByTeamPlot(regseasTeam)
+.. ..
+
 Four Factors
 ------------
 
@@ -124,11 +131,24 @@ toPctPlot(regseasTeam, TRUE)
 fttPctPlot(regseasTeam, TRUE)
 .. ..
 
-Points
-------
 
-.. {r point-differential-by-team, message=FALSE, fig.cap=''}
-ptsDiffByTeamPlot(regseasTeam)
+Shot selection
+--------------
+
+.. {r shot-selection-ftt-team, message=FALSE, fig.cap=''}
+shotSelectionFTT(regseasTeam)
+.. ..
+
+.. {r shot-selection-2s-team, message=FALSE, fig.cap=''}
+shotSelectionFG2A(regseasTeam)
+.. ..
+
+.. {r shot-selection-3s-team, message=FALSE, fig.cap=''}
+shotSelectionFG3A(regseasTeam)
+.. ..
+
+.. {r shot-selection-history-team, message=FALSE, fig.cap='', fig.height=10}
+shotSelectionHistory(regseasTeam)
 .. ..
 
 
