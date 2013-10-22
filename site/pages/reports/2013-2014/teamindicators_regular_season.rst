@@ -43,8 +43,11 @@ The following teams are in this competition:
 
 
 
-Ratings and Pace
-----------------
+Ratings
+-------
+
+The average offensive and defensive ratings for all teams are pictured below,
+in the quadrant plot descibed by Kevin Pelton in [Pelton2012]_.
 
 
 .. figure:: figure/rating-quadrant.png
@@ -73,6 +76,9 @@ Ratings and Pace
 
     
 
+
+Pace
+----
 
 
 .. figure:: figure/pace-by-team.png
@@ -113,8 +119,10 @@ The correlation matrix for the four factors and the net rating is displayed belo
 
 
 
-By Team
+Offense
 ^^^^^^^
+
+This shows the four factors for each of the teams.
 
 
 .. figure:: figure/efg-by-team.png
@@ -144,8 +152,10 @@ By Team
     
 
 
-By Opponent
-^^^^^^^^^^^
+Defense
+^^^^^^^
+
+This shows the four factors of the team's opponents for each of the teams.
 
 
 .. figure:: figure/opp-efg-by-team.png
