@@ -87,6 +87,16 @@ Pace
     
 
 
+Points
+------
+
+
+.. figure:: figure/point-differential-by-team.png
+    :alt: 
+
+    
+
+
 Four Factors
 ------------
 
@@ -185,11 +195,33 @@ This shows the four factors of the team's opponents for each of the teams.
     
 
 
-Points
-------
+
+Shot selection
+--------------
 
 
-.. figure:: figure/point-differential-by-team.png
+.. figure:: figure/shot-selection-ftt-team.png
+    :alt: 
+
+    
+
+
+
+.. figure:: figure/shot-selection-2s-team.png
+    :alt: 
+
+    
+
+
+
+.. figure:: figure/shot-selection-3s-team.png
+    :alt: 
+
+    
+
+
+
+.. figure:: figure/shot-selection-history-team.png
     :alt: 
 
     
