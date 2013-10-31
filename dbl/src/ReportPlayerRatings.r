@@ -2,12 +2,12 @@ ScoringEfficiency <- function (sts) {
   teamUsageMedian <- 0.2
   teamTSMedian <- median(sts$spl_PPP)
 
-  agg <- aggregate(cbind(spl_Minuten, spl_PPP, spl_USGpct, spl_TSpct) ~ spl_ID,
+  agg <- aggregate(cbind(spl_Minuten, spl_PPP, spl_USGpct, spl_Finishes) ~ spl_ID,
                    dat = sts, 
                    FUN = median)
   
   plt <- ggplot(agg, aes(x=spl_USGpct, y=spl_PPP)) + 
-    geom_point(aes(size = spl_TSpct, colour = spl_Minuten)) +  
+    geom_point(aes(size = spl_Finishes, colour = spl_Minuten)) +  
       scale_colour_gradient(high="red") +
     geom_vline(xintercept=teamUsageMedian, linetype="dotted") +   
     geom_hline(yintercept=teamTSMedian, linetype="dotted") +   
