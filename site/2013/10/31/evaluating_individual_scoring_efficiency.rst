@@ -22,8 +22,8 @@ Many low-impact players around team efficiency average -
 everybody appears to know what to do offensively.
 
 Two outstanding players (Holcomb-Faye and Givens).
-Holcomb Faye is outstanding in terms of finishes (many assists, 37% assist ratio) 
-and keeps his usage at team average to compensate for his low scoring efficiency.
+Holcomb Faye is outstanding in terms of finishes, 
+mainly because of his many assists, 37% assist ratio.
 Givens is outstanding in that he combines high usage with high scoring efficiency.
 
 
