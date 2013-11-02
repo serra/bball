@@ -33,9 +33,9 @@ The following teams are in this competition:
 +----+---------------------------+------+------+------+-----------+-----------+-----------+
 | 7  | Den Helder Kings Noordkop | 0.40 | 2.00 | 3.00 | -4.94     | 105.61    | 110.55    |
 +----+---------------------------+------+------+------+-----------+-----------+-----------+
-| 8  | Rotterdam Basketbal       | 0.25 | 1.00 | 3.00 | -13.12    | 105.43    | 118.55    |
+| 8  | Rotterdam Basketbal       | 0.40 | 2.00 | 3.00 | -9.55     | 103.71    | 113.25    |
 +----+---------------------------+------+------+------+-----------+-----------+-----------+
-| 9  | BC APOLLO A'dam           | 0.00 | 0.00 | 6.00 | -24.98    | 79.64     | 104.62    |
+| 9  | BC APOLLO A'dam           | 0.00 | 0.00 | 7.00 | -22.09    | 81.42     | 103.51    |
 +----+---------------------------+------+------+------+-----------+-----------+-----------+
 | 10 | Basketball Stars Weert    | 0.00 | 0.00 | 5.00 | -30.97    | 81.49     | 112.46    |
 +----+---------------------------+------+------+------+-----------+-----------+-----------+
@@ -48,13 +48,6 @@ Ratings
 
 The average offensive and defensive ratings for all teams are pictured below,
 in the quadrant plot descibed by Kevin Pelton in [Pelton2012]_.
-
-
-
-::
-
-    ## Warning: Removed 1 rows containing missing values (geom_point). Warning:
-    ## Removed 1 rows containing missing values (geom_text).
 
 
 .. figure:: figure/rating-quadrant.png
@@ -126,12 +119,12 @@ The correlation matrix for the four factors and the net rating is displayed belo
 
 ::
 
-    ##             Nrtg   EFGpct    ORpct    TOpct      FT4f
-    ## Nrtg    1.000000  0.59630  0.35004 -0.46801 -0.007502
-    ## EFGpct  0.596303  1.00000 -0.04757 -0.22857  0.144543
-    ## ORpct   0.350042 -0.04757  1.00000 -0.02527 -0.113372
-    ## TOpct  -0.468006 -0.22857 -0.02527  1.00000  0.017470
-    ## FT4f   -0.007502  0.14454 -0.11337  0.01747  1.000000
+    ##            Nrtg   EFGpct    ORpct    TOpct     FT4f
+    ## Nrtg    1.00000  0.57836  0.34691 -0.45387 -0.01486
+    ## EFGpct  0.57836  1.00000 -0.05979 -0.15967  0.11492
+    ## ORpct   0.34691 -0.05979  1.00000 -0.02783 -0.09925
+    ## TOpct  -0.45387 -0.15967 -0.02783  1.00000  0.03355
+    ## FT4f   -0.01486  0.11492 -0.09925  0.03355  1.00000
 
 
 
