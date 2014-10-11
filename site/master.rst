@@ -4,6 +4,7 @@ Sitemap
 .. toctree::
    :maxdepth: 1
 
+   2014/10/11/2014_2015_stats_available
    2013/10/31/evaluating_individual_scoring_efficiency
    2013/10/15/2013_2014_stats_available
    2013/03/23/predicting_the_perfect_bracket
