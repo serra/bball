@@ -120,7 +120,7 @@ CreateAdvancedStatsFilesForCompetition <- function (sts, compdesc) {
   return(c(advancedTeamsStatsOutputFile,advancedPlayerStatsOutputFile))
 }
 
-GetAdvancedTeamStats <- function(sts) {
+GetNormalizedTeamStats <- function(sts) {
   psData <- data.frame(sts$wed_ID, sts$plg_ID, sts$wed_UitPloeg, sts$wed_ThuisPloeg, 
                        sts$scu_FTA, sts$scu_FTM, sts$scu_FGA, sts$scu_FGM, sts$scu_3PM,  
                        sts$scu_3PA, 
@@ -140,9 +140,9 @@ GetAdvancedTeamStats <- function(sts) {
   names(psData) <- sub("Blocks", "Blk", names(psData))
   names(psData) <- sub("^FG", "FG2", names(psData))
   names(psData) <- sub("3P", "FG3", names(psData))
-    
+  
   teams <- GetTeams(sts)
-   
+  
   sqlThuis <- paste("select wed_ID, plg_ID, wed_UitPloeg, wed_ThuisPloeg, ", 
                     "max(wed_TeamOffRebThuis) as [OR], ",
                     "max(wed_TeamDefRebThuis) as DR, ", 
@@ -163,10 +163,10 @@ GetAdvancedTeamStats <- function(sts) {
   
   # merge the data frames to obtain a frame we can aggregate on by wed_ID and plg_ID
   psData <- rbind(psData, stsThuis, stsUit)
-
+  
   # aggregate by game and team
   agg <- aggregate(psData[5:14] , by=list(wed_ID=psData$wed_ID, plg_ID=psData$plg_ID, wed_UitPloeg=psData$wed_UitPloeg, wed_ThuisPloeg=psData$wed_ThuisPloeg), FUN=sum)
-
+  
   # add team name
   agg <- sqldf("select agg.*, teams.plg_Name from agg inner join teams on agg.plg_ID=teams.plg_ID")
   
@@ -193,7 +193,11 @@ GetAdvancedTeamStats <- function(sts) {
   
   # sanity checks ...
   CheckMinutesPlayed(teamStats)
-
+  
+  return(teamStats)
+}
+  
+GetAdvancedStatsFrame <- function(normalizedTeamStats) {
   #######################################################################
   #
   # Calculate performance indicators and add them to the teamStats frame
@@ -201,7 +205,7 @@ GetAdvancedTeamStats <- function(sts) {
   #######################################################################
   
   # ft ftrips
-  teamStats <- transform(teamStats,
+  teamStats <- transform(normalizedTeamStats,
                          FTtrips = ftaFactor*FTA,
                          opp_FTtrips =  ftaFactor*opp_FTA
   )
@@ -211,13 +215,13 @@ GetAdvancedTeamStats <- function(sts) {
                          pts = FTM + 2*FG2M + 3*FG3M,
                          opp_pts =  opp_FTM + 2*opp_FG2M + 3*opp_FG3M
   )
-
+  
   # win or loss
   teamStats <- transform(teamStats,
                          Win = (pts > opp_pts) ,
                          Loss = (pts < opp_pts)
   )
-    
+  
   # a play is a turnover, a ft trip or field goal attempt 
   teamStats <- transform(teamStats, 
                          plays = TO + FTtrips + (FG2A + FG3A),
@@ -289,6 +293,14 @@ GetAdvancedTeamStats <- function(sts) {
   #                      ContrFG3pts = FG3pts/pts,
   #                      ContrFTpts = FTpts/pts
   #                      )
+  
+  return(teamStats)
+}
+
+GetAdvancedTeamStats <- function(sts) {
+  teamStats <- GetNormalizedTeamStats(sts)
+
+  teamStats <- GetAdvancedStatsFrame(teamStats)
   
   return(teamStats)
 }

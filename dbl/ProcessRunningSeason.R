@@ -8,7 +8,7 @@ source("./src/knit-reports.R")
 args<-commandArgs(TRUE)
 
 if(length(args) == 0) {
-  season = "2012-2013"
+  season = "2014-2015"
 } else {
   season <- args[1]  
 }
