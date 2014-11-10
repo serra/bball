@@ -13,7 +13,7 @@ GetInputFileName <- function (seasonId) {
 
 
 DownLoadAll <- function() {
-  seasonStarts <- 2000:2012
+  seasonStarts <- 2000:2014
   allSeasons <- paste(seasonStarts, seasonStarts+1, sep="-")
   
   for(s in allSeasons) {

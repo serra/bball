@@ -196,7 +196,16 @@ GetNormalizedTeamStats <- function(sts) {
   
   return(teamStats)
 }
-  
+
+AppendFTTrips <- function(teamStats) {
+  return(
+    transform(teamStats,
+            FTtrips = ftaFactor*FTA,
+            opp_FTtrips =  ftaFactor*opp_FTA
+    )
+  )
+}
+
 GetAdvancedStatsFrame <- function(normalizedTeamStats) {
   #######################################################################
   #
@@ -205,10 +214,7 @@ GetAdvancedStatsFrame <- function(normalizedTeamStats) {
   #######################################################################
   
   # ft ftrips
-  teamStats <- transform(normalizedTeamStats,
-                         FTtrips = ftaFactor*FTA,
-                         opp_FTtrips =  ftaFactor*opp_FTA
-  )
+  teamStats <- AppendFTTrips(normalizedTeamStats)
   
   # pts
   teamStats <- transform(teamStats, 
@@ -447,3 +453,12 @@ CheckMinutesPlayed <- function(sts) {
   # the players involved in error - unlike the situation where we change 
   # everybody's minutes: then we can _be sure_ everybody will have an error!
 }
+
+CalcualteTeamTotals <- function(teamStats) {
+  teamTotals <- ddply(regseasTeam,~plg_Name,summarise,
+                      pts=sum(pts), opp_pts=sum(opp_pts),
+                      avgps=sum(avgps)
+  return(teamTotals)
+}
+
+

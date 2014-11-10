@@ -1,4 +1,4 @@
-# Create data files with advances stats for the 2012-2013 season
+# Create data files with advances stats
 
 source("./src/download.r")
 source("./src/CalculateAdvancedGameStats.r")
@@ -30,4 +30,5 @@ googlePlayerFile <- sprintf("./output/heren_%s_regseas_advanced_player_stats_goo
 write.csv(regseasTeam, googleTeamFile)
 write.csv(regseasPlyr, googlePlayerFile)
 
+# regseasTeamTotalsCalculateTotals(regseasTeam)
 KnitReports(season, regseasTeam, regseasPlyr)
