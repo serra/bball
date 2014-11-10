@@ -22,6 +22,7 @@ regseasPlyr <- read.csv2(sprintf("./output/heren_%s_regseas_advanced_player_stat
 
 teamTotals <- CalcualteTeamTotals(regseasTeam)
 write.csv2(teamTotals, sprintf("./output/heren_%s_regseas_team_totals.csv", season))
+write.csv(teamTotals, sprintf("./output/heren_%s_regseas_team_totals_google.csv", season))
 
 # suitable for google docs:
 googleTeamFile <- sprintf("./output/heren_%s_regseas_advanced_team_stats_google.csv", season)
