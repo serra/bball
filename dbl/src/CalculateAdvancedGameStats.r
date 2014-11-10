@@ -3,6 +3,7 @@
 #
 
 library(sqldf)
+library(plyr)
 
 ############
 #
