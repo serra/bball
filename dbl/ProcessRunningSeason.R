@@ -20,6 +20,9 @@ CreateAdvancedStatsFiles(fileName)
 regseasTeam <- read.csv2(sprintf("./output/heren_%s_regseas_advanced_team_stats.csv", season))
 regseasPlyr <- read.csv2(sprintf("./output/heren_%s_regseas_advanced_player_stats.csv", season))
 
+teamTotals <- CalcualteTeamTotals(regseasTeam)
+write.csv2(teamTotals, sprintf("./output/heren_%s_regseas_team_totals.csv", season))
+
 # suitable for google docs:
 googleTeamFile <- sprintf("./output/heren_%s_regseas_advanced_team_stats_google.csv", season)
 googlePlayerFile <- sprintf("./output/heren_%s_regseas_advanced_player_stats_google.csv", season)

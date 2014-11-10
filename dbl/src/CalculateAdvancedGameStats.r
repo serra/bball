@@ -206,6 +206,37 @@ AppendFTTrips <- function(teamStats) {
   )
 }
 
+AppendRatings <- function(teamStats) {
+  ts <- transform(teamStats,
+                         Ortg = 100 * pts / avgps,
+                         Drtg = 100 * opp_pts / avgps)
+  ts <- transform(ts,
+                         Nrtg = Ortg - Drtg)
+  return(ts)
+}
+
+AppendOwnFourFactors <- function(teamStats) {
+  return(
+    transform(teamStats,
+              EFGpct = (FG2M+1.5*FG3M)/(FG2A+FG3A),
+              ORpct = OR / (OR + opp_DR),
+              TOpct = TO / avgps,
+              FT4f = FTM / (FG2A+FG3A)
+    )
+  )
+}
+
+AppendOpponentFourFactors <- function(teamStats) {
+  return(
+    transform(teamStats,
+              opp_EFGpct = (opp_FG2M+1.5*opp_FG3M)/(opp_FG2A+opp_FG3A),
+              opp_ORpct = opp_OR / (opp_OR + DR),
+              opp_TOpct = opp_TO / avgps,
+              opp_FT4f = opp_FTM / (opp_FG2A+opp_FG3A)
+    )
+  )
+}
+
 GetAdvancedStatsFrame <- function(normalizedTeamStats) {
   #######################################################################
   #
@@ -248,29 +279,16 @@ GetAdvancedStatsFrame <- function(normalizedTeamStats) {
   
   # offensive and defensive ratings
   # we use the average posessions, because we think that's the best estimate of the actual number of posessions
+  teamStats <- AppendRatings(teamStats)
+  
   teamStats <- transform(teamStats,
-                         Ortg = 100 * pts / avgps,
-                         Drtg = 100 * opp_pts / avgps,
                          Home =  plg_ID == wed_ThuisPloeg)
   
-  # net rating
-  teamStats <- transform(teamStats,
-                         Nrtg = Ortg - Drtg)
-  
-  # Four factors: 1-3
-  teamStats <- transform(teamStats,
-                         EFGpct = (FG2M+1.5*FG3M)/(FG2A+FG3A),
-                         ORpct = OR / (OR + opp_DR),
-                         TOpct = TO / avgps,
-                         FT4f = FTM / (FG2A+FG3A)
-  )
-  
-  teamStats <- transform(teamStats,
-                         opp_EFGpct = (opp_FG2M+1.5*opp_FG3M)/(opp_FG2A+opp_FG3A),
-                         opp_ORpct = opp_OR / (opp_OR + DR),
-                         opp_TOpct = opp_TO / avgps,
-                         opp_FT4f = opp_FTM / (opp_FG2A+opp_FG3A)
-  )
+  # Four factors own
+  teamStats <- AppendOwnFourFactors(teamStats)
+
+  # Four factors opp
+  teamStats <- AppendOpponentFourFactors(teamStats)
   
   # shooting distribution
   teamStats <- transform(teamStats,
@@ -456,8 +474,24 @@ CheckMinutesPlayed <- function(sts) {
 
 CalcualteTeamTotals <- function(teamStats) {
   teamTotals <- ddply(regseasTeam,~plg_Name,summarise,
+                      W=sum(Win),L=sum(Loss),
                       pts=sum(pts), opp_pts=sum(opp_pts),
-                      avgps=sum(avgps)
+                      avgps=sum(avgps),
+                      FG2M=sum(FG2M),FG3M=sum(FG3M),FG2A=sum(FG2A),FG3A=sum(FG3A),
+                      TO=sum(TO),OR=sum(OR),DR=sum(DR),                                            
+                      FTM=sum(FTM),FTA=sum(FTA),                      
+                      opp_FG2M=sum(opp_FG2M),opp_FG3M=sum(opp_FG3M),
+                      opp_FG2A=sum(opp_FG2A),opp_FG3A=sum(opp_FG3A),
+                      opp_TO=sum(opp_TO),opp_OR=sum(OR),opp_DR=sum(opp_DR),
+                      opp_FTM=sum(opp_FTM),opp_FTA=sum(opp_FTA)
+  )
+  
+  teamTotals <- AppendRatings(teamTotals)
+  
+  teamTotals <- AppendOwnFourFactors(teamTotals)
+
+  teamTotals <- AppendOpponentFourFactors(teamTotals)
+    
   return(teamTotals)
 }
 
