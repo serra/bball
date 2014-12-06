@@ -1,6 +1,6 @@
-# example: http://west.basketball.nl/db/overzicht/heren_ere_stats.pl?seizoen=2008-2009
+# example: http://db.basketball.nl/db/overzicht/heren_ere_stats.pl?seizoen=2008-2009
 downloadseason <- function(seasonId) {
-  baseUrl <- "http://west.basketball.nl/db/overzicht/heren_ere_stats.pl?seizoen="
+  baseUrl <- "http://db.basketball.nl/db/overzicht/heren_ere_stats.pl?seizoen="
   url <- paste(baseUrl, seasonId, sep="")
   dest <- GetInputFileName(seasonId)
   download.file(url, dest, "auto")
