@@ -1,6 +1,5 @@
 
 
-
 ..
   Assumptions
   season      : srting identifier of the season we're evaluating
@@ -16,28 +15,25 @@ Results
 The following teams are in this competition:
 
 
-+---+---------------------------+------+-------+-------+-----------+-----------+-----------+
-|   | plg_Name                  | pct  | W     | L     | avg(Nrtg) | avg(Ortg) | avg(Drtg) |
-+===+===========================+======+=======+=======+===========+===========+===========+
-| 1 | Dukes Unlimited           | 0.83 | 10.00 | 2.00  | 24.60     | 112.42    | 87.82     |
-+---+---------------------------+------+-------+-------+-----------+-----------+-----------+
-| 2 | BS Leiden                 | 0.75 | 12.00 | 4.00  | 15.10     | 112.11    | 97.01     |
-+---+---------------------------+------+-------+-------+-----------+-----------+-----------+
-| 3 | Den Helder Kings Noordkop | 0.73 | 8.00  | 3.00  | 9.36      | 107.10    | 97.74     |
-+---+---------------------------+------+-------+-------+-----------+-----------+-----------+
-| 4 | Landstede Basketbal       | 0.69 | 9.00  | 4.00  | 5.40      | 105.33    | 99.93     |
-+---+---------------------------+------+-------+-------+-----------+-----------+-----------+
-| 5 | GasTerra Flames           | 0.64 | 9.00  | 5.00  | 13.07     | 105.91    | 92.84     |
-+---+---------------------------+------+-------+-------+-----------+-----------+-----------+
-| 6 | Rotterdam Basketbal       | 0.40 | 6.00  | 9.00  | -3.87     | 102.08    | 105.95    |
-+---+---------------------------+------+-------+-------+-----------+-----------+-----------+
-| 7 | BV Leeuwarden             | 0.29 | 4.00  | 10.00 | -9.80     | 100.66    | 110.46    |
-+---+---------------------------+------+-------+-------+-----------+-----------+-----------+
-| 8 | Basketball Stars Weert    | 0.14 | 2.00  | 12.00 | -24.30    | 84.99     | 109.29    |
-+---+---------------------------+------+-------+-------+-----------+-----------+-----------+
-| 9 | BC APOLLO A'dam           | 0.08 | 1.00  | 12.00 | -27.50    | 85.67     | 113.16    |
-+---+---------------------------+------+-------+-------+-----------+-----------+-----------+
-
++---+------------------------+------+-------+-------+-----------+-----------+-----------+
+|   | plg_Name               | pct  | W     | L     | avg(Nrtg) | avg(Ortg) | avg(Drtg) |
++===+========================+======+=======+=======+===========+===========+===========+
+| 1 | Dukes Unlimited        | 0.82 | 9.00  | 2.00  | 24.56     | 112.75    | 88.19     |
++---+------------------------+------+-------+-------+-----------+-----------+-----------+
+| 2 | BS Leiden              | 0.79 | 11.00 | 3.00  | 17.77     | 113.33    | 95.56     |
++---+------------------------+------+-------+-------+-----------+-----------+-----------+
+| 3 | Landstede Basketbal    | 0.73 | 8.00  | 3.00  | 9.00      | 105.79    | 96.79     |
++---+------------------------+------+-------+-------+-----------+-----------+-----------+
+| 4 | GasTerra Flames        | 0.69 | 9.00  | 4.00  | 14.51     | 107.23    | 92.72     |
++---+------------------------+------+-------+-------+-----------+-----------+-----------+
+| 5 | Rotterdam Basketbal    | 0.46 | 6.00  | 7.00  | -1.66     | 103.51    | 105.18    |
++---+------------------------+------+-------+-------+-----------+-----------+-----------+
+| 6 | BV Leeuwarden          | 0.31 | 4.00  | 9.00  | -9.94     | 100.35    | 110.29    |
++---+------------------------+------+-------+-------+-----------+-----------+-----------+
+| 7 | Basketball Stars Weert | 0.15 | 2.00  | 11.00 | -24.70    | 84.52     | 109.22    |
++---+------------------------+------+-------+-------+-----------+-----------+-----------+
+| 8 | BC APOLLO A'dam        | 0.08 | 1.00  | 11.00 | -27.89    | 85.84     | 113.73    |
++---+------------------------+------+-------+-------+-----------+-----------+-----------+
 
 
 
@@ -48,52 +44,46 @@ The average offensive and defensive ratings for all teams are pictured below,
 in the quadrant plot descibed by Kevin Pelton in [Pelton2012]_.
 
 
-.. figure:: figure/rating-quadrant.png
+.. figure:: figure/rating-quadrant-1.png
     :alt: 
 
     
 
 
-
-.. figure:: figure/net-rating.png
+.. figure:: figure/net-rating-1.png
     :alt: 
 
     
 
 
-
-.. figure:: figure/off-rating.png
+.. figure:: figure/off-rating-1.png
     :alt: 
 
     
 
 
-
-.. figure:: figure/def-rating.png
+.. figure:: figure/def-rating-1.png
     :alt: 
 
     
-
 
 Pace
 ----
 
 
-.. figure:: figure/pace-by-team.png
+.. figure:: figure/pace-by-team-1.png
     :alt: 
 
     
-
 
 Points
 ------
 
 
-.. figure:: figure/point-differential-by-team.png
+.. figure:: figure/point-differential-by-team-1.png
     :alt: 
 
     
-
 
 Four Factors
 ------------
@@ -105,11 +95,10 @@ Because we can assume the net rating to be the best indicator of actually winnin
 these plots show how and how strongly each of the four factors contribute to winning basketball games in the DBL in this season. 
 
 
-.. figure:: figure/net-rating-by-four-factor.png
+.. figure:: figure/net-rating-by-four-factor-1.png
     :alt: 
 
     
-
 
 The correlation matrix for the four factors and the net rating is displayed below:
 
@@ -117,13 +106,12 @@ The correlation matrix for the four factors and the net rating is displayed belo
 
 ::
 
-    ##           Nrtg   EFGpct   ORpct     TOpct     FT4f
-    ## Nrtg    1.0000  0.61710 0.38648 -0.392462 0.210438
-    ## EFGpct  0.6171  1.00000 0.09572 -0.137797 0.101361
-    ## ORpct   0.3865  0.09572 1.00000  0.084277 0.060081
-    ## TOpct  -0.3925 -0.13780 0.08428  1.000000 0.005945
-    ## FT4f    0.2104  0.10136 0.06008  0.005945 1.000000
-
+    ##              Nrtg      EFGpct      ORpct       TOpct        FT4f
+    ## Nrtg    1.0000000  0.61666687 0.40178871 -0.42808725  0.24353956
+    ## EFGpct  0.6166669  1.00000000 0.09971247 -0.17074708  0.17347189
+    ## ORpct   0.4017887  0.09971247 1.00000000  0.07519750  0.01516154
+    ## TOpct  -0.4280872 -0.17074708 0.07519750  1.00000000 -0.06552049
+    ## FT4f    0.2435396  0.17347189 0.01516154 -0.06552049  1.00000000
 
 
 
@@ -133,32 +121,28 @@ Offense
 This shows the four factors for each of the teams.
 
 
-.. figure:: figure/efg-by-team.png
+.. figure:: figure/efg-by-team-1.png
     :alt: 
 
     
 
 
-
-.. figure:: figure/or-pct-by-team.png
+.. figure:: figure/or-pct-by-team-1.png
     :alt: 
 
     
 
 
-
-.. figure:: figure/to-pct-team.png
+.. figure:: figure/to-pct-team-1.png
     :alt: 
 
     
 
 
-
-.. figure:: figure/ftt-pct-team.png
+.. figure:: figure/ftt-pct-team-1.png
     :alt: 
 
     
-
 
 Defense
 ^^^^^^^
@@ -166,64 +150,56 @@ Defense
 This shows the four factors of the team's opponents for each of the teams.
 
 
-.. figure:: figure/opp-efg-by-team.png
+.. figure:: figure/opp-efg-by-team-1.png
     :alt: 
 
     
 
 
-
-.. figure:: figure/opp-or-pct-by-team.png
+.. figure:: figure/opp-or-pct-by-team-1.png
     :alt: 
 
     
 
 
-
-.. figure:: figure/opp-to-pct-team.png
+.. figure:: figure/opp-to-pct-team-1.png
     :alt: 
 
     
 
 
-
-.. figure:: figure/opp-ftt-pct-team.png
+.. figure:: figure/opp-ftt-pct-team-1.png
     :alt: 
 
     
-
 
 
 Shot selection
 --------------
 
 
-.. figure:: figure/shot-selection-ftt-team.png
+.. figure:: figure/shot-selection-ftt-team-1.png
     :alt: 
 
     
 
 
-
-.. figure:: figure/shot-selection-2s-team.png
+.. figure:: figure/shot-selection-2s-team-1.png
     :alt: 
 
     
 
 
-
-.. figure:: figure/shot-selection-3s-team.png
+.. figure:: figure/shot-selection-3s-team-1.png
     :alt: 
 
     
 
 
-
-.. figure:: figure/shot-selection-history-team.png
+.. figure:: figure/shot-selection-history-team-1.png
     :alt: 
 
     
-
 
 
 
