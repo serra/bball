@@ -62,12 +62,26 @@ CreateAdvancedStatsFiles <- function (fileName) {
   print(comps)
   
   for(i in 1:nrComps) {
-    message(sprintf("Processing %s ... ", comps[i,"Desc"]))
+    compDesc <- comps[i,"Desc"]
+    message(sprintf("Processing %s ... ", compDesc))
+    
     compStats <- sts[which(sts$cmp_ID==comps[i,"cmp_ID"]),]
+    compStats <- FilterOutRetreatedTeams(compStats, compDesc)
+        
     PrintCompetitionStatistics(compStats)
     CreateAdvancedStatsFilesForCompetition(compStats, 
-                                           comps[i,"Desc"])
+                                           compDesc)
   }
+}
+
+FilterOutRetreatedTeams <- function(compStats, compDesc) {
+  if(grepl("heren_2014-2015", compDesc))
+  {
+    message("removing Den Helder for the 2014-2015 season")
+    compStats <- subset(compStats, thuis_club!="Den Helder Kings Noordkop")      
+    compStats <- subset(compStats, uit_club!="Den Helder Kings Noordkop")
+  }
+  return(compStats)
 }
 
 PrintCompetitionStatistics <- function(sts) {
