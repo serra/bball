@@ -1,5 +1,6 @@
 
 
+
 ..
   Assumptions
   season      : srting identifier of the season we're evaluating
@@ -39,6 +40,7 @@ The following teams are in this competition:
 
 
 
+
 Ratings
 -------
 
@@ -46,46 +48,52 @@ The average offensive and defensive ratings for all teams are pictured below,
 in the quadrant plot descibed by Kevin Pelton in [Pelton2012]_.
 
 
-.. figure:: figure/rating-quadrant-1.png
+.. figure:: figure/rating-quadrant.png
     :alt: 
 
     
 
 
-.. figure:: figure/net-rating-1.png
+
+.. figure:: figure/net-rating.png
     :alt: 
 
     
 
 
-.. figure:: figure/off-rating-1.png
+
+.. figure:: figure/off-rating.png
     :alt: 
 
     
 
 
-.. figure:: figure/def-rating-1.png
+
+.. figure:: figure/def-rating.png
     :alt: 
 
     
+
 
 Pace
 ----
 
 
-.. figure:: figure/pace-by-team-1.png
+.. figure:: figure/pace-by-team.png
     :alt: 
 
     
+
 
 Points
 ------
 
 
-.. figure:: figure/point-differential-by-team-1.png
+.. figure:: figure/point-differential-by-team.png
     :alt: 
 
     
+
 
 Four Factors
 ------------
@@ -97,10 +105,11 @@ Because we can assume the net rating to be the best indicator of actually winnin
 these plots show how and how strongly each of the four factors contribute to winning basketball games in the DBL in this season. 
 
 
-.. figure:: figure/net-rating-by-four-factor-1.png
+.. figure:: figure/net-rating-by-four-factor.png
     :alt: 
 
     
+
 
 The correlation matrix for the four factors and the net rating is displayed below:
 
@@ -108,12 +117,13 @@ The correlation matrix for the four factors and the net rating is displayed belo
 
 ::
 
-    ##              Nrtg     EFGpct      ORpct       TOpct       FT4f
-    ## Nrtg    1.0000000  0.6171005 0.38648326 -0.39246243 0.21043816
-    ## EFGpct  0.6171005  1.0000000 0.09572140 -0.13779747 0.10136143
-    ## ORpct   0.3864833  0.0957214 1.00000000  0.08427735 0.06008122
-    ## TOpct  -0.3924624 -0.1377975 0.08427735  1.00000000 0.00594528
-    ## FT4f    0.2104382  0.1013614 0.06008122  0.00594528 1.00000000
+    ##           Nrtg   EFGpct   ORpct     TOpct     FT4f
+    ## Nrtg    1.0000  0.61710 0.38648 -0.392462 0.210438
+    ## EFGpct  0.6171  1.00000 0.09572 -0.137797 0.101361
+    ## ORpct   0.3865  0.09572 1.00000  0.084277 0.060081
+    ## TOpct  -0.3925 -0.13780 0.08428  1.000000 0.005945
+    ## FT4f    0.2104  0.10136 0.06008  0.005945 1.000000
+
 
 
 
@@ -123,28 +133,32 @@ Offense
 This shows the four factors for each of the teams.
 
 
-.. figure:: figure/efg-by-team-1.png
+.. figure:: figure/efg-by-team.png
     :alt: 
 
     
 
 
-.. figure:: figure/or-pct-by-team-1.png
+
+.. figure:: figure/or-pct-by-team.png
     :alt: 
 
     
 
 
-.. figure:: figure/to-pct-team-1.png
+
+.. figure:: figure/to-pct-team.png
     :alt: 
 
     
 
 
-.. figure:: figure/ftt-pct-team-1.png
+
+.. figure:: figure/ftt-pct-team.png
     :alt: 
 
     
+
 
 Defense
 ^^^^^^^
@@ -152,56 +166,64 @@ Defense
 This shows the four factors of the team's opponents for each of the teams.
 
 
-.. figure:: figure/opp-efg-by-team-1.png
+.. figure:: figure/opp-efg-by-team.png
     :alt: 
 
     
 
 
-.. figure:: figure/opp-or-pct-by-team-1.png
+
+.. figure:: figure/opp-or-pct-by-team.png
     :alt: 
 
     
 
 
-.. figure:: figure/opp-to-pct-team-1.png
+
+.. figure:: figure/opp-to-pct-team.png
     :alt: 
 
     
 
 
-.. figure:: figure/opp-ftt-pct-team-1.png
+
+.. figure:: figure/opp-ftt-pct-team.png
     :alt: 
 
     
+
 
 
 Shot selection
 --------------
 
 
-.. figure:: figure/shot-selection-ftt-team-1.png
+.. figure:: figure/shot-selection-ftt-team.png
     :alt: 
 
     
 
 
-.. figure:: figure/shot-selection-2s-team-1.png
+
+.. figure:: figure/shot-selection-2s-team.png
     :alt: 
 
     
 
 
-.. figure:: figure/shot-selection-3s-team-1.png
+
+.. figure:: figure/shot-selection-3s-team.png
     :alt: 
 
     
 
 
-.. figure:: figure/shot-selection-history-team-1.png
+
+.. figure:: figure/shot-selection-history-team.png
     :alt: 
 
     
+
 
 
 
