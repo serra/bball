@@ -17,4 +17,5 @@ Sitemap
    pages/about
    pages/downloads
    pages/report_index
+   pages/reading_list
 
