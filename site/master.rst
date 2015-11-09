@@ -4,6 +4,7 @@ Sitemap
 .. toctree::
    :maxdepth: 1
 
+   2015/11/09/2014_2015_stats_available
    2014/11/10/team_totals_csv_file_added
    2014/10/11/2014_2015_stats_available
    2013/10/31/evaluating_individual_scoring_efficiency
