@@ -11,4 +11,5 @@ Reports
    reports/2013-2014/teamindicators_regular_season
    reports/2014-2015/teamindicators_regular_season
    reports/2015-2016/teamindicators_regular_season
+   reports/2016-2017/teamindicators_regular_season
 
