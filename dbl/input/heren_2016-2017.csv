@@ -20,7 +20,7 @@ wed_ID;cmp_ID;cmp_Nummer;wed_Nummer;wed_ThuisPloeg;thuis_club;thuis_ploeg;wed_Ui
 736133;421;15;BG;3808;BV Leeuwarden;MSE 1;2571;Basketball Stars Weert;MSE 1;2016-10-08;20:00:00;18279;2571;Roel;;Aarts;1993-08-19;198;22;4;6;0;0;0;1;8;3;2;3;1;0;1;1;0;0;0;1;0;0;0;0;
 736133;421;15;BG;3808;BV Leeuwarden;MSE 1;2571;Basketball Stars Weert;MSE 1;2016-10-08;20:00:00;18271;2571;Kasper;;Averink;1993-06-11;192;43;3;3;2;8;10;11;22;4;3;9;3;1;0;2;0;0;0;1;0;0;0;0;
 736133;421;15;BG;3808;BV Leeuwarden;MSE 1;2571;Basketball Stars Weert;MSE 1;2016-10-08;20:00:00;18276;2571;Akeel;;Eduardo;1993-01-10;191;23;0;2;0;0;0;0;0;5;1;3;1;0;0;2;0;0;0;1;0;0;0;0;
-736133;421;15;BG;3808;BV Leeuwarden;MSE 1;2571;Basketball Stars Weert;MSE 1;2016-10-08;20:00:00;18277;2571;Dyon;;Halman;1994-11-17;203;26;8;11;0;0;3;4;19;2;3;1;1;0;0;3;0;0;0;1;0;0;0;0;
+736133;421;15;BG;3808;BV Leeuwarden;MSE 1;2571;Basketball Stars Weert;MSE 1;2016-10-08;20:00:00;18277;2571;Dyon;;Halman;1994-11-17;204;26;8;11;0;0;3;4;19;2;3;1;1;0;0;3;0;0;0;1;0;0;0;0;
 736133;421;15;BG;3808;BV Leeuwarden;MSE 1;2571;Basketball Stars Weert;MSE 1;2016-10-08;20:00:00;18272;2571;Rens;van;Ravensteijn;1995-06-16;200;27;2;7;2;5;0;0;10;2;0;3;0;0;0;1;0;0;0;1;0;0;0;0;
 736133;421;15;BG;3808;BV Leeuwarden;MSE 1;2571;Basketball Stars Weert;MSE 1;2016-10-08;20:00:00;18278;2571;Daan;;Rosenmuller;1995-07-15;193;28;1;4;1;2;0;2;5;3;3;3;3;2;0;2;0;0;0;1;0;0;0;0;
 736133;421;15;BG;3808;BV Leeuwarden;MSE 1;2571;Basketball Stars Weert;MSE 1;2016-10-08;20:00:00;18273;2571;Jules;;Schild;1997-04-18;200;1;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;
@@ -115,7 +115,7 @@ wed_ID;cmp_ID;cmp_Nummer;wed_Nummer;wed_ThuisPloeg;thuis_club;thuis_ploeg;wed_Ui
 736138;421;15;CG;3107;BS Leiden;MSE 1;2571;Basketball Stars Weert;MSE 1;2016-10-15;20:00:00;18271;2571;Kasper;;Averink;1993-06-11;192;33;1;4;0;6;0;0;2;2;1;8;6;0;0;5;3;2;3;6;0;0;0;0;
 736138;421;15;CG;3107;BS Leiden;MSE 1;2571;Basketball Stars Weert;MSE 1;2016-10-15;20:00:00;18276;2571;Akeel;;Eduardo;1993-01-10;191;34;5;8;0;3;0;0;10;3;1;6;2;1;0;3;3;2;3;6;0;0;0;0;
 736138;421;15;CG;3107;BS Leiden;MSE 1;2571;Basketball Stars Weert;MSE 1;2016-10-15;20:00:00;18337;2571;Jan;;Gijsen;1999-10-27;197;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;3;2;3;6;0;0;0;0;
-736138;421;15;CG;3107;BS Leiden;MSE 1;2571;Basketball Stars Weert;MSE 1;2016-10-15;20:00:00;18277;2571;Dyon;;Halman;1994-11-17;203;26;7;12;0;0;2;3;16;1;7;2;1;1;0;2;3;2;3;6;0;0;0;0;
+736138;421;15;CG;3107;BS Leiden;MSE 1;2571;Basketball Stars Weert;MSE 1;2016-10-15;20:00:00;18277;2571;Dyon;;Halman;1994-11-17;204;26;7;12;0;0;2;3;16;1;7;2;1;1;0;2;3;2;3;6;0;0;0;0;
 736138;421;15;CG;3107;BS Leiden;MSE 1;2571;Basketball Stars Weert;MSE 1;2016-10-15;20:00:00;18336;2571;Roel;van;Overbeek;2000-08-07;185;1;0;0;0;0;0;0;0;0;0;0;1;0;0;1;3;2;3;6;0;0;0;0;
 736138;421;15;CG;3107;BS Leiden;MSE 1;2571;Basketball Stars Weert;MSE 1;2016-10-15;20:00:00;18272;2571;Rens;van;Ravensteijn;1995-06-16;200;27;1;1;1;7;2;2;7;1;1;1;3;0;0;2;3;2;3;6;0;0;0;0;
 736138;421;15;CG;3107;BS Leiden;MSE 1;2571;Basketball Stars Weert;MSE 1;2016-10-15;20:00:00;18278;2571;Daan;;Rosenmuller;1995-07-15;193;31;2;4;0;2;0;0;4;2;1;1;3;1;0;5;3;2;3;6;0;0;0;0;
@@ -175,7 +175,7 @@ wed_ID;cmp_ID;cmp_Nummer;wed_Nummer;wed_ThuisPloeg;thuis_club;thuis_ploeg;wed_Ui
 736141;421;15;GE;2571;Basketball Stars Weert;MSE 1;8594;Donar;MSE 1;2016-10-11;20:00:00;18271;2571;Kasper;;Averink;1993-06-11;192;36;3;6;2;8;10;10;22;1;1;7;4;3;0;6;0;0;0;3;0;0;0;0;
 736141;421;15;GE;2571;Basketball Stars Weert;MSE 1;8594;Donar;MSE 1;2016-10-11;20:00:00;18276;2571;Akeel;;Eduardo;1993-01-10;191;28;2;3;0;0;2;2;6;4;3;6;0;0;0;4;0;0;0;3;0;0;0;0;
 736141;421;15;GE;2571;Basketball Stars Weert;MSE 1;8594;Donar;MSE 1;2016-10-11;20:00:00;18337;2571;Jan;;Gijsen;1999-10-27;197;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;3;0;0;0;0;
-736141;421;15;GE;2571;Basketball Stars Weert;MSE 1;8594;Donar;MSE 1;2016-10-11;20:00:00;18277;2571;Dyon;;Halman;1994-11-17;203;16;0;2;0;0;1;2;1;2;0;1;0;0;0;1;0;0;0;3;0;0;0;0;
+736141;421;15;GE;2571;Basketball Stars Weert;MSE 1;8594;Donar;MSE 1;2016-10-11;20:00:00;18277;2571;Dyon;;Halman;1994-11-17;204;16;0;2;0;0;1;2;1;2;0;1;0;0;0;1;0;0;0;3;0;0;0;0;
 736141;421;15;GE;2571;Basketball Stars Weert;MSE 1;8594;Donar;MSE 1;2016-10-11;20:00:00;18336;2571;Roel;van;Overbeek;2000-08-07;185;1;0;0;0;0;2;2;2;1;0;0;0;0;0;0;0;0;0;3;0;0;0;0;
 736141;421;15;GE;2571;Basketball Stars Weert;MSE 1;8594;Donar;MSE 1;2016-10-11;20:00:00;18272;2571;Rens;van;Ravensteijn;1995-06-16;200;21;1;2;0;7;0;0;2;2;0;2;0;1;0;1;0;0;0;3;0;0;0;0;
 736141;421;15;GE;2571;Basketball Stars Weert;MSE 1;8594;Donar;MSE 1;2016-10-11;20:00:00;18278;2571;Daan;;Rosenmuller;1995-07-15;193;25;1;1;0;1;0;0;2;3;0;1;0;0;0;1;0;0;0;3;0;0;0;0;
@@ -229,7 +229,7 @@ wed_ID;cmp_ID;cmp_Nummer;wed_Nummer;wed_ThuisPloeg;thuis_club;thuis_ploeg;wed_Ui
 736144;421;15;AG;10757;BC APOLLO Amsterdam;MSE 1;2571;Basketball Stars Weert;MSE 1;2016-10-22;20:00:00;18279;2571;Roel;;Aarts;1993-08-19;198;8;2;3;0;0;0;2;4;4;1;1;0;0;0;2;0;3;1;3;0;0;0;0;
 736144;421;15;AG;10757;BC APOLLO Amsterdam;MSE 1;2571;Basketball Stars Weert;MSE 1;2016-10-22;20:00:00;18271;2571;Kasper;;Averink;1993-06-11;192;25;3;6;4;8;0;0;18;3;2;1;1;0;0;5;0;3;1;3;0;0;0;0;
 736144;421;15;AG;10757;BC APOLLO Amsterdam;MSE 1;2571;Basketball Stars Weert;MSE 1;2016-10-22;20:00:00;18276;2571;Akeel;;Eduardo;1993-01-10;191;14;0;2;0;0;0;0;0;4;1;3;2;3;0;2;0;3;1;3;0;0;0;0;
-736144;421;15;AG;10757;BC APOLLO Amsterdam;MSE 1;2571;Basketball Stars Weert;MSE 1;2016-10-22;20:00:00;18277;2571;Dyon;;Halman;1994-11-17;203;10;3;4;0;0;0;0;6;4;1;2;0;0;1;1;0;3;1;3;0;0;0;0;
+736144;421;15;AG;10757;BC APOLLO Amsterdam;MSE 1;2571;Basketball Stars Weert;MSE 1;2016-10-22;20:00:00;18277;2571;Dyon;;Halman;1994-11-17;204;10;3;4;0;0;0;0;6;4;1;2;0;0;1;1;0;3;1;3;0;0;0;0;
 736144;421;15;AG;10757;BC APOLLO Amsterdam;MSE 1;2571;Basketball Stars Weert;MSE 1;2016-10-22;20:00:00;18336;2571;Roel;van;Overbeek;2000-08-07;185;12;0;1;0;2;0;0;0;0;0;1;2;0;0;3;0;3;1;3;0;0;0;0;
 736144;421;15;AG;10757;BC APOLLO Amsterdam;MSE 1;2571;Basketball Stars Weert;MSE 1;2016-10-22;20:00:00;18272;2571;Rens;van;Ravensteijn;1995-06-16;200;25;2;4;2;6;3;4;13;4;0;0;0;0;0;2;0;3;1;3;0;0;0;0;
 736144;421;15;AG;10757;BC APOLLO Amsterdam;MSE 1;2571;Basketball Stars Weert;MSE 1;2016-10-22;20:00:00;18278;2571;Daan;;Rosenmuller;1995-07-15;193;21;1;3;2;4;1;1;9;3;2;2;4;0;0;0;0;3;1;3;0;0;0;0;
@@ -372,7 +372,7 @@ wed_ID;cmp_ID;cmp_Nummer;wed_Nummer;wed_ThuisPloeg;thuis_club;thuis_ploeg;wed_Ui
 736151;421;15;GH;2571;Basketball Stars Weert;MSE 1;1771;Landstede Basketbal;MSE 1;2016-10-29;19:30:00;18271;2571;Kasper;;Averink;1993-06-11;192;34;3;9;2;5;3;4;15;3;4;4;6;3;0;5;1;2;2;0;0;0;0;0;
 736151;421;15;GH;2571;Basketball Stars Weert;MSE 1;1771;Landstede Basketbal;MSE 1;2016-10-29;19:30:00;18276;2571;Akeel;;Eduardo;1993-01-10;191;27;2;5;2;7;2;2;12;5;1;4;1;2;0;6;1;2;2;0;0;0;0;0;
 736151;421;15;GH;2571;Basketball Stars Weert;MSE 1;1771;Landstede Basketbal;MSE 1;2016-10-29;19:30:00;18337;2571;Jan;;Gijsen;1999-10-27;197;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;2;2;0;0;0;0;0;
-736151;421;15;GH;2571;Basketball Stars Weert;MSE 1;1771;Landstede Basketbal;MSE 1;2016-10-29;19:30:00;18277;2571;Dyon;;Halman;1994-11-17;203;25;5;8;0;0;0;0;10;3;6;7;2;0;2;2;1;2;2;0;0;0;0;0;
+736151;421;15;GH;2571;Basketball Stars Weert;MSE 1;1771;Landstede Basketbal;MSE 1;2016-10-29;19:30:00;18277;2571;Dyon;;Halman;1994-11-17;204;25;5;8;0;0;0;0;10;3;6;7;2;0;2;2;1;2;2;0;0;0;0;0;
 736151;421;15;GH;2571;Basketball Stars Weert;MSE 1;1771;Landstede Basketbal;MSE 1;2016-10-29;19:30:00;18383;2571;Robin;van;Heukelom;1999-11-29;185;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;2;2;0;0;0;0;0;
 736151;421;15;GH;2571;Basketball Stars Weert;MSE 1;1771;Landstede Basketbal;MSE 1;2016-10-29;19:30:00;18336;2571;Roel;van;Overbeek;2000-08-07;185;1;0;0;0;0;0;0;0;1;0;0;0;0;0;0;1;2;2;0;0;0;0;0;
 736151;421;15;GH;2571;Basketball Stars Weert;MSE 1;1771;Landstede Basketbal;MSE 1;2016-10-29;19:30:00;18272;2571;Rens;van;Ravensteijn;1995-06-16;200;22;3;4;2;8;0;0;12;0;0;2;2;1;0;3;1;2;2;0;0;0;0;0;
@@ -435,7 +435,7 @@ wed_ID;cmp_ID;cmp_Nummer;wed_Nummer;wed_ThuisPloeg;thuis_club;thuis_ploeg;wed_Ui
 736155;421;15;FG;3103;Rotterdam Basketbal;MSE 1;2571;Basketball Stars Weert;MSE 1;2016-11-05;20:00:00;18279;2571;Roel;;Aarts;1993-08-19;198;24;2;6;0;0;3;4;7;3;0;3;2;1;0;3;0;0;3;4;0;0;0;0;
 736155;421;15;FG;3103;Rotterdam Basketbal;MSE 1;2571;Basketball Stars Weert;MSE 1;2016-11-05;20:00:00;18271;2571;Kasper;;Averink;1993-06-11;192;27;4;8;1;5;2;2;13;1;0;1;1;2;0;0;0;0;3;4;0;0;0;0;
 736155;421;15;FG;3103;Rotterdam Basketbal;MSE 1;2571;Basketball Stars Weert;MSE 1;2016-11-05;20:00:00;18276;2571;Akeel;;Eduardo;1993-01-10;191;31;4;6;1;3;1;2;12;4;4;2;1;5;0;4;0;0;3;4;0;0;0;0;
-736155;421;15;FG;3103;Rotterdam Basketbal;MSE 1;2571;Basketball Stars Weert;MSE 1;2016-11-05;20:00:00;18277;2571;Dyon;;Halman;1994-11-17;203;13;2;5;0;0;0;0;4;3;2;2;0;0;1;3;0;0;3;4;0;0;0;0;
+736155;421;15;FG;3103;Rotterdam Basketbal;MSE 1;2571;Basketball Stars Weert;MSE 1;2016-11-05;20:00:00;18277;2571;Dyon;;Halman;1994-11-17;204;13;2;5;0;0;0;0;4;3;2;2;0;0;1;3;0;0;3;4;0;0;0;0;
 736155;421;15;FG;3103;Rotterdam Basketbal;MSE 1;2571;Basketball Stars Weert;MSE 1;2016-11-05;20:00:00;18395;2571;Kamiel;;Hamers;1996-06-11;198;2;0;1;0;0;0;0;0;0;0;0;0;0;0;1;0;0;3;4;0;0;0;0;
 736155;421;15;FG;3103;Rotterdam Basketbal;MSE 1;2571;Basketball Stars Weert;MSE 1;2016-11-05;20:00:00;18383;2571;Robin;van;Heukelom;1999-11-29;185;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;3;4;0;0;0;0;
 736155;421;15;FG;3103;Rotterdam Basketbal;MSE 1;2571;Basketball Stars Weert;MSE 1;2016-11-05;20:00:00;18336;2571;Roel;van;Overbeek;2000-08-07;185;1;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;3;4;0;0;0;0;
@@ -488,7 +488,7 @@ wed_ID;cmp_ID;cmp_Nummer;wed_Nummer;wed_ThuisPloeg;thuis_club;thuis_ploeg;wed_Ui
 736158;421;15;GD;2571;Basketball Stars Weert;MSE 1;11480;New Heroes;MSE 1;2016-11-12;19:30:00;18271;2571;Kasper;;Averink;1993-06-11;192;27;2;4;0;4;3;3;7;0;0;3;2;2;0;7;2;0;2;1;0;0;0;0;
 736158;421;15;GD;2571;Basketball Stars Weert;MSE 1;11480;New Heroes;MSE 1;2016-11-12;19:30:00;18276;2571;Akeel;;Eduardo;1993-01-10;191;19;0;2;0;1;2;2;2;4;0;2;2;1;0;1;2;0;2;1;0;0;0;0;
 736158;421;15;GD;2571;Basketball Stars Weert;MSE 1;11480;New Heroes;MSE 1;2016-11-12;19:30:00;18337;2571;Jan;;Gijsen;1999-10-27;197;2;0;0;0;0;0;0;0;0;0;1;0;0;0;0;2;0;2;1;0;0;0;0;
-736158;421;15;GD;2571;Basketball Stars Weert;MSE 1;11480;New Heroes;MSE 1;2016-11-12;19:30:00;18277;2571;Dyon;;Halman;1994-11-17;203;23;1;2;0;0;3;4;5;3;4;3;2;2;0;1;2;0;2;1;0;0;0;0;
+736158;421;15;GD;2571;Basketball Stars Weert;MSE 1;11480;New Heroes;MSE 1;2016-11-12;19:30:00;18277;2571;Dyon;;Halman;1994-11-17;204;23;1;2;0;0;3;4;5;3;4;3;2;2;0;1;2;0;2;1;0;0;0;0;
 736158;421;15;GD;2571;Basketball Stars Weert;MSE 1;11480;New Heroes;MSE 1;2016-11-12;19:30:00;18383;2571;Robin;van;Heukelom;1999-11-29;185;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2;0;2;1;0;0;0;0;
 736158;421;15;GD;2571;Basketball Stars Weert;MSE 1;11480;New Heroes;MSE 1;2016-11-12;19:30:00;18272;2571;Rens;van;Ravensteijn;1995-06-16;200;21;1;3;0;4;0;0;2;2;1;1;3;0;0;1;2;0;2;1;0;0;0;0;
 736158;421;15;GD;2571;Basketball Stars Weert;MSE 1;11480;New Heroes;MSE 1;2016-11-12;19:30:00;18278;2571;Daan;;Rosenmuller;1995-07-15;193;28;1;3;1;3;0;2;5;5;1;6;2;2;0;2;2;0;2;1;0;0;0;0;
@@ -547,7 +547,7 @@ wed_ID;cmp_ID;cmp_Nummer;wed_Nummer;wed_ThuisPloeg;thuis_club;thuis_ploeg;wed_Ui
 736161;421;15;GB;2571;Basketball Stars Weert;MSE 1;3808;BV Leeuwarden;MSE 1;2016-11-19;19:30:00;18271;2571;Kasper;;Averink;1993-06-11;192;25;3;5;0;3;1;2;7;3;0;2;3;0;0;3;1;1;1;2;0;0;0;0;
 736161;421;15;GB;2571;Basketball Stars Weert;MSE 1;3808;BV Leeuwarden;MSE 1;2016-11-19;19:30:00;18276;2571;Akeel;;Eduardo;1993-01-10;191;28;5;9;1;2;1;2;14;2;1;6;1;0;0;3;1;1;1;2;0;0;0;0;
 736161;421;15;GB;2571;Basketball Stars Weert;MSE 1;3808;BV Leeuwarden;MSE 1;2016-11-19;19:30:00;18337;2571;Jan;;Gijsen;1999-10-27;197;1;0;0;0;1;0;0;0;0;0;0;0;0;0;0;1;1;1;2;0;0;0;0;
-736161;421;15;GB;2571;Basketball Stars Weert;MSE 1;3808;BV Leeuwarden;MSE 1;2016-11-19;19:30:00;18277;2571;Dyon;;Halman;1994-11-17;203;15;1;1;0;0;0;0;2;3;0;4;0;0;0;0;1;1;1;2;0;0;0;0;
+736161;421;15;GB;2571;Basketball Stars Weert;MSE 1;3808;BV Leeuwarden;MSE 1;2016-11-19;19:30:00;18277;2571;Dyon;;Halman;1994-11-17;204;15;1;1;0;0;0;0;2;3;0;4;0;0;0;0;1;1;1;2;0;0;0;0;
 736161;421;15;GB;2571;Basketball Stars Weert;MSE 1;3808;BV Leeuwarden;MSE 1;2016-11-19;19:30:00;18395;2571;Kamiel;;Hamers;1996-06-11;198;11;0;1;0;0;0;0;0;2;0;1;1;1;0;1;1;1;1;2;0;0;0;0;
 736161;421;15;GB;2571;Basketball Stars Weert;MSE 1;3808;BV Leeuwarden;MSE 1;2016-11-19;19:30:00;18336;2571;Roel;van;Overbeek;2000-08-07;185;13;1;2;1;2;0;0;5;1;0;1;2;0;0;1;1;1;1;2;0;0;0;0;
 736161;421;15;GB;2571;Basketball Stars Weert;MSE 1;3808;BV Leeuwarden;MSE 1;2016-11-19;19:30:00;18278;2571;Daan;;Rosenmuller;1995-07-15;193;17;1;4;0;1;0;0;2;2;3;1;1;0;0;1;1;1;1;2;0;0;0;0;
@@ -609,7 +609,7 @@ wed_ID;cmp_ID;cmp_Nummer;wed_Nummer;wed_ThuisPloeg;thuis_club;thuis_ploeg;wed_Ui
 736163;421;15;ED;8594;Donar;MSE 1;11480;New Heroes;MSE 1;2016-11-19;19:30:00;18231;11480;Stefan;;Wessels;1984-04-13;199;35;3;5;1;1;0;0;9;3;2;8;4;0;0;4;1;0;3;0;0;0;0;0;
 736164;421;15;GA;2571;Basketball Stars Weert;MSE 1;10757;BC APOLLO Amsterdam;MSE 1;2016-11-26;19:30:00;18279;2571;Roel;;Aarts;1993-08-19;198;21;3;7;0;0;0;0;6;5;2;1;1;3;0;1;1;0;1;1;0;0;0;0;
 736164;421;15;GA;2571;Basketball Stars Weert;MSE 1;10757;BC APOLLO Amsterdam;MSE 1;2016-11-26;19:30:00;18276;2571;Akeel;;Eduardo;1993-01-10;191;36;1;4;2;2;2;2;10;5;0;9;3;1;0;5;1;0;1;1;0;0;0;0;
-736164;421;15;GA;2571;Basketball Stars Weert;MSE 1;10757;BC APOLLO Amsterdam;MSE 1;2016-11-26;19:30:00;18277;2571;Dyon;;Halman;1994-11-17;203;17;5;7;0;0;6;8;16;5;6;5;1;1;0;1;1;0;1;1;0;0;0;0;
+736164;421;15;GA;2571;Basketball Stars Weert;MSE 1;10757;BC APOLLO Amsterdam;MSE 1;2016-11-26;19:30:00;18277;2571;Dyon;;Halman;1994-11-17;204;17;5;7;0;0;6;8;16;5;6;5;1;1;0;1;1;0;1;1;0;0;0;0;
 736164;421;15;GA;2571;Basketball Stars Weert;MSE 1;10757;BC APOLLO Amsterdam;MSE 1;2016-11-26;19:30:00;18383;2571;Robin;van;Heukelom;1999-11-29;185;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;1;1;0;0;0;0;
 736164;421;15;GA;2571;Basketball Stars Weert;MSE 1;10757;BC APOLLO Amsterdam;MSE 1;2016-11-26;19:30:00;18336;2571;Roel;van;Overbeek;2000-08-07;185;3;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;1;1;0;0;0;0;
 736164;421;15;GA;2571;Basketball Stars Weert;MSE 1;10757;BC APOLLO Amsterdam;MSE 1;2016-11-26;19:30:00;18278;2571;Daan;;Rosenmuller;1995-07-15;193;32;8;13;0;3;6;8;22;3;1;5;5;0;0;3;1;0;1;1;0;0;0;0;
@@ -700,7 +700,7 @@ wed_ID;cmp_ID;cmp_Nummer;wed_Nummer;wed_ThuisPloeg;thuis_club;thuis_ploeg;wed_Ui
 736168;421;15;AF;10757;BC APOLLO Amsterdam;MSE 1;3103;Rotterdam Basketbal;MSE 1;2016-12-01;20:30:00;18462;10757;Chaed;;Wellian;1992-08-27;203;3;0;0;0;1;0;0;0;1;0;0;0;0;0;1;2;1;2;1;0;0;0;0;
 736169;421;15;EG;8594;Donar;MSE 1;2571;Basketball Stars Weert;MSE 1;2016-12-01;19:30:00;18279;2571;Roel;;Aarts;1993-08-19;198;29;4;8;0;1;0;0;8;3;1;3;1;0;2;3;1;1;0;1;0;0;0;0;
 736169;421;15;EG;8594;Donar;MSE 1;2571;Basketball Stars Weert;MSE 1;2016-12-01;19:30:00;18276;2571;Akeel;;Eduardo;1993-01-10;191;33;2;5;0;2;3;4;7;2;0;7;3;2;1;5;1;1;0;1;0;0;0;0;
-736169;421;15;EG;8594;Donar;MSE 1;2571;Basketball Stars Weert;MSE 1;2016-12-01;19:30:00;18277;2571;Dyon;;Halman;1994-11-17;203;15;2;4;0;0;2;3;6;2;1;1;1;0;0;1;1;1;0;1;0;0;0;0;
+736169;421;15;EG;8594;Donar;MSE 1;2571;Basketball Stars Weert;MSE 1;2016-12-01;19:30:00;18277;2571;Dyon;;Halman;1994-11-17;204;15;2;4;0;0;2;3;6;2;1;1;1;0;0;1;1;1;0;1;0;0;0;0;
 736169;421;15;EG;8594;Donar;MSE 1;2571;Basketball Stars Weert;MSE 1;2016-12-01;19:30:00;18395;2571;Kamiel;;Hamers;1996-06-11;198;11;1;1;0;0;0;2;2;0;0;3;0;0;1;0;1;1;0;1;0;0;0;0;
 736169;421;15;EG;8594;Donar;MSE 1;2571;Basketball Stars Weert;MSE 1;2016-12-01;19:30:00;18336;2571;Roel;van;Overbeek;2000-08-07;185;14;0;1;1;2;0;0;3;3;1;0;0;1;0;0;1;1;0;1;0;0;0;0;
 736169;421;15;EG;8594;Donar;MSE 1;2571;Basketball Stars Weert;MSE 1;2016-12-01;19:30:00;18278;2571;Daan;;Rosenmuller;1995-07-15;193;28;1;6;0;2;0;0;2;3;1;1;3;4;0;11;1;1;0;1;0;0;0;0;
@@ -796,7 +796,7 @@ wed_ID;cmp_ID;cmp_Nummer;wed_Nummer;wed_ThuisPloeg;thuis_club;thuis_ploeg;wed_Ui
 736174;421;15;GC;2571;Basketball Stars Weert;MSE 1;3107;BS Leiden;MSE 1;2016-12-03;19:30:00;18271;2571;Kasper;;Averink;1993-06-11;192;21;1;1;1;4;3;4;8;2;0;2;2;0;0;2;1;3;5;1;0;0;0;0;
 736174;421;15;GC;2571;Basketball Stars Weert;MSE 1;3107;BS Leiden;MSE 1;2016-12-03;19:30:00;18276;2571;Akeel;;Eduardo;1993-01-10;191;30;0;0;0;4;0;0;0;0;0;4;0;0;1;3;1;3;5;1;0;0;0;0;
 736174;421;15;GC;2571;Basketball Stars Weert;MSE 1;3107;BS Leiden;MSE 1;2016-12-03;19:30:00;18337;2571;Jan;;Gijsen;1999-10-27;197;7;0;0;0;0;0;0;0;1;0;0;0;0;0;0;1;3;5;1;0;0;0;0;
-736174;421;15;GC;2571;Basketball Stars Weert;MSE 1;3107;BS Leiden;MSE 1;2016-12-03;19:30:00;18277;2571;Dyon;;Halman;1994-11-17;203;19;1;7;0;0;6;8;8;4;5;3;0;0;0;3;1;3;5;1;0;0;0;0;
+736174;421;15;GC;2571;Basketball Stars Weert;MSE 1;3107;BS Leiden;MSE 1;2016-12-03;19:30:00;18277;2571;Dyon;;Halman;1994-11-17;204;19;1;7;0;0;6;8;8;4;5;3;0;0;0;3;1;3;5;1;0;0;0;0;
 736174;421;15;GC;2571;Basketball Stars Weert;MSE 1;3107;BS Leiden;MSE 1;2016-12-03;19:30:00;18383;2571;Robin;van;Heukelom;1999-11-29;185;4;0;1;0;0;0;0;0;1;0;0;0;0;0;1;1;3;5;1;0;0;0;0;
 736174;421;15;GC;2571;Basketball Stars Weert;MSE 1;3107;BS Leiden;MSE 1;2016-12-03;19:30:00;18336;2571;Roel;van;Overbeek;2000-08-07;185;8;0;0;2;3;0;0;6;1;0;0;0;0;0;1;1;3;5;1;0;0;0;0;
 736174;421;15;GC;2571;Basketball Stars Weert;MSE 1;3107;BS Leiden;MSE 1;2016-12-03;19:30:00;18278;2571;Daan;;Rosenmuller;1995-07-15;193;19;1;2;0;0;0;0;2;2;1;1;1;2;0;3;1;3;5;1;0;0;0;0;
@@ -898,7 +898,7 @@ wed_ID;cmp_ID;cmp_Nummer;wed_Nummer;wed_ThuisPloeg;thuis_club;thuis_ploeg;wed_Ui
 736179;421;15;HG;1771;Landstede Basketbal;MSE 1;2571;Basketball Stars Weert;MSE 1;2016-12-11;14:00:00;18285;1771;J.T.;;Yoho;1993-11-24;198;22;3;7;1;6;2;2;11;3;1;2;2;2;0;1;1;0;1;2;0;0;0;0;
 736179;421;15;HG;1771;Landstede Basketbal;MSE 1;2571;Basketball Stars Weert;MSE 1;2016-12-11;14:00:00;18279;2571;Roel;;Aarts;1993-08-19;198;25;1;5;0;2;1;1;3;4;0;7;1;0;0;2;1;0;1;2;0;0;0;0;
 736179;421;15;HG;1771;Landstede Basketbal;MSE 1;2571;Basketball Stars Weert;MSE 1;2016-12-11;14:00:00;18276;2571;Akeel;;Eduardo;1993-01-10;191;28;2;8;0;1;0;0;4;2;0;2;0;1;0;1;1;0;1;2;0;0;0;0;
-736179;421;15;HG;1771;Landstede Basketbal;MSE 1;2571;Basketball Stars Weert;MSE 1;2016-12-11;14:00:00;18277;2571;Dyon;;Halman;1994-11-17;203;21;2;3;0;0;2;2;6;3;1;3;0;0;0;1;1;0;1;2;0;0;0;0;
+736179;421;15;HG;1771;Landstede Basketbal;MSE 1;2571;Basketball Stars Weert;MSE 1;2016-12-11;14:00:00;18277;2571;Dyon;;Halman;1994-11-17;204;21;2;3;0;0;2;2;6;3;1;3;0;0;0;1;1;0;1;2;0;0;0;0;
 736179;421;15;HG;1771;Landstede Basketbal;MSE 1;2571;Basketball Stars Weert;MSE 1;2016-12-11;14:00:00;18395;2571;Kamiel;;Hamers;1996-06-11;198;2;0;0;0;0;0;0;0;1;0;0;0;0;0;0;1;0;1;2;0;0;0;0;
 736179;421;15;HG;1771;Landstede Basketbal;MSE 1;2571;Basketball Stars Weert;MSE 1;2016-12-11;14:00:00;18383;2571;Robin;van;Heukelom;1999-11-29;185;1;0;0;0;1;0;0;0;0;0;0;0;0;0;0;1;0;1;2;0;0;0;0;
 736179;421;15;HG;1771;Landstede Basketbal;MSE 1;2571;Basketball Stars Weert;MSE 1;2016-12-11;14:00:00;18336;2571;Roel;van;Overbeek;2000-08-07;185;3;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;1;2;0;0;0;0;
@@ -969,7 +969,7 @@ wed_ID;cmp_ID;cmp_Nummer;wed_Nummer;wed_ThuisPloeg;thuis_club;thuis_ploeg;wed_Ui
 736183;421;15;GF;2571;Basketball Stars Weert;MSE 1;3103;Rotterdam Basketbal;MSE 1;2016-12-17;19:30:00;18279;2571;Roel;;Aarts;1993-08-19;198;29;3;5;0;2;1;2;7;5;1;4;2;2;0;2;0;0;0;0;0;0;0;0;
 736183;421;15;GF;2571;Basketball Stars Weert;MSE 1;3103;Rotterdam Basketbal;MSE 1;2016-12-17;19:30:00;18276;2571;Akeel;;Eduardo;1993-01-10;191;37;1;6;3;5;2;2;13;0;1;4;1;1;0;2;0;0;0;0;0;0;0;0;
 736183;421;15;GF;2571;Basketball Stars Weert;MSE 1;3103;Rotterdam Basketbal;MSE 1;2016-12-17;19:30:00;18337;2571;Jan;;Gijsen;1999-10-27;197;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;
-736183;421;15;GF;2571;Basketball Stars Weert;MSE 1;3103;Rotterdam Basketbal;MSE 1;2016-12-17;19:30:00;18277;2571;Dyon;;Halman;1994-11-17;203;11;0;0;0;0;7;8;7;3;2;2;4;0;0;3;0;0;0;0;0;0;0;0;
+736183;421;15;GF;2571;Basketball Stars Weert;MSE 1;3103;Rotterdam Basketbal;MSE 1;2016-12-17;19:30:00;18277;2571;Dyon;;Halman;1994-11-17;204;11;0;0;0;0;7;8;7;3;2;2;4;0;0;3;0;0;0;0;0;0;0;0;
 736183;421;15;GF;2571;Basketball Stars Weert;MSE 1;3103;Rotterdam Basketbal;MSE 1;2016-12-17;19:30:00;18383;2571;Robin;van;Heukelom;1999-11-29;185;3;0;0;1;1;0;0;3;1;0;0;0;1;0;0;0;0;0;0;0;0;0;0;
 736183;421;15;GF;2571;Basketball Stars Weert;MSE 1;3103;Rotterdam Basketbal;MSE 1;2016-12-17;19:30:00;18336;2571;Roel;van;Overbeek;2000-08-07;185;14;1;3;1;1;1;2;6;2;0;1;4;1;0;2;0;0;0;0;0;0;0;0;
 736183;421;15;GF;2571;Basketball Stars Weert;MSE 1;3103;Rotterdam Basketbal;MSE 1;2016-12-17;19:30:00;18278;2571;Daan;;Rosenmuller;1995-07-15;193;28;4;7;0;3;6;7;14;5;2;3;4;2;0;2;0;0;0;0;0;0;0;0;
@@ -1021,7 +1021,7 @@ wed_ID;cmp_ID;cmp_Nummer;wed_Nummer;wed_ThuisPloeg;thuis_club;thuis_ploeg;wed_Ui
 736185;421;15;HC;1771;Landstede Basketbal;MSE 1;3107;BS Leiden;MSE 1;2017-01-08;14:00:00;18251;3107;Jessey;;Voorn;1990-03-17;193;34;3;4;5;8;0;0;21;3;0;1;3;1;0;2;2;2;2;1;0;0;0;0;
 736186;421;15;DG;11480;New Heroes;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-01-10;20:00:00;18279;2571;Roel;;Aarts;1993-08-19;198;8;1;3;0;0;0;0;2;2;1;1;0;0;1;0;0;2;1;1;0;0;0;0;
 736186;421;15;DG;11480;New Heroes;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-01-10;20:00:00;18276;2571;Akeel;;Eduardo;1993-01-10;191;8;0;1;0;1;0;0;0;2;1;1;0;0;0;1;0;2;1;1;0;0;0;0;
-736186;421;15;DG;11480;New Heroes;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-01-10;20:00:00;18277;2571;Dyon;;Halman;1994-11-17;203;23;1;3;0;0;3;3;5;3;3;2;0;1;0;1;0;2;1;1;0;0;0;0;
+736186;421;15;DG;11480;New Heroes;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-01-10;20:00:00;18277;2571;Dyon;;Halman;1994-11-17;204;23;1;3;0;0;3;3;5;3;3;2;0;1;0;1;0;2;1;1;0;0;0;0;
 736186;421;15;DG;11480;New Heroes;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-01-10;20:00:00;18336;2571;Roel;van;Overbeek;2000-08-07;185;8;0;1;0;0;0;0;0;0;0;1;1;0;0;0;0;2;1;1;0;0;0;0;
 736186;421;15;DG;11480;New Heroes;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-01-10;20:00:00;18534;2571;Joost;;Padberg;1991-04-14;202;12;1;2;0;0;0;0;2;2;0;1;0;0;0;2;0;2;1;1;0;0;0;0;
 736186;421;15;DG;11480;New Heroes;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-01-10;20:00:00;18272;2571;Rens;van;Ravensteijn;1995-06-16;200;18;1;3;2;3;0;0;8;2;0;3;2;0;0;2;0;2;1;1;0;0;0;0;
@@ -1077,7 +1077,7 @@ wed_ID;cmp_ID;cmp_Nummer;wed_Nummer;wed_ThuisPloeg;thuis_club;thuis_ploeg;wed_Ui
 736188;421;15;Ha;1771;Landstede Basketbal;MSE 1;10757;BC APOLLO Amsterdam;MSE 1;2017-01-15;14:00:00;18294;10757;Max;van;Schaik;1991-06-28;208;32;3;4;0;6;3;3;9;1;0;5;0;0;1;2;2;1;1;5;0;0;0;0;
 736189;421;15;Bg;3808;BV Leeuwarden;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-01-14;20:00:00;18279;2571;Roel;;Aarts;1993-08-19;198;10;1;3;0;0;0;0;2;0;0;1;0;0;0;2;0;2;2;1;0;0;0;0;
 736189;421;15;Bg;3808;BV Leeuwarden;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-01-14;20:00:00;18276;2571;Akeel;;Eduardo;1993-01-10;191;35;3;5;3;6;3;3;18;2;3;2;2;1;0;4;0;2;2;1;0;0;0;0;
-736189;421;15;Bg;3808;BV Leeuwarden;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-01-14;20:00:00;18277;2571;Dyon;;Halman;1994-11-17;203;12;3;3;0;0;1;1;7;2;3;2;0;0;0;1;0;2;2;1;0;0;0;0;
+736189;421;15;Bg;3808;BV Leeuwarden;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-01-14;20:00:00;18277;2571;Dyon;;Halman;1994-11-17;204;12;3;3;0;0;1;1;7;2;3;2;0;0;0;1;0;2;2;1;0;0;0;0;
 736189;421;15;Bg;3808;BV Leeuwarden;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-01-14;20:00:00;18383;2571;Robin;van;Heukelom;1999-11-29;185;3;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;2;2;1;0;0;0;0;
 736189;421;15;Bg;3808;BV Leeuwarden;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-01-14;20:00:00;18534;2571;Joost;;Padberg;1991-04-14;202;20;4;5;0;0;4;6;12;4;1;0;4;0;0;1;0;2;2;1;0;0;0;0;
 736189;421;15;Bg;3808;BV Leeuwarden;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-01-14;20:00:00;18272;2571;Rens;van;Ravensteijn;1995-06-16;200;12;2;3;0;1;0;0;4;1;1;2;0;0;0;1;0;2;2;1;0;0;0;0;
@@ -1137,7 +1137,7 @@ wed_ID;cmp_ID;cmp_Nummer;wed_Nummer;wed_ThuisPloeg;thuis_club;thuis_ploeg;wed_Ui
 736192;421;15;Ag;10757;BC APOLLO Amsterdam;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-01-21;20:00:00;18279;2571;Roel;;Aarts;1993-08-19;198;5;0;3;0;0;2;2;2;0;0;0;0;0;0;1;3;1;2;2;0;0;0;0;
 736192;421;15;Ag;10757;BC APOLLO Amsterdam;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-01-21;20:00:00;18271;2571;Kasper;;Averink;1993-06-11;192;16;3;4;1;3;0;0;9;4;0;1;2;1;0;1;3;1;2;2;0;0;0;0;
 736192;421;15;Ag;10757;BC APOLLO Amsterdam;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-01-21;20:00:00;18276;2571;Akeel;;Eduardo;1993-01-10;191;30;1;2;2;2;2;2;10;2;0;4;1;0;0;2;3;1;2;2;0;0;0;0;
-736192;421;15;Ag;10757;BC APOLLO Amsterdam;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-01-21;20:00:00;18277;2571;Dyon;;Halman;1994-11-17;203;18;3;3;0;0;3;4;9;0;3;5;0;0;1;2;3;1;2;2;0;0;0;0;
+736192;421;15;Ag;10757;BC APOLLO Amsterdam;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-01-21;20:00:00;18277;2571;Dyon;;Halman;1994-11-17;204;18;3;3;0;0;3;4;9;0;3;5;0;0;1;2;3;1;2;2;0;0;0;0;
 736192;421;15;Ag;10757;BC APOLLO Amsterdam;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-01-21;20:00:00;18534;2571;Joost;;Padberg;1991-04-14;202;19;1;4;0;0;0;0;2;3;2;2;0;1;0;2;3;1;2;2;0;0;0;0;
 736192;421;15;Ag;10757;BC APOLLO Amsterdam;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-01-21;20:00:00;18272;2571;Rens;van;Ravensteijn;1995-06-16;200;19;7;9;1;6;4;6;21;1;0;7;2;1;0;1;3;1;2;2;0;0;0;0;
 736192;421;15;Ag;10757;BC APOLLO Amsterdam;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-01-21;20:00:00;18278;2571;Daan;;Rosenmuller;1995-07-15;193;26;0;1;2;3;0;0;6;4;0;2;1;0;0;2;3;1;2;2;0;0;0;0;
@@ -1229,7 +1229,7 @@ wed_ID;cmp_ID;cmp_Nummer;wed_Nummer;wed_ThuisPloeg;thuis_club;thuis_ploeg;wed_Ui
 736196;421;15;Ea;8594;Donar;MSE 1;10757;BC APOLLO Amsterdam;MSE 1;2017-01-28;19:30:00;18293;10757;Gian;;Slagter;1991-06-27;191;14;0;2;0;2;0;0;0;4;0;0;0;0;0;0;0;2;1;1;0;0;0;0;
 736197;421;15;Gf;2571;Basketball Stars Weert;MSE 1;3103;Rotterdam Basketbal;MSE 1;2017-01-28;19:30:00;18271;2571;Kasper;;Averink;1993-06-11;192;22;2;3;3;8;4;6;17;1;0;2;2;0;0;3;0;1;2;3;0;0;0;0;
 736197;421;15;Gf;2571;Basketball Stars Weert;MSE 1;3103;Rotterdam Basketbal;MSE 1;2017-01-28;19:30:00;18276;2571;Akeel;;Eduardo;1993-01-10;191;19;0;1;2;3;1;2;7;3;0;4;1;0;0;1;0;1;2;3;0;0;0;0;
-736197;421;15;Gf;2571;Basketball Stars Weert;MSE 1;3103;Rotterdam Basketbal;MSE 1;2017-01-28;19:30:00;18277;2571;Dyon;;Halman;1994-11-17;203;22;3;9;0;0;3;5;9;3;3;2;0;0;1;0;0;1;2;3;0;0;0;0;
+736197;421;15;Gf;2571;Basketball Stars Weert;MSE 1;3103;Rotterdam Basketbal;MSE 1;2017-01-28;19:30:00;18277;2571;Dyon;;Halman;1994-11-17;204;22;3;9;0;0;3;5;9;3;3;2;0;0;1;0;0;1;2;3;0;0;0;0;
 736197;421;15;Gf;2571;Basketball Stars Weert;MSE 1;3103;Rotterdam Basketbal;MSE 1;2017-01-28;19:30:00;18534;2571;Joost;;Padberg;1991-04-14;202;16;1;2;0;0;4;6;6;5;1;2;0;0;0;2;0;1;2;3;0;0;0;0;
 736197;421;15;Gf;2571;Basketball Stars Weert;MSE 1;3103;Rotterdam Basketbal;MSE 1;2017-01-28;19:30:00;18575;2571;Aleek;;Pauline;1987-07-21;185;18;1;4;0;1;0;0;2;2;0;2;3;1;0;3;0;1;2;3;0;0;0;0;
 736197;421;15;Gf;2571;Basketball Stars Weert;MSE 1;3103;Rotterdam Basketbal;MSE 1;2017-01-28;19:30:00;18272;2571;Rens;van;Ravensteijn;1995-06-16;200;14;2;2;0;0;0;0;4;0;1;1;0;0;0;1;0;1;2;3;0;0;0;0;
@@ -1322,7 +1322,7 @@ wed_ID;cmp_ID;cmp_Nummer;wed_Nummer;wed_ThuisPloeg;thuis_club;thuis_ploeg;wed_Ui
 736202;421;15;Cg;3107;BS Leiden;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-02-04;20:00:00;18279;2571;Roel;;Aarts;1993-08-19;198;5;0;2;0;0;0;0;0;3;0;0;1;0;0;0;4;3;2;1;0;0;0;0;
 736202;421;15;Cg;3107;BS Leiden;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-02-04;20:00:00;18271;2571;Kasper;;Averink;1993-06-11;192;23;0;3;0;2;4;4;4;3;1;4;2;0;0;4;4;3;2;1;0;0;0;0;
 736202;421;15;Cg;3107;BS Leiden;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-02-04;20:00:00;18276;2571;Akeel;;Eduardo;1993-01-10;191;30;3;7;1;8;2;2;11;3;0;3;2;1;1;0;4;3;2;1;0;0;0;0;
-736202;421;15;Cg;3107;BS Leiden;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-02-04;20:00:00;18277;2571;Dyon;;Halman;1994-11-17;203;17;1;2;0;0;6;6;8;4;1;1;1;0;0;1;4;3;2;1;0;0;0;0;
+736202;421;15;Cg;3107;BS Leiden;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-02-04;20:00:00;18277;2571;Dyon;;Halman;1994-11-17;204;17;1;2;0;0;6;6;8;4;1;1;1;0;0;1;4;3;2;1;0;0;0;0;
 736202;421;15;Cg;3107;BS Leiden;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-02-04;20:00:00;18336;2571;Roel;van;Overbeek;2000-08-07;185;1;0;0;0;0;1;2;1;0;0;0;0;0;0;0;4;3;2;1;0;0;0;0;
 736202;421;15;Cg;3107;BS Leiden;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-02-04;20:00:00;18534;2571;Joost;;Padberg;1991-04-14;202;18;3;5;0;0;0;0;6;5;1;1;0;1;0;4;4;3;2;1;0;0;0;0;
 736202;421;15;Cg;3107;BS Leiden;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-02-04;20:00:00;18575;2571;Aleek;;Pauline;1987-07-21;185;18;0;2;0;0;0;2;0;2;0;4;4;1;0;2;4;3;2;1;0;0;0;0;
@@ -1423,7 +1423,7 @@ wed_ID;cmp_ID;cmp_Nummer;wed_Nummer;wed_ThuisPloeg;thuis_club;thuis_ploeg;wed_Ui
 736207;421;15;Gh;2571;Basketball Stars Weert;MSE 1;1771;Landstede Basketbal;MSE 1;2017-02-11;19:30:00;18279;2571;Roel;;Aarts;1993-08-19;198;7;2;3;0;0;1;2;5;3;1;3;0;1;0;0;3;2;3;5;0;0;0;0;
 736207;421;15;Gh;2571;Basketball Stars Weert;MSE 1;1771;Landstede Basketbal;MSE 1;2017-02-11;19:30:00;18271;2571;Kasper;;Averink;1993-06-11;192;21;3;3;1;4;4;4;13;3;0;1;1;1;0;1;3;2;3;5;0;0;0;0;
 736207;421;15;Gh;2571;Basketball Stars Weert;MSE 1;1771;Landstede Basketbal;MSE 1;2017-02-11;19:30:00;18276;2571;Akeel;;Eduardo;1993-01-10;191;12;2;2;0;2;0;0;4;4;0;3;0;1;1;0;3;2;3;5;0;0;0;0;
-736207;421;15;Gh;2571;Basketball Stars Weert;MSE 1;1771;Landstede Basketbal;MSE 1;2017-02-11;19:30:00;18277;2571;Dyon;;Halman;1994-11-17;203;7;1;2;0;0;0;0;2;2;1;1;0;0;0;0;3;2;3;5;0;0;0;0;
+736207;421;15;Gh;2571;Basketball Stars Weert;MSE 1;1771;Landstede Basketbal;MSE 1;2017-02-11;19:30:00;18277;2571;Dyon;;Halman;1994-11-17;204;7;1;2;0;0;0;0;2;2;1;1;0;0;0;0;3;2;3;5;0;0;0;0;
 736207;421;15;Gh;2571;Basketball Stars Weert;MSE 1;1771;Landstede Basketbal;MSE 1;2017-02-11;19:30:00;18534;2571;Joost;;Padberg;1991-04-14;202;26;5;7;1;1;3;3;16;2;3;2;3;1;0;3;3;2;3;5;0;0;0;0;
 736207;421;15;Gh;2571;Basketball Stars Weert;MSE 1;1771;Landstede Basketbal;MSE 1;2017-02-11;19:30:00;18575;2571;Aleek;;Pauline;1987-07-21;185;23;1;4;0;0;5;8;7;1;1;6;3;2;0;6;3;2;3;5;0;0;0;0;
 736207;421;15;Gh;2571;Basketball Stars Weert;MSE 1;1771;Landstede Basketbal;MSE 1;2017-02-11;19:30:00;18272;2571;Rens;van;Ravensteijn;1995-06-16;200;22;1;4;2;6;0;2;8;2;0;4;4;1;0;2;3;2;3;5;0;0;0;0;
@@ -1494,7 +1494,7 @@ wed_ID;cmp_ID;cmp_Nummer;wed_Nummer;wed_ThuisPloeg;thuis_club;thuis_ploeg;wed_Ui
 736211;421;15;Eg;8594;Donar;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-02-16;19:30:00;18271;2571;Kasper;;Averink;1993-06-11;192;15;4;5;0;5;1;2;9;0;0;1;1;0;0;2;1;4;4;2;0;0;0;0;
 736211;421;15;Eg;8594;Donar;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-02-16;19:30:00;18276;2571;Akeel;;Eduardo;1993-01-10;191;22;3;4;0;4;1;2;7;2;1;2;1;1;0;1;1;4;4;2;0;0;0;0;
 736211;421;15;Eg;8594;Donar;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-02-16;19:30:00;18337;2571;Jan;;Gijsen;1999-10-27;197;3;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;4;4;2;0;0;0;0;
-736211;421;15;Eg;8594;Donar;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-02-16;19:30:00;18277;2571;Dyon;;Halman;1994-11-17;203;10;1;3;0;0;0;0;2;1;0;1;0;1;0;1;1;4;4;2;0;0;0;0;
+736211;421;15;Eg;8594;Donar;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-02-16;19:30:00;18277;2571;Dyon;;Halman;1994-11-17;204;10;1;3;0;0;0;0;2;1;0;1;0;1;0;1;1;4;4;2;0;0;0;0;
 736211;421;15;Eg;8594;Donar;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-02-16;19:30:00;18534;2571;Joost;;Padberg;1991-04-14;202;28;4;8;0;0;0;0;8;3;2;3;2;0;0;1;1;4;4;2;0;0;0;0;
 736211;421;15;Eg;8594;Donar;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-02-16;19:30:00;18575;2571;Aleek;;Pauline;1987-07-21;185;27;2;6;0;0;0;0;4;1;1;4;1;2;0;1;1;4;4;2;0;0;0;0;
 736211;421;15;Eg;8594;Donar;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-02-16;19:30:00;18272;2571;Rens;van;Ravensteijn;1995-06-16;200;11;0;1;0;1;0;0;0;2;0;0;0;0;0;1;1;4;4;2;0;0;0;0;
@@ -1550,7 +1550,7 @@ wed_ID;cmp_ID;cmp_Nummer;wed_Nummer;wed_ThuisPloeg;thuis_club;thuis_ploeg;wed_Ui
 736213;421;15;Ch;3107;BS Leiden;MSE 1;1771;Landstede Basketbal;MSE 1;2017-02-25;20:00:00;18251;3107;Jessey;;Voorn;1990-03-17;193;23;1;5;0;6;0;0;2;2;2;0;2;1;0;1;2;0;4;0;0;0;0;0;
 736214;421;15;Gd;2571;Basketball Stars Weert;MSE 1;11480;New Heroes;MSE 1;2017-02-25;19:30:00;18279;2571;Roel;;Aarts;1993-08-19;198;9;1;2;0;0;1;2;3;3;0;2;1;1;0;0;0;1;1;1;0;0;0;0;
 736214;421;15;Gd;2571;Basketball Stars Weert;MSE 1;11480;New Heroes;MSE 1;2017-02-25;19:30:00;18276;2571;Akeel;;Eduardo;1993-01-10;191;11;0;1;1;2;0;0;3;3;0;2;0;3;0;1;0;1;1;1;0;0;0;0;
-736214;421;15;Gd;2571;Basketball Stars Weert;MSE 1;11480;New Heroes;MSE 1;2017-02-25;19:30:00;18277;2571;Dyon;;Halman;1994-11-17;203;19;3;3;0;0;0;0;6;1;2;4;1;0;0;0;0;1;1;1;0;0;0;0;
+736214;421;15;Gd;2571;Basketball Stars Weert;MSE 1;11480;New Heroes;MSE 1;2017-02-25;19:30:00;18277;2571;Dyon;;Halman;1994-11-17;204;19;3;3;0;0;0;0;6;1;2;4;1;0;0;0;0;1;1;1;0;0;0;0;
 736214;421;15;Gd;2571;Basketball Stars Weert;MSE 1;11480;New Heroes;MSE 1;2017-02-25;19:30:00;18383;2571;Robin;van;Heukelom;1999-11-29;185;4;1;1;0;0;1;1;3;0;0;0;0;0;0;0;0;1;1;1;0;0;0;0;
 736214;421;15;Gd;2571;Basketball Stars Weert;MSE 1;11480;New Heroes;MSE 1;2017-02-25;19:30:00;18336;2571;Roel;van;Overbeek;2000-08-07;185;7;0;0;0;1;0;0;0;0;0;1;0;0;0;0;0;1;1;1;0;0;0;0;
 736214;421;15;Gd;2571;Basketball Stars Weert;MSE 1;11480;New Heroes;MSE 1;2017-02-25;19:30:00;18534;2571;Joost;;Padberg;1991-04-14;202;12;2;2;0;0;0;0;4;4;0;2;1;0;0;3;0;1;1;1;0;0;0;0;
@@ -1610,7 +1610,7 @@ wed_ID;cmp_ID;cmp_Nummer;wed_Nummer;wed_ThuisPloeg;thuis_club;thuis_ploeg;wed_Ui
 736216;421;15;Ah;10757;BC APOLLO Amsterdam;MSE 1;1771;Landstede Basketbal;MSE 1;2017-03-04;20:00:00;18293;10757;Gian;;Slagter;1991-06-27;191;27;1;1;0;1;1;2;3;2;2;1;2;1;0;0;2;2;2;1;0;0;0;0;
 736217;421;15;Gb;2571;Basketball Stars Weert;MSE 1;3808;BV Leeuwarden;MSE 1;2017-03-04;19:30:00;18279;2571;Roel;;Aarts;1993-08-19;198;13;1;1;0;0;0;0;2;2;1;3;0;0;0;2;0;0;0;1;0;0;0;0;
 736217;421;15;Gb;2571;Basketball Stars Weert;MSE 1;3808;BV Leeuwarden;MSE 1;2017-03-04;19:30:00;18276;2571;Akeel;;Eduardo;1993-01-10;191;22;1;3;2;5;0;0;8;2;1;3;2;0;0;1;0;0;0;1;0;0;0;0;
-736217;421;15;Gb;2571;Basketball Stars Weert;MSE 1;3808;BV Leeuwarden;MSE 1;2017-03-04;19:30:00;18277;2571;Dyon;;Halman;1994-11-17;203;20;8;11;0;0;2;3;18;3;11;2;0;0;0;2;0;0;0;1;0;0;0;0;
+736217;421;15;Gb;2571;Basketball Stars Weert;MSE 1;3808;BV Leeuwarden;MSE 1;2017-03-04;19:30:00;18277;2571;Dyon;;Halman;1994-11-17;204;20;8;11;0;0;2;3;18;3;11;2;0;0;0;2;0;0;0;1;0;0;0;0;
 736217;421;15;Gb;2571;Basketball Stars Weert;MSE 1;3808;BV Leeuwarden;MSE 1;2017-03-04;19:30:00;18534;2571;Joost;;Padberg;1991-04-14;202;13;1;1;0;0;2;4;4;4;2;4;0;2;1;1;0;0;0;1;0;0;0;0;
 736217;421;15;Gb;2571;Basketball Stars Weert;MSE 1;3808;BV Leeuwarden;MSE 1;2017-03-04;19:30:00;18575;2571;Aleek;;Pauline;1987-07-21;185;27;4;7;3;4;0;2;17;2;1;4;3;3;0;4;0;0;0;1;0;0;0;0;
 736217;421;15;Gb;2571;Basketball Stars Weert;MSE 1;3808;BV Leeuwarden;MSE 1;2017-03-04;19:30:00;18272;2571;Rens;van;Ravensteijn;1995-06-16;200;21;5;9;2;5;1;1;17;0;2;1;2;0;0;0;0;0;0;1;0;0;0;0;
@@ -1694,7 +1694,7 @@ wed_ID;cmp_ID;cmp_Nummer;wed_Nummer;wed_ThuisPloeg;thuis_club;thuis_ploeg;wed_Ui
 736221;421;15;De;11480;New Heroes;MSE 1;8594;Donar;MSE 1;2017-03-09;20:00:00;18231;11480;Stefan;;Wessels;1984-04-13;199;28;2;3;1;4;2;2;9;4;0;5;1;1;0;1;0;2;1;2;0;0;0;0;
 736222;421;15;Gc;2571;Basketball Stars Weert;MSE 1;3107;BS Leiden;MSE 1;2017-03-11;19:30:00;18279;2571;Roel;;Aarts;1993-08-19;198;6;0;1;0;0;1;2;1;2;2;1;0;0;0;1;3;0;2;1;0;0;0;0;
 736222;421;15;Gc;2571;Basketball Stars Weert;MSE 1;3107;BS Leiden;MSE 1;2017-03-11;19:30:00;18276;2571;Akeel;;Eduardo;1993-01-10;191;27;3;7;0;7;1;3;7;0;2;3;2;0;2;1;3;0;2;1;0;0;0;0;
-736222;421;15;Gc;2571;Basketball Stars Weert;MSE 1;3107;BS Leiden;MSE 1;2017-03-11;19:30:00;18277;2571;Dyon;;Halman;1994-11-17;203;14;4;6;0;0;3;3;11;3;2;4;0;1;0;2;3;0;2;1;0;0;0;0;
+736222;421;15;Gc;2571;Basketball Stars Weert;MSE 1;3107;BS Leiden;MSE 1;2017-03-11;19:30:00;18277;2571;Dyon;;Halman;1994-11-17;204;14;4;6;0;0;3;3;11;3;2;4;0;1;0;2;3;0;2;1;0;0;0;0;
 736222;421;15;Gc;2571;Basketball Stars Weert;MSE 1;3107;BS Leiden;MSE 1;2017-03-11;19:30:00;18534;2571;Joost;;Padberg;1991-04-14;202;19;0;4;0;0;2;6;2;2;1;3;2;2;0;3;3;0;2;1;0;0;0;0;
 736222;421;15;Gc;2571;Basketball Stars Weert;MSE 1;3107;BS Leiden;MSE 1;2017-03-11;19:30:00;18575;2571;Aleek;;Pauline;1987-07-21;185;23;0;3;0;1;2;4;2;3;1;5;4;1;0;2;3;0;2;1;0;0;0;0;
 736222;421;15;Gc;2571;Basketball Stars Weert;MSE 1;3107;BS Leiden;MSE 1;2017-03-11;19:30:00;18272;2571;Rens;van;Ravensteijn;1995-06-16;200;19;0;2;2;9;0;0;6;4;0;2;1;0;0;0;3;0;2;1;0;0;0;0;
@@ -1748,7 +1748,7 @@ wed_ID;cmp_ID;cmp_Nummer;wed_Nummer;wed_ThuisPloeg;thuis_club;thuis_ploeg;wed_Ui
 736224;421;15;Ae;10757;BC APOLLO Amsterdam;MSE 1;8594;Donar;MSE 1;2017-03-18;20:00:00;18293;10757;Gian;;Slagter;1991-06-27;191;33;0;1;1;2;1;2;4;5;2;2;1;2;0;5;0;0;0;1;0;0;0;0;
 736225;421;15;Fg;3103;Rotterdam Basketbal;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-03-18;20:00:00;18279;2571;Roel;;Aarts;1993-08-19;198;14;0;2;0;0;0;0;0;4;1;1;0;2;0;2;1;4;3;1;0;0;0;0;
 736225;421;15;Fg;3103;Rotterdam Basketbal;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-03-18;20:00:00;18276;2571;Akeel;;Eduardo;1993-01-10;191;23;1;4;2;6;0;0;8;0;0;3;1;2;0;2;1;4;3;1;0;0;0;0;
-736225;421;15;Fg;3103;Rotterdam Basketbal;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-03-18;20:00:00;18277;2571;Dyon;;Halman;1994-11-17;203;26;7;12;0;0;1;2;15;0;4;3;0;1;0;1;1;4;3;1;0;0;0;0;
+736225;421;15;Fg;3103;Rotterdam Basketbal;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-03-18;20:00:00;18277;2571;Dyon;;Halman;1994-11-17;204;26;7;12;0;0;1;2;15;0;4;3;0;1;0;1;1;4;3;1;0;0;0;0;
 736225;421;15;Fg;3103;Rotterdam Basketbal;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-03-18;20:00:00;18383;2571;Robin;van;Heukelom;1999-11-29;185;4;0;0;0;0;0;0;0;1;0;0;0;0;0;0;1;4;3;1;0;0;0;0;
 736225;421;15;Fg;3103;Rotterdam Basketbal;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-03-18;20:00:00;18336;2571;Roel;van;Overbeek;2000-08-07;185;3;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;4;3;1;0;0;0;0;
 736225;421;15;Fg;3103;Rotterdam Basketbal;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-03-18;20:00:00;18575;2571;Aleek;;Pauline;1987-07-21;185;28;3;5;0;3;2;5;8;0;0;4;1;0;0;2;1;4;3;1;0;0;0;0;
@@ -1808,7 +1808,7 @@ wed_ID;cmp_ID;cmp_Nummer;wed_Nummer;wed_ThuisPloeg;thuis_club;thuis_ploeg;wed_Ui
 736227;421;15;Cb;3107;BS Leiden;MSE 1;3808;BV Leeuwarden;MSE 1;2017-03-18;20:00:00;18265;3808;Torben;;Tonjann;1994-05-03;203;6;0;0;1;1;0;0;3;0;0;1;1;0;0;0;1;0;3;4;0;0;0;0;
 736228;421;15;Ga;2571;Basketball Stars Weert;MSE 1;10757;BC APOLLO Amsterdam;MSE 1;2017-03-25;19:30:00;18279;2571;Roel;;Aarts;1993-08-19;198;3;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;2;1;0;0;0;0;
 736228;421;15;Ga;2571;Basketball Stars Weert;MSE 1;10757;BC APOLLO Amsterdam;MSE 1;2017-03-25;19:30:00;18276;2571;Akeel;;Eduardo;1993-01-10;191;28;3;4;1;6;4;5;13;1;1;6;1;2;0;0;0;1;2;1;0;0;0;0;
-736228;421;15;Ga;2571;Basketball Stars Weert;MSE 1;10757;BC APOLLO Amsterdam;MSE 1;2017-03-25;19:30:00;18277;2571;Dyon;;Halman;1994-11-17;203;27;3;9;0;0;1;2;7;4;4;6;0;0;0;1;0;1;2;1;0;0;0;0;
+736228;421;15;Ga;2571;Basketball Stars Weert;MSE 1;10757;BC APOLLO Amsterdam;MSE 1;2017-03-25;19:30:00;18277;2571;Dyon;;Halman;1994-11-17;204;27;3;9;0;0;1;2;7;4;4;6;0;0;0;1;0;1;2;1;0;0;0;0;
 736228;421;15;Ga;2571;Basketball Stars Weert;MSE 1;10757;BC APOLLO Amsterdam;MSE 1;2017-03-25;19:30:00;18336;2571;Roel;van;Overbeek;2000-08-07;185;4;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;1;2;1;0;0;0;0;
 736228;421;15;Ga;2571;Basketball Stars Weert;MSE 1;10757;BC APOLLO Amsterdam;MSE 1;2017-03-25;19:30:00;18534;2571;Joost;;Padberg;1991-04-14;202;11;0;1;0;0;0;0;0;1;0;3;0;0;0;1;0;1;2;1;0;0;0;0;
 736228;421;15;Ga;2571;Basketball Stars Weert;MSE 1;10757;BC APOLLO Amsterdam;MSE 1;2017-03-25;19:30:00;18575;2571;Aleek;;Pauline;1987-07-21;185;29;4;4;0;1;0;0;8;2;2;8;2;1;0;2;0;1;2;1;0;0;0;0;
@@ -1950,7 +1950,7 @@ wed_ID;cmp_ID;cmp_Nummer;wed_Nummer;wed_ThuisPloeg;thuis_club;thuis_ploeg;wed_Ui
 736235;421;15;Hg;1771;Landstede Basketbal;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-04-01;19:30:00;18285;1771;J.T.;;Yoho;1993-11-24;198;26;6;8;2;7;1;1;19;3;1;2;4;5;0;2;3;0;1;1;0;0;0;0;
 736235;421;15;Hg;1771;Landstede Basketbal;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-04-01;19:30:00;18279;2571;Roel;;Aarts;1993-08-19;198;11;1;3;0;0;4;4;6;5;0;1;0;0;0;1;3;0;1;1;0;0;0;0;
 736235;421;15;Hg;1771;Landstede Basketbal;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-04-01;19:30:00;18276;2571;Akeel;;Eduardo;1993-01-10;191;32;3;6;1;3;0;0;9;3;0;4;4;2;0;2;3;0;1;1;0;0;0;0;
-736235;421;15;Hg;1771;Landstede Basketbal;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-04-01;19:30:00;18277;2571;Dyon;;Halman;1994-11-17;203;28;3;6;0;0;1;6;7;1;2;3;1;0;0;2;3;0;1;1;0;0;0;0;
+736235;421;15;Hg;1771;Landstede Basketbal;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-04-01;19:30:00;18277;2571;Dyon;;Halman;1994-11-17;204;28;3;6;0;0;1;6;7;1;2;3;1;0;0;2;3;0;1;1;0;0;0;0;
 736235;421;15;Hg;1771;Landstede Basketbal;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-04-01;19:30:00;18575;2571;Aleek;;Pauline;1987-07-21;185;25;3;8;0;0;1;2;7;3;1;3;3;2;0;8;3;0;1;1;0;0;0;0;
 736235;421;15;Hg;1771;Landstede Basketbal;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-04-01;19:30:00;18272;2571;Rens;van;Ravensteijn;1995-06-16;200;26;0;2;2;3;2;2;8;3;1;2;0;1;0;2;3;0;1;1;0;0;0;0;
 736235;421;15;Hg;1771;Landstede Basketbal;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-04-01;19:30:00;18278;2571;Daan;;Rosenmuller;1995-07-15;193;25;2;5;2;4;5;5;15;1;0;3;1;2;0;2;3;0;1;1;0;0;0;0;
@@ -2010,7 +2010,7 @@ wed_ID;cmp_ID;cmp_Nummer;wed_Nummer;wed_ThuisPloeg;thuis_club;thuis_ploeg;wed_Ui
 736239;421;15;Ge;2571;Basketball Stars Weert;MSE 1;8594;Donar;MSE 1;2017-04-04;20:00:00;18279;2571;Roel;;Aarts;1993-08-19;198;13;2;2;0;0;3;4;7;4;1;3;0;2;0;3;0;0;1;2;0;0;0;0;
 736239;421;15;Ge;2571;Basketball Stars Weert;MSE 1;8594;Donar;MSE 1;2017-04-04;20:00:00;18276;2571;Akeel;;Eduardo;1993-01-10;191;29;2;7;3;6;0;0;13;3;1;3;1;2;0;4;0;0;1;2;0;0;0;0;
 736239;421;15;Ge;2571;Basketball Stars Weert;MSE 1;8594;Donar;MSE 1;2017-04-04;20:00:00;18337;2571;Jan;;Gijsen;1999-10-27;197;4;0;0;0;0;1;2;1;0;0;0;0;1;0;1;0;0;1;2;0;0;0;0;
-736239;421;15;Ge;2571;Basketball Stars Weert;MSE 1;8594;Donar;MSE 1;2017-04-04;20:00:00;18277;2571;Dyon;;Halman;1994-11-17;203;24;1;1;0;0;0;0;2;3;2;8;0;1;0;3;0;0;1;2;0;0;0;0;
+736239;421;15;Ge;2571;Basketball Stars Weert;MSE 1;8594;Donar;MSE 1;2017-04-04;20:00:00;18277;2571;Dyon;;Halman;1994-11-17;204;24;1;1;0;0;0;0;2;3;2;8;0;1;0;3;0;0;1;2;0;0;0;0;
 736239;421;15;Ge;2571;Basketball Stars Weert;MSE 1;8594;Donar;MSE 1;2017-04-04;20:00:00;18336;2571;Roel;van;Overbeek;2000-08-07;185;10;1;2;0;0;0;0;2;2;0;2;1;1;0;0;0;0;1;2;0;0;0;0;
 736239;421;15;Ge;2571;Basketball Stars Weert;MSE 1;8594;Donar;MSE 1;2017-04-04;20:00:00;18575;2571;Aleek;;Pauline;1987-07-21;185;23;2;7;0;1;3;6;7;3;1;1;3;1;0;7;0;0;1;2;0;0;0;0;
 736239;421;15;Ge;2571;Basketball Stars Weert;MSE 1;8594;Donar;MSE 1;2017-04-04;20:00:00;18272;2571;Rens;van;Ravensteijn;1995-06-16;200;28;2;5;2;7;1;1;11;3;0;3;0;1;0;1;0;0;1;2;0;0;0;0;
@@ -2067,7 +2067,7 @@ wed_ID;cmp_ID;cmp_Nummer;wed_Nummer;wed_ThuisPloeg;thuis_club;thuis_ploeg;wed_Ui
 736241;421;15;Hc;1771;Landstede Basketbal;MSE 1;3107;BS Leiden;MSE 1;2017-04-08;20:00:00;18251;3107;Jessey;;Voorn;1990-03-17;193;29;1;4;1;5;2;2;7;4;0;4;3;0;1;2;0;1;1;3;0;0;0;0;
 736242;421;15;Dg;11480;New Heroes;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-04-08;20:00:00;18279;2571;Roel;;Aarts;1993-08-19;198;23;4;6;1;1;3;4;14;4;2;3;0;0;0;1;0;1;1;3;0;0;0;0;
 736242;421;15;Dg;11480;New Heroes;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-04-08;20:00:00;18337;2571;Jan;;Gijsen;1999-10-27;197;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;3;0;0;0;0;
-736242;421;15;Dg;11480;New Heroes;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-04-08;20:00:00;18277;2571;Dyon;;Halman;1994-11-17;203;19;4;5;0;0;3;5;11;3;2;2;1;1;0;0;0;1;1;3;0;0;0;0;
+736242;421;15;Dg;11480;New Heroes;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-04-08;20:00:00;18277;2571;Dyon;;Halman;1994-11-17;204;19;4;5;0;0;3;5;11;3;2;2;1;1;0;0;0;1;1;3;0;0;0;0;
 736242;421;15;Dg;11480;New Heroes;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-04-08;20:00:00;18383;2571;Robin;van;Heukelom;1999-11-29;185;10;1;1;0;0;1;2;3;1;0;3;0;0;0;2;0;1;1;3;0;0;0;0;
 736242;421;15;Dg;11480;New Heroes;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-04-08;20:00:00;18336;2571;Roel;van;Overbeek;2000-08-07;185;4;0;1;0;1;0;0;0;0;0;0;0;0;0;1;0;1;1;3;0;0;0;0;
 736242;421;15;Dg;11480;New Heroes;MSE 1;2571;Basketball Stars Weert;MSE 1;2017-04-08;20:00:00;18575;2571;Aleek;;Pauline;1987-07-21;185;35;7;12;0;3;5;7;19;2;1;13;3;1;0;4;0;1;1;3;0;0;0;0;
