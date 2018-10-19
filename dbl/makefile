@@ -1,2 +1,2 @@
 download:
-	Rscript --version
+	Rscript PrepareRunningSeason.R "2017-2018"
