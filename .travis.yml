@@ -6,7 +6,6 @@ cache: packages
 script:
 - make download
 - make commit_input_files
-after_success:
 - make push_changes
 env:
   global:
