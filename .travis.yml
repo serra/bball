@@ -9,4 +9,4 @@ script:
 - make push_changes
 env:
   global:
-    secure: da0+0t8z2+OH6VPrnAvlO7zL3SymZ3FuXK1coQr2B+8HmwMzp3yHbYtkJ8diuQS/7qBWmXr4vF0RE6V6Cwc6wzBdFDDecZBuonqgDfpOB0RC2fjmFeYjiSrAG7y3zEIB9Vsf61FBWs8EwLi6aBRZyA5eEtVFv41VG7MtSHtLBq8=
+    secure: cCMUjOlG1+9CJt4yQ5LYIpEv67ERvetTvk5nnf5WP1/k1jvfvaPuhK7zVA5tLNROfY9uChwYfGHNOzl1H+t4VpUZUt4EyZ4UjJQ43pTiEfArOwACtzVQBES1IQzth74hvk4LNTQzJ8kXJLBDKMc70a4ubVHh6EtN8+cvi7tf8gA=
