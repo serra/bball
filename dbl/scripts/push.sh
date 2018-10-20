@@ -6,7 +6,7 @@ setup_git() {
 }
 
 add_changes_to_master_branch() {
-  git branch –f master HEAD #update master to point to the new <temp> branch
+  git checkout -b master
 }
 
 upload_files() {
