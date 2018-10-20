@@ -1,10 +1,9 @@
 #!/bin/bash
 mydir=$(dirname "${BASH_SOURCE[0]}")
 inputdir="$mydir/../input"
-git --version
 
 # if we have new input files, we should push them to github
-git status dbl/input --porcelain
+echo "$(git status $inputdir --porcelain)"
 
 if [ -n "$(git status $inputdir --porcelain)" ]; then 
   GAMES=$(git diff -U0 $inputdir/*.csv | 
@@ -14,6 +13,7 @@ if [ -n "$(git status $inputdir --porcelain)" ]; then
   MESSAGE=$"input files changed: $GAMES"
   git add $inputdir/**;
   git commit -m "$MESSAGE"
+  echo "committed with message:\n\n$MESSAGE"
 else 
   echo "no changes to input files";
 fi
