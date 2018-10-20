@@ -12,7 +12,7 @@ add_changes_to_master_branch() {
 
 upload_files() {
   echo "remote add origin https://${GH_TOKEN}@github.com/serra/bball.git"
-  git remote add origin https://${GH_TOKEN}@github.com/serra/bball.git > /dev/null 2>&1
+  git remote add origin https://serra:${GH_TOKEN}@github.com/serra/bball.git > /dev/null 2>&1
   echo "pushing to origin ..."
   git push --quiet --set-upstream origin master
   echo "done"
