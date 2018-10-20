@@ -5,3 +5,4 @@ sudo: false
 cache: packages
 script:
  - make download
+ - make commit_input_files
