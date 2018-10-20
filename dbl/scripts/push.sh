@@ -9,7 +9,8 @@ add_changes_to_master_branch() {
   git checkout -b master
 }
 
-upload_files() {
+upload_files() { 
+  echo "https://${GH_TOKEN}@github.com/serra/bball.git"
   git remote add origin https://${GH_TOKEN}@github.com/serra/bball.git > /dev/null 2>&1
   git status
   echo "pushing to origin ..."
