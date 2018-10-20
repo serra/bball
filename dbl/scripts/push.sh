@@ -6,11 +6,10 @@ setup_git() {
 }
 
 add_changes_to_master_branch() {
-  git checkout -b master
+  git branch -f master HEAD #update master to point to the new <temp> branch
 }
 
-upload_files() { 
-  echo "https://${GH_TOKEN}@github.com/serra/bball.git"
+upload_files() {
   git remote add origin https://${GH_TOKEN}@github.com/serra/bball.git > /dev/null 2>&1
   git status
   echo "pushing to origin ..."
