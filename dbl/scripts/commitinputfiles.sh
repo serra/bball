@@ -1,5 +1,6 @@
 #!/bin/bash
-echo "$(dirname $0)"
+mydir=$(dirname "${BASH_SOURCE[0]}")
+echo $mydir
 git --version
 
 # if we have new input files, we should push them to github
