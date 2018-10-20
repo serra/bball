@@ -1,8 +1,13 @@
 language: r
 before_install:
-  - cd dbl
+- cd dbl
 sudo: false
 cache: packages
 script:
- - make download
- - make commit_input_files
+- make download
+- make commit_input_files
+after_success:
+- make push_changes
+env:
+  global:
+    secure: da0+0t8z2+OH6VPrnAvlO7zL3SymZ3FuXK1coQr2B+8HmwMzp3yHbYtkJ8diuQS/7qBWmXr4vF0RE6V6Cwc6wzBdFDDecZBuonqgDfpOB0RC2fjmFeYjiSrAG7y3zEIB9Vsf61FBWs8EwLi6aBRZyA5eEtVFv41VG7MtSHtLBq8=
