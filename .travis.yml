@@ -4,7 +4,8 @@ before_install:
 sudo: false
 cache: packages
 script:
-- make download
+- make prepare
+- make process
 env:
   global:
     - SEASON='2018-2019'
