@@ -6,7 +6,7 @@ season <- ""
 args<-commandArgs(TRUE)
 
 if(length(args) == 0) {
-  season = "2015-2016"
+  season = Sys.getenv("SEASON")
 } else {
   season <- args[1]  
 }
