@@ -1,4 +1,4 @@
-image: docker:rbase
+image: jangorecki/r-base-dev
 test:
   script:
     - echo "hello Gitlab CI!"
