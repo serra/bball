@@ -1,6 +1,9 @@
 image: jangorecki/r-base-dev
-test:
+before_script:
+  - cd ./dbl/
+build:
   script:
     - echo "hello Gitlab CI!"
     - R --version
     - Rscript --version
+    - ls
