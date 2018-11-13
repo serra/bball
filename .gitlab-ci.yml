@@ -3,3 +3,4 @@ test:
   script:
     - echo "hello Gitlab CI!"
     - R --version
+    - Rscript --version
