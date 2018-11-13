@@ -445,9 +445,9 @@ GetAdvancedPlayerStats <- function(sts, teamStats) {
 
 CheckMinutesPlayed <- function(sts) {
   
-  minutesNotEqual <- sqldf(paste("select wed_ID, plg_name, wed_ThuisPloeg, wed_UitPloeg, Minuten, opp_minuten",
+  minutesNotEqual <- sqldf(paste("select wed_ID, plg_name, wed_ThuisPloeg, wed_UitPloeg, Minuten, opp_Minuten",
                                  "from sts ",
-                                 "where Minuten <> opp_minuten"))
+                                 "where Minuten <> opp_Minuten"))
   
   nrGamesWithUnEqualMinutes <- (nrow(minutesNotEqual) / 2)
   if(nrGamesWithUnEqualMinutes > 0) {
