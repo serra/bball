@@ -1,5 +1,5 @@
 prepare:
-	Rscript PrepareRunningSeason.R
+	Rscript PrepareRunningSeason.R ${SEASON}
 process:
 	Rscript ProcessRunningSeason.R ${SEASON}
 commit_input_files:
