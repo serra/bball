@@ -204,6 +204,10 @@ GetNormalizedTeamStats <- function(sts) {
   # pretify columns; opponents columns are prefixed with "opp_"
   nrCols <- dim(teamStats)[2]/2
   oppCols <- paste("opp", names(teamStats)[nrCols+1:nrCols], sep="_")
+  #sqldf adds ..17 to colnames, only keep part before ..
+  #e.g. "opp_wed_ID..17"         "opp_plg_ID..18"
+  #     "opp_wed_ID"             "opp_plg_ID"
+  oppCols <- sapply(oppCols, function(x) unlist(strsplit(x, '[..]'))[1]) 
   names(teamStats)[nrCols+1:nrCols] <- oppCols
   
   # sanity checks ...
