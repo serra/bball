@@ -7,7 +7,7 @@ Description: Scripts for downloading raw boxscores,
 	advanced box score analysis for teams,
 	advanced boxscore analysis for players,
 	and generation of graphical reports.
-Depends: R (== 3.0.1)
+Depends: R (>= 3.0.1)
 License: Copyright Marijn van der Zee, 2012-2018
 LazyData: true
 Imports:
