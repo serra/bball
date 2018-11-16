@@ -7,6 +7,6 @@ travis_checkout_branch:
 commit_input_files:
 	./scripts/commitinputfiles.sh
 commit_report_files:
-	./scripts/commitreportfiles.sh 
-push_changes:
+	./scripts/commitreportfiles.sh
+travis_push:
 	./scripts/push.sh

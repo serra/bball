@@ -9,6 +9,7 @@ script:
 - make travis_checkout_branch
 - make commit_input_files
 - make commit_report_files
+- make travis_push
 env:
   global:
     - SEASON='2018-2019'
