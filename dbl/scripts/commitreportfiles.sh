@@ -2,7 +2,7 @@
 
 echo "Commit report files if changed"
 mydir=$(dirname "${BASH_SOURCE[0]}")
-reportdir="$mydir/../../site/pages/reports"
+reportdir="$mydir/../site/pages/reports"
 
 git status ./site/pages/reports --porcelain
 if [ -n "$(git status $reportdir --porcelain)" ]; then 
