@@ -6,6 +6,7 @@ cache: packages
 script:
 - make prepare
 - make process
+- make travis_checkout_branch
 - make commit_input_files
 env:
   global:

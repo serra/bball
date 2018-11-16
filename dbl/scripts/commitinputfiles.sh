@@ -1,19 +1,6 @@
 #!/bin/bash
 
-echo "Travis Config"
-
-git config --global user.email "travis@travis-ci.org"
-git config --global user.name "Travis CI"
-git config --global push.default current
-git status
-
-echo "Checkout the branch being built"
-git stash
-git checkout ${TRAVIS_BRANCH}
-git stash pop
-git status
-
-echo "Commit report- and csv files if changed"
+echo "Commit csv input files if changed"
 mydir=$(dirname "${BASH_SOURCE[0]}")
 inputdir="$mydir/../input"
 
@@ -33,4 +20,3 @@ else
   echo "no changes to input files";
 fi
 
-echo "Now only thing left to do is push to Github ... "
