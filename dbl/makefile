@@ -9,4 +9,4 @@ commit_input_files:
 commit_report_files:
 	./scripts/commitreportfiles.sh
 travis_push:
-	./scripts/push.sh
+	./scripts/travispush.sh
