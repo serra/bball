@@ -6,7 +6,7 @@ cache: packages
 script:
 - make prepare
 - make process
-- commit_input_files
+- make commit_input_files
 env:
   global:
     - SEASON='2018-2019'
