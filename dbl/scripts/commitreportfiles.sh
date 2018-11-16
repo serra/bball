@@ -4,10 +4,13 @@ echo "Commit report files if changed"
 mydir=$(dirname "${BASH_SOURCE[0]}")
 reportdir="$mydir/../site/pages/reports"
 
+ls -la $reportdir
+git status $reportdir
+
 git status ./site/pages/reports --porcelain
 if [ -n "$(git status $reportdir --porcelain)" ]; then 
   git add ".$reportdir/**";
   git commit -m "Updated report files"
 else 
-  echo "no changes to input files";
+  echo "no changes to report files";
 fi
