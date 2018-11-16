@@ -5,6 +5,8 @@ process:
 travis_checkout_branch:
 	./scripts/travischeckoutbranch.sh 
 commit_input_files:
-	./scripts/commitinputfiles.sh 
+	./scripts/commitinputfiles.sh
+commit_report_files:
+	./scripts/commitreportfiles.sh 
 push_changes:
 	./scripts/push.sh
