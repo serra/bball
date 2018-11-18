@@ -1,10 +1,5 @@
 language: r
 before_install:
-- python --version
-- pyenv versions
-- pyenv global 3.6.3
-- python --version
-- pip --version
 - cd dbl
 sudo: false
 cache: packages
@@ -15,6 +10,7 @@ script:
 - make commit_input_files
 - make commit_report_files
 - make travis_push
+- make travis_make_site
 env:
   global:
     - SEASON='2018-2019'
