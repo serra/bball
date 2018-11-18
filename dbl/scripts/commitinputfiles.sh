@@ -1,11 +1,8 @@
 #!/bin/bash
-
+set -e
 echo "Commit csv input files if changed"
 mydir=$(dirname "${BASH_SOURCE[0]}")
 inputdir="$mydir/../input"
-
-# if we have new input files, we should push them to github
-echo "$(git status $inputdir --porcelain)"
 
 if [ -n "$(git status $inputdir --porcelain)" ]; then 
   GAMES=$(git diff -U0 $inputdir/*.csv | 
