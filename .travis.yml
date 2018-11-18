@@ -1,9 +1,10 @@
 language: r
 before_install:
 - python --version
+- pyenv versions
+- pyenv global 3.6.3
+- python --version
 - pip --version
-- python3 --version
-- pip3 --version
 - cd dbl
 sudo: false
 cache: packages
