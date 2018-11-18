@@ -4,6 +4,8 @@ echo "Commit report files if changed"
 mydir=$(dirname "${BASH_SOURCE[0]}")
 reportdir="$mydir/../../site/pages/reports"
 
+echo "reportdir: $reportdir"
+git status
 ls -la $reportdir
 git status $reportdir
 git status $reportdir --porcelain
