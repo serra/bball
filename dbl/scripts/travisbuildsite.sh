@@ -9,5 +9,8 @@ pip --version
 
 pip install tinkerer
 
-cd ../../site
+mydir=$(dirname "${BASH_SOURCE[0]}")
+dir="$mydir/../../site/"
+cd $dir
+
 tinker --build
