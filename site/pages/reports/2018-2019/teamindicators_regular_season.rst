@@ -9,6 +9,8 @@
 2018-2019 Regular season
 ====================================================
 
+Dummy line to trigger diffs in the report.
+
 Results
 -------
 
