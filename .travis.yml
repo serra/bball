@@ -1,5 +1,9 @@
 language: r
 before_install:
+- python --version
+- pip --version
+- python3 --version
+- pip3 --version
 - cd dbl
 sudo: false
 cache: packages
