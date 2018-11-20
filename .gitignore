@@ -53,7 +53,6 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
-site/stats/**
 
 .DS_Store
 bball.sublime-workspace
