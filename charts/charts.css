@@ -1,0 +1,22 @@
+.axis path,
+.axis line
+{
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.legend text
+{
+    font-size: 9px;
+}
+
+.dot
+{
+    stroke: #222;
+}
+
+.game
+{
+    opacity: .5;
+}
