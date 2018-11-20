@@ -11,6 +11,14 @@ script:
 - make commit_report_files
 - make travis_push
 - make travis_make_site
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GH_TOKEN
+  keep-history: true
+  local-dir: "site/blog/html"
+  on:
+    branch: master
 env:
   global:
     - SEASON='2018-2019'
