@@ -2,8 +2,15 @@
 curdir=$(pwd)
 
 mydir=$(dirname "${BASH_SOURCE[0]}")
-dir="$mydir/../../site/"
+sitedir="$mydir/../../site/"
 
-cd $dir
+cd $sitedir
 tinker --build
+
+#copy charts
+cp -R -f -a ./charts ./blog/html
+#copy stats
+statsdir="./blog/html/stats"
+mkdir -p $statsdir && cp -R -f -a ../dbl/output/* $statsdir
+
 cd $curdir
