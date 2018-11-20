@@ -12,5 +12,7 @@ cp -R -f -a ./charts ./blog/html
 #copy stats
 statsdir="./blog/html/stats"
 mkdir -p $statsdir && cp -R -f -a ../dbl/output/* $statsdir
+# add .nojekyll file to root of site
+touch ./blog/html/.nojekyll
 
 cd $curdir
