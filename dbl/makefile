@@ -11,4 +11,5 @@ commit_report_files:
 travis_push:
 	./scripts/travispush.sh
 travis_make_site:
-	./scripts/travisbuildsite.sh
+	./scripts/travispreparebuildsite.sh
+	./scripts/buildsite.sh
