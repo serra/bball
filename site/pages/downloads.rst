@@ -7,7 +7,7 @@ For the Excel geeks we provide `Excel files, configured to download stats </stat
  
 For the R- and raw data geeks:
 
- * `Dump of advanced stats, updated regularly </stats>`_
+ * `Dump of advanced stats, updated regularly <../stats>`_
  * `Input files I've used for my analysis <https://github.com/serra/bball/tree/master/dbl/input>`_
  * `Github project home page <https://github.com/serra/bball>`_
 
