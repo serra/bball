@@ -13,7 +13,4 @@ cp -R -f -a ../dbl/output/* ./stats
 cp -R -f -a ./charts ./blog/html
 cp -R -f -a ./stats ./blog/html
 
-# add .nojekyll file to root of site
-touch ./blog/html/.nojekyll
-
 cd $curdir
