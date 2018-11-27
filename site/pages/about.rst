@@ -18,7 +18,7 @@ You can contact me on `Github <https://www.github.com>`_
 where I'm known as `serra <https://github.com/serra>`_.
 
 If you'd like to hire me to do coaching or consultancy for your IT teams,
-please refer to `www.serraict.com <https://www.serraict.com/contact>`_.
+please refer to `www.serraict.com <https://www.serraict.com/pages/contact>`_.
 My professional expertise is in the field 
 agile software development.
 I love to grow great teams that reliably deliver valuable software.
