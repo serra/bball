@@ -1,6 +1,8 @@
 #!/bin/bash
 set -ev
 
+pyenv versions
+
 pyenv global 3.6.3
 python --version
 pip --version
