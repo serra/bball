@@ -2,6 +2,8 @@
 set -ev
 
 pyenv versions
+python --version
+pip --version
 
 pyenv global 3.6.3
 python --version
